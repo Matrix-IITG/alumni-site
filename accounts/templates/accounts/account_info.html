@@ -7,7 +7,7 @@
 {% block body_block %}
 
     <img src='../../../{{puser.profile.pro_img.url}}' width="10%" height="10%" alt={{puser.profile.pro_img.url}}>
-<table>
+{#<!--<table>
     <tr><td><b>Username:</b></td><td>{{user.username}}</td></tr>
     <tr><td><b>Name:</b></td><td>{{user.get_full_name}}</td></tr>
     <tr><td><b>Email:</b></td><td>{{user.email}}</td></tr>
@@ -16,9 +16,22 @@
     <tr><td><b>Previous works:</b></td><td>{{user.profile.prev_work}}</td></tr>
     <tr><td><b>Social links:</b></td>
         <td><a href="{{user.profile.fb_link}}" target="_blank"><img src="../../static/fb_logo.png" width="10%" height="10%" alt="Facebook"/></a></td>
-        <td><a href="{{user.profile.ln_link}}" target="_blank"><img src="../../static/linkedin_logo.png" width="10%" height="10%" alt="Linkedin"/></a></td></tr>
+        <td><a href="{{user.profile.ln_link}}" target="_blank"><img src="../../static/linkedin_logo.png" width="10%" height="10%" alt="Linkedin"/></a></td></tr>#}
 
-</table>
+</table>-->
+    <div class="card text-center">
+		<div class="card-block"><img src="{{user.profile.pro_img.url}}" width="50px" height="50px"></div>
+            <td><a href="{% url 'accounts:public_profile' user.username %}">{{ user.username }}</a></td>
+            <div class="card-block"><h3>{{ user.first_name }} {{ user.last_name }}</h3></div>
+    	<div class="card-subtitle"><b>Email: </b>{{ user.email }}</div>
+    	<div class="card-text"><b>Last Login: </b>{{ user.last_login }}<br>
+    	<b>Graduation year: </b>{{ user.profile.year }}<br>
+    	<b>Currently Works at: </b>{{ user.profile.curr_work }}<br>
+    	<b>Previously Works at: </b>{{ user.profile.prev_work }}<br>
+            <b>Social links:</b><a href="{{user.profile.fb_link}}" target="_blank"><img src="{% static 'fb_logo.png'%}" width="10%" height="10%" alt="Facebook"/></a>
+            <a href="{{user.profile.ln_link}}" target="_blank"><img src="{% static 'linkedin_logo.png'%}" width="10%" height="10%" alt="LinkedIn"/></a>
+        </div>
+    	</div>
 <p><a href="{% url 'accounts:edit_profile' %}">Edit profile</a></p>
 <p><a href="{% url 'accounts:logout' %}">Logout</a></p>
 <p><a href="{% url 'accounts:search' %}">Search</a></p>

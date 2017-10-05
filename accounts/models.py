@@ -6,7 +6,7 @@ import datetime
 
 curr=datetime.datetime.now().year
 YEARS=[]
-for i in range(2000, curr+1):
+for i in range(2000, curr+4):
     dum=[(i, str(i))]
     YEARS=YEARS+dum
 

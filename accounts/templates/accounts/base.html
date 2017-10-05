@@ -15,80 +15,78 @@
 
     <style>
         {% block style_block %}{% endblock %}
-            #footer {
-        clear: both;
-        position: relative;
-        z-index: 10;
-        height: 3em;
-        margin-top: -3em;
-    }
+        #footer {
+            clear: both;
+            position: relative;
+            z-index: 10;
+            height: 3em;
+            margin-top: -3em;
+        }
+
         /*Navbar*/
         ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
 
-li {
-    float: left;
-}
+        li {
+            float: left;
+        }
 
-li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+        li a, .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
 
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-}
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
 
-li.dropdown {
-    display: inline-block;
-}
+        li.dropdown {
+            display: inline-block;
+        }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+        .dropdown:hover .dropdown-content {
+            display: block;
     </style>
 </head>
 
 <body>
 {% if user.is_authenticated %}
-<ul>
-  <li><a href="{% url 'home' %}">Home</a></li>
-  <li><a href="{% url 'search' %}">News</a></li>
-  <li class="dropdown right">
-    <button onclick="click_dropdown()" class="dropbtn"></button>
-    <div id= "myDropdown" class="dropdown-content">
-      <a href="{% url 'account_info' %}">Your Account</a>
-      <a href="{% url 'edit_profile' %}">Edit your profile</a>
-      <a href="{% url 'logout' %}">Logout</a>
-    </div>
-  </li>
-</ul>
+    <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'search' %}">Search</a></li>
+        <li style="float:right"><a href="{% url 'logout' %}">Logout</a></li>
+        <li style="float:right"><a href="{% url 'edit_profile' %}">Edit your profile</a></li>
+        <li style="float:right"><a href="{% url 'account_info' %}">Your Account</a></li>
+    </ul>
 {% endif %}
 <!--
 <h1>{% block h1_block %}{{ base_h1 }}{% endblock %}</h1>-->
@@ -96,33 +94,33 @@ li.dropdown {
     {{ base_body }}
 {% endblock %}
 {#<p><a href="{% url ':index' %}">Back to Homepage</a></p>#}
-<div id="footer" style="padding-top: 100px;padding-bottom: 50px">
-    <div align="center">
+<div id="footer" style="width: 100%;position: fixed;bottom: 0">
+   <center> <div align="center">
         Copyrights MATRIX IIT Guwahati<br>
         Developed by <a href="https://github.com/Matrix-IITG/">Web Development Team</a>
-    </div>
+   </div></center>
 </div>
 <script>
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function click_dropdown() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
+    /* When the user clicks on the button,
+     toggle between hiding and showing the dropdown content */
+    function click_dropdown() {
+        document.getElementById("myDropdown").classList.toggle("show");
     }
-  }
-}
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
 </script>
 </body>
 </html>

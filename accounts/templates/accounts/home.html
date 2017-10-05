@@ -90,8 +90,8 @@ body {font-family: Verdana,sans-serif;}
     <a class="w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
   </li>
   <li class="w3-left"><a href="home.html" class="w3-padding-large w3-hover-white">MATRIX</a></li>
-  <li class="w3-right w3-hide-small " ><a href="about_us.html" class="w3-padding-large w3-hover-white">About us</a></li>
-  <li class="w3-right w3-hide-small"><a href="team.html" class="w3-padding-large w3-hover-white">Team</a></li>
+  <li class="w3-right w3-hide-small " ><a href="{% url 'about_us' %}" class="w3-padding-large w3-hover-white">About us</a></li>
+  <li class="w3-right w3-hide-small"><a href="{% url 'team' %}" class="w3-padding-large w3-hover-white">Team</a></li>
   
   <li class="w3-right w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Upcoming Events</a></li>
    <li class="w3-right w3-hide-small"><a href="https://issuu.com/matrixiitg/docs/anantha" class="w3-padding-large w3-hover-white">Anantha</a></li>
@@ -146,11 +146,11 @@ body {font-family: Verdana,sans-serif;}
   <div class="w3-content">
     <div class="w3-twothird">
       <h1 class="w3-text-teal hvr-float-shadow">Mathematics</h1>
-      <h5 class="w3-padding-32 hvr-sweep-to-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
 
-      <p class=" w3-padding-32 hvr-sweep-to-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class=" w3-padding-32 hvr-sweep-to-right">Matrix is a responsible for various events and lecture series related to Mathematics. This ensures full development of students as they learn about the real time applications of their theoritical knowledge which they have gained during their curriculum.
+Also Lecture series by some of the greatest minds in the world, allow our students to interact with such immense personalities and ponder to achieve a great research breakthrough.
+Various Events such as LaTeX workshops and other relevant resourceful workshops help our research community to present a fruitful publication of their research projects.
+          Matrix is planning to conduct a workshop on cryptography and encryption techniques.</p>
     </div>
 
     <div class="w3-third w3-center">
@@ -168,11 +168,10 @@ body {font-family: Verdana,sans-serif;}
 
     <div class="w3-twothird">
       <h1 class="w3-text-blue hvr-float-shadow">Computer Science</h1>
-      <h5 class="w3-padding-32 hvr-sweep-to-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
 
-      <p class="w3-padding-32 hvr-sweep-to-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="w3-padding-32 hvr-sweep-to-left">Coding skills help a person in various scenarios of their professional life. Matrix is responsible to build up this skill by conducting events such as Coding Competitions and Hackathons.
+Various workshops on web development, network management, understanding our operating system etc. are also conducted by Matrix.
+</p>
     </div>
   </div>
 </div>
@@ -182,11 +181,8 @@ body {font-family: Verdana,sans-serif;}
   <div class="w3-content">
     <div class="w3-twothird">
       <h1 class = "w3-text-deep-purple hvr-float-shadow " >Financial Engineering</h1>
-      <h5 class="w3-padding-32 hvr-sweep-to-right1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
 
-      <p class="w3-padding-32 hvr-sweep-to-right1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="w3-padding-32 hvr-sweep-to-right1">Matrix conduct events such a Virtual Stock Market (VSM), which is a very innovative idea for understanding the stock exchange. Matrix is responsible for conducting various workshops such as Portfolio Management to help the community by giving an exposure of the outside exchange techniques. </p>
     </div>
 
     <div class="w3-third w3-center">
@@ -199,7 +195,7 @@ body {font-family: Verdana,sans-serif;}
 
 
 <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Some info</h1>
+    <h1 class="w3-margin w3-xlarge">MATRIX<br>Student Body<br>Department Of Mathematics<br>IIT Guwahati</h1>
 </div>
 
 <!-- Footer -->

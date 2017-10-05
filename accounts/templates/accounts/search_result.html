@@ -4,13 +4,21 @@
 {% block h1_block %}My Account{% endblock %}
 
 {% block body_block %}
-
-<form action="." method="POST">
+<div class = "container-fluid col-md-6 col-md-offset-6">
+<br>
+<div class="row">
+<form  class="form-inline" action="." method="POST">
 	{% csrf_token %}
-	<input type="text" name="query">
-	<button type="submit" name="">Search</button>
-	</form>
-<table>
+    <div class="input-group">
+	<input type="text" class="form-control" size="50" placeholder="Search" name="query" required>
+	<div class="input-group-btn">
+        <button type="submit" class = "btn btn-danger" name="search-btn">Search</button>
+    </div>
+    </div>
+</form>
+</div>
+</div>
+<div class="container">
 	{{error}}
 	{% if result %}
 		<p>Showing results for <strong>{{query}}</strong></p>
@@ -18,19 +26,20 @@
 		<p>{{empty}}<strong>{{query}}</strong></p>
 	{% endif %}
 	{% for user in result %}
-		<tr>
-		<td><img src="../../{{user.profile.pro_img.url}}" width="50px" height="50px"></td>
-    	<td><a href="{% url 'accounts:public_profile' user.username %}">{{ user.username }}</td>
-    	<td>{{ user.first_name }} {{ user.last_name }}</td>
-    	<td>{{ user.email }}</td>
-    	<td>{{ user.last_login }}</td>
-    	<td>{{ user.profile.year }}</td>
-    	<td>{{ user.profile.curr_work }}</td>
-    	<td>{{ user.profile.prev_work }}</td>
-    	</tr>
+		<div class="card text-center">
+		<div class="card-block"><img src="../../{{user.profile.pro_img.url}}" width="50px" height="50px"></div>
+            <td><a href="{% url 'accounts:public_profile' user.username %}">{{ user.username }}</a></td>
+            <div class="card-block"><h3>{{ user.first_name }} {{ user.last_name }}</h3></div>
+    	<div class="card-subtitle"><b>Email: </b>{{ user.email }}</div>
+    	<div class="card-text"><b>Last Login: </b>{{ user.last_login }}<br>
+    	<b>Graduation year: </b>{{ user.profile.year }}<br>
+    	<b>Currently Works at: </b>{{ user.profile.curr_work }}<br>
+    	<b>Previously Works at: </b>{{ user.profile.prev_work }}
+        </div>
+    	</div>
 	{% endfor %}
-</table>
-<p><a href="{% url 'accounts:edit_profile' %}">Edit profile</a></p>
+</div>
+{#<p><a href="{% url 'accounts:edit_profile' %}">Edit profile</a></p>#}
 {#<p><a href="{% url 'accounts:user_list' %}">List of all users</a></p>#}
 {#<p><a href="{% url 'accounts:change_password' %}">Change password</a></p>#}
 {% endblock %}

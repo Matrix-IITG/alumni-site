@@ -1,10 +1,10 @@
 {% extends 'accounts/base.html' %}
-
+{% load static %}
 {% block title_block %}{{PROJECT_NAME}} - profile{% endblock %}
 {% block h1_block %}{{puser.username}}{% endblock %}
 
 {% block body_block %}
-<table>
+<!--<table>
 	<tr><td>Username:</td><td>{{puser.username}}</td></tr>
 	<tr><td>Name:</td><td>{{puser.get_full_name}}</td></tr>
 	<tr><td>Email:</td><td>{{puser.email}}</td></tr>
@@ -16,8 +16,21 @@
         <td><a href="{{puser.profile.fb_link}}" target="_blank">Facebook</a></td>
         <td><a href="{{puser.profile.ln_link}}" target="_blank">Linkedin</a></td></tr>
 
-</table>
+</table>-->
+    <div class="card text-center">
+		<div class="card-block"><img src="{{user.profile.pro_img.url}}" width="50px" height="50px"></div>
+        <h1>  <a href="{% url 'public_profile' user.username %}">{{ user.username }}</a></h1>
+            <div class="card-block"><h3>{{ user.first_name }} {{ user.last_name }}</h3></div>
+    	<div class="card-subtitle"><b>Email: </b>{{ user.email }}</div>
+    	<div class="card-text"><b>Last Login: </b>{{ user.last_login }}<br>
+    	<b>Graduation year: </b>{{ user.profile.year }}<br>
+    	<b>Currently Works at: </b>{{ user.profile.curr_work }}<br>
+    	<b>Previously Works at: </b>{{ user.profile.prev_work }}<br>
+            <b>Social links:</b><a href="{{user.profile.fb_link}}" target="_blank"><img src="{% static 'fb_logo.png'%}" width="5%" height="5%" alt="Facebook"/></a>
+            <a href="{{user.profile.ln_link}}" target="_blank"><img src="{% static 'linkedin_logo.png'%}" width="4.5%" height="4.5%" alt="LinkedIn"/></a>
+        </div>
+    </div>
 {% if user.is_authenticated and user == puser %}
-	<p><a href="{% url 'accounts:edit_profile' %}">Edit profile</a></p>
+	<!--<p><a href="{% url 'edit_profile' %}">Edit profile</a></p>-->
 {% endif %}
 {% endblock %}

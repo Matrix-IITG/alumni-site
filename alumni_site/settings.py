@@ -20,8 +20,8 @@ CONF_DIR = os.path.dirname(os.path.abspath(__file__))
 BASE_DIR = os.path.dirname(CONF_DIR)
 PROJECT_NAME = "Matrix Alumni Portal"
 CONF_DIR_NAME = os.path.relpath(CONF_DIR, BASE_DIR)
-LOGIN_REDIRECT_URL = reverse_lazy("accounts:account_info")
-LOGOUT_REDIRECT_URL = reverse_lazy("accounts:login")
+#LOGIN_REDIRECT_URL = reverse_lazy("accounts:account_info")
+#LOGOUT_REDIRECT_URL = reverse_lazy("accounts:login")
 
 CURR_YEAR=datetime.datetime.now().year
 
@@ -66,7 +66,7 @@ ROOT_URLCONF = 'alumni_site.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, "templates")],
+        'DIRS': [os.path.join(BASE_DIR, "accounts/templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

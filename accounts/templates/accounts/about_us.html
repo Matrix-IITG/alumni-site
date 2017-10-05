@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+{% load static %}
 <title>Matrix</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="{% static 'css/w3.css' %}">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -17,25 +18,24 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
     <a class="w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
   </li>
-  <li class="w3-left"><a href="index.html" class="w3-padding-large w3-hover-white">MATRIX</a></li>
-  <li class="w3-right w3-hide-small " ><a href="index2.html" class="w3-padding-large w3-hover-white">About us</a></li>
-  <li class="w3-right w3-hide-small"><a href="index3.html" class="w3-padding-large w3-hover-white">Team</a></li>
-    <li class="w3-right w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Anantha</a></li>
+  <li class="w3-left"><a href="{% url 'home' %}" class="w3-padding-large w3-hover-white">MATRIX</a></li>
+  <li class="w3-right w3-hide-small " ><a href="{% url 'about_us' %}" class="w3-padding-large w3-hover-white">About us</a></li>
+  <li class="w3-right w3-hide-small"><a href="{% url 'team' %}" class="w3-padding-large w3-hover-white">Team</a></li>
+    <li class="w3-right w3-hide-small"><a href="https://issuu.com/matrixiitg/docs/anantha" class="w3-padding-large w3-hover-white">Anantha</a></li>
   <li class="w3-right w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Upcoming Events</a></li>
-  <li class="w3-right w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Alumni</a></li>
-  <li class="w3-right w3-hide-small"><a href="index.html" class="w3-padding-large w3-hover-white">Home</a></li>
+  <li class="w3-right w3-hide-small"><a href="{% url 'login' %}" class="w3-padding-large w3-hover-white">Alumni</a></li>
   
 </ul>
 
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:51px">
   <ul class="w3-navbar w3-left-align w3-large w3-black">
-  <li><a class="w3-padding-large" href="index.html">Home</a></li>
-    <li><a class="w3-padding-large" href="#">Alumni</a></li>
+  <li><a class="w3-padding-large" href="{% url 'home' %}">Home</a></li>
+    <li><a class="w3-padding-large" href="{% url 'login' %}">Alumni</a></li>
     <li><a class="w3-padding-large" href="#">Upcoming Events</a></li>
-      <li><a class="w3-padding-large" href="#">Anantha</a></li>
-    <li><a class="w3-padding-large" href="index3.html">Team</a></li>
-    <li><a class="w3-padding-large" href="index2.html">About us</a></li>
+      <li><a class="w3-padding-large" href="https://issuu.com/matrixiitg/docs/anantha">Anantha</a></li>
+    <li><a class="w3-padding-large" href="{% url 'team' %}">Team</a></li>
+    <li><a class="w3-padding-large" href="{% url 'about_us' %}">About us</a></li>
     
   </ul>
 </div>
@@ -48,11 +48,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <div class="w3-content">
     <div class="w3-twothird">
       <h1 style="text-align:center;margin-left: 20%" class="w3-jumbo w3-text-teal" >About</h1>
-      <h5 style="text-align:left;margin-left: 20%" class="w3-padding-32 w3-text-teal ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+        <h5 style="text-align:left;margin-left: 20%" class="w3-padding-32 w3-text-teal "><b>MATRIX</b> Student Body, Department of Mathematics, IIT Guwahati,
+        was founded in 2008 with a vision to provide exposure for applying the mathematics and computing
+            knowledge to solve the real life technical problems by organizing lectures, seminars and workshops on topics of general interest
+            and special lectures on specific topics of interest.</h5>
 
-      <h5 style="text-align:left;margin-left: 20%" class="w3-text-teal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</h5>
+      <h5 style="text-align:left;margin-left: 20%" class="w3-text-teal"></h5>
     </div>
 
   
@@ -65,11 +66,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
     <div class="w3-twothird">
       <h1 style="text-align:center;margin-left: 20%" class="w3-text-blue">Dimension</h1>
-      <h5 class="w3-text-blue" style="text-align:center;margin-left: 20%">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-      
-      <h5 class="w3-text-blue" style="text-align:center;margin-left: 20%">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+      <h5 class="w3-text-blue" style="text-align:center;margin-left: 20%">Dimension is the annual festival of IITG Mathematics Society (MATRIX). Many important personalities, visit our campus to address the audience, about their industrial experiences, research projects. Lecture series by eminent scientists from various fields such as Cryptography, Fractals, Artificial Intelligence are held during Dimension.</h5>
     </div>
   </div>
 </div>
@@ -79,11 +77,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <div class="w3-content">
     <div class="w3-twothird">
       <h1 class = "w3-text-deep-purple" style="text-align:center;margin-left: 20%" >Anantha</h1>
-      <h5 class="w3-text-deep-purple" style="text-align:center;margin-left: 20%">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
-      <h5 class="w3-text-deep-purple" style="text-align:center;margin-left: 20%">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</h5>
+        <h5 class="w3-text-deep-purple" style="text-align:center;margin-left: 20%">The Annual Magazine published by MATRIX </h5>
+      <h5 class="w3-text-deep-purple" style="text-align:center;margin-left: 20%">Publication of thoughts is very important for a person to improve its profile. Matrix helps the community, by issuing its magazine “Anantha”, which contains a wide range of interesting articles contribute by different people, related to Latest Mathematical Research, Experience of Internships, and many more.</h5>
     </div>
 
     
