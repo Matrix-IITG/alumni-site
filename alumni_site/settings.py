@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(CONF_DIR)
 PROJECT_NAME = "Matrix Alumni Portal"
 CONF_DIR_NAME = os.path.relpath(CONF_DIR, BASE_DIR)
 #LOGIN_REDIRECT_URL = reverse_lazy("accounts:account_info")
-#LOGOUT_REDIRECT_URL = reverse_lazy("accounts:login")
+LOGOUT_REDIRECT_URL = reverse_lazy("accounts:login")
 
 CURR_YEAR=datetime.datetime.now().year
 
@@ -37,7 +37,7 @@ SECRET_KEY = '4(i50^6)5881wz#r3xkff8=r__n9heh+h%3_p3l6$n^4#l1_5)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['10.10.3.21']
 
 # Application definition
 

@@ -108,7 +108,7 @@ def register(request):
                         print("checking location")
                         print(user.profile.pro_img)
                     login(request, user)
-                    return HttpResponseRedirect(settings.LOGIN_REDIRECT_URL)
+                    return HttpResponseRedirect('/login')
             else:
                 context_dict["register_error"] = "You must fill out all fields"
         else:

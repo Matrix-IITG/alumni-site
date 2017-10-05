@@ -28,7 +28,7 @@
 	{% for user in result %}
 		<div class="card text-center">
 		<div class="card-block"><img src="../../{{user.profile.pro_img.url}}" width="50px" height="50px"></div>
-            <td><a href="{% url 'accounts:public_profile' user.username %}">{{ user.username }}</a></td>
+            <td><a href="{% url 'public_profile' user.username %}">{{ user.username }}</a></td>
             <div class="card-block"><h3>{{ user.first_name }} {{ user.last_name }}</h3></div>
     	<div class="card-subtitle"><b>Email: </b>{{ user.email }}</div>
     	<div class="card-text"><b>Last Login: </b>{{ user.last_login }}<br>
@@ -42,4 +42,6 @@
 {#<p><a href="{% url 'accounts:edit_profile' %}">Edit profile</a></p>#}
 {#<p><a href="{% url 'accounts:user_list' %}">List of all users</a></p>#}
 {#<p><a href="{% url 'accounts:change_password' %}">Change password</a></p>#}
+    <br>
+    <br>
 {% endblock %}

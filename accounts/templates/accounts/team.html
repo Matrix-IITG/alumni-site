@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+{% load static %}
 <title>Matrix</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="{% static 'css/w3.css' %}">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -13,74 +14,86 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .alignment
 
 </style>
+
+<!-- Navbar -->
 <ul class="w3-navbar w3-black w3-card-2 w3-top w3-left-align w3-large">
   <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
     <a class="w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
   </li>
-  <li class="w3-left"><a href="index.html" class="w3-padding-large w3-hover-white">MATRIX</a></li>
-  <li class="w3-right w3-hide-small " ><a href="index2.html" class="w3-padding-large w3-hover-white">About us</a></li>
-  <li class="w3-right w3-hide-small"><a href="index3.html" class="w3-padding-large w3-hover-white">Team</a></li>
-    <li class="w3-right w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Anantha</a></li>
+  <li class="w3-left"><a href="{% url 'home' %}" class="w3-padding-large w3-hover-white">MATRIX</a></li>
+  <li class="w3-right w3-hide-small " ><a href="{% url 'about_us' %}" class="w3-padding-large w3-hover-white">About us</a></li>
+  <li class="w3-right w3-hide-small"><a href="{% url 'team' %}" class="w3-padding-large w3-hover-white">Team</a></li>
+
   <li class="w3-right w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Upcoming Events</a></li>
-  <li class="w3-right w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Alumni</a></li>
-  <li class="w3-right w3-hide-small"><a href="index.html" class="w3-padding-large w3-hover-white">Home</a></li>
-  
+   <li class="w3-right w3-hide-small"><a href="https://issuu.com/matrixiitg/docs/anantha" class="w3-padding-large w3-hover-white">Anantha</a></li>
+  <li class="w3-right w3-hide-small"><a href="{% url 'login' %}" class="w3-padding-large w3-hover-white">Alumni</a></li>
+ <!-- <li class="w3-right w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Home</a></li>-->
+
 </ul>
 
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:51px">
   <ul class="w3-navbar w3-left-align w3-large w3-black">
-  <li><a class="w3-padding-large" href="index.html">Home</a></li>
-    <li><a class="w3-padding-large" href="#">Alumni</a></li>
+  <li><a class="w3-padding-large" href="{%  url 'home' %}">Home</a></li>
+    <li><a class="w3-padding-large" href="{% url 'login' %}">Alumni</a></li>
     <li><a class="w3-padding-large" href="#">Upcoming Events</a></li>
-      <li><a class="w3-padding-large" href="#">Anantha</a></li>
-    <li><a class="w3-padding-large" href="index3.html">Team</a></li>
-    <li><a class="w3-padding-large" href="index2.html">About us</a></li>
+    <li><a class="w3-padding-large" href="https://issuu.com/matrixiitg/docs/anantha">Anantha</a></li>
+    <li><a class="w3-padding-large" href="{% url 'team' %}">Team</a></li>
+    <li><a class="w3-padding-large" href="{% url 'about_us' %}">About us</a></li>
     
   </ul>
 </div>
-<div class = " w3-padding-64 w3-container w3-center w3-light-grey" style = "padding-right:60px"  
->
+<div class = " w3-padding-64 w3-container w3-center w3-light-grey" style = "padding-right:60px">
 <h1 class = "w3-text-teal w3-jumbo"  >Team</h1>
 </div>
 
 
 
 <!-- First Grid -->
-  <div class = "w3-half w3-row-padding w3-padding-64 w3-container w3-left-align w3-light-grey" style = "padding-left :100px;" >
- <div class="w3-card-8" style="width:80%;height:150%;">
+  <div class = "w3-row-padding w3-padding-64 w3-container w3-light-grey" style = "padding-left :100px;" >
+ <div class="w3-card-8" style=" display: block; margin: auto;width: 40%;">
     <header class="w3-container w3-teal">
-      <h3>post1</h3>
+      <h3>Head of the Department</h3>
     </header>
     <div class="w3-container">
      <!--<p>1 new friend request</p>-->
       <div>
       <img src="../../static/profile.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:90px">
-      <p>name1</p></div>
+      <p>Prof. Swaroop Nandan Bora</p>
+      <p>Email:<a href="mailto:hodmath@iitg.ernet.in" target="_top">hodmath@iitg.ernet.in</a></p>
+      <p>Telehone: +91-361-2582601</p></div>
+    </div>
     </div>
     <div class = "w3-padding-8" 
     ></div>
    <!--<button class="w3-btn-block w3-dark-grey">+ Connect</button>-->
-  </div>
   </div>
 
 <!-- Second Grid -->
-<div class = "w3-half w3-row-padding w3-padding-64 w3-container w3-left-align w3-light-grey" style = "padding-left :100px;" >
- <div class="w3-card-8" style="width:80%;height:150%;">
+<div class = "w3-row-padding w3-padding-64 w3-container w3-light-grey" style = "padding-left :100px;" >
+ <div class="w3-card-8" style=" display: block; margin: auto;width: 40%;">
     <header class="w3-container w3-teal">
-      <h3>post1</h3>
+      <h3>Faculty Advisor</h3>
     </header>
     <div class="w3-container">
      <!--<p>1 new friend request</p>-->
-      <div>
-      <img src="../../static/profile.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:90px">
-      <p>name1</p></div>
+      <div class="w3-row" >
+      <img src="../../static/profile.png" alt="Avatar" class="w3-col m4 l3 w3-circle w3-left w3-margin-right" style="width:20%;margin:0 auto;display:block;">
+      <div class="w3-col m8 l9">
+      <p>H. Ramesh</p>
+      <p></p>Assistant Professor</p>
+      <p>Email:<a href="mailto: ramesh_h@iitg.ernet.in" target="_top">ramesh_h@iitg.ernet.in</a></p>
+      <p>Telehone: +91-361-2582601</p></div>
+      </div>
+    </div>
     </div>
     <div class = "w3-padding-8" 
     ></div>
    <!--<button class="w3-btn-block w3-dark-grey">+ Connect</button>-->
   </div>
-  </div>
+
+
+
 <!-- Third Grid -->
 <div class = "w3-half w3-row-padding w3-padding-64 w3-container w3-left-align w3-light-grey" style = "padding-left :100px;" >
  <div class="w3-card-8" style="width:80%;">
@@ -102,7 +115,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class = "w3-half w3-row-padding w3-padding-64 w3-container w3-left-align w3-light-grey" style = "padding-left :100px;" >
  <div class="w3-card-8" style="width:80%;height:150%;">
     <header class="w3-container w3-teal">
-      <h3>post1</h3>
+      <h3>post4</h3>
     </header>
     <div class="w3-container">
      <!--<p>1 new friend request</p>-->
