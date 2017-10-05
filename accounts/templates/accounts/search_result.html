@@ -1,0 +1,36 @@
+{% extends 'accounts/base.html' %}
+
+{% block title_block %}{{PROJECT_NAME}} - account{% endblock %}
+{% block h1_block %}My Account{% endblock %}
+
+{% block body_block %}
+
+<form action="." method="POST">
+	{% csrf_token %}
+	<input type="text" name="query">
+	<button type="submit" name="">Search</button>
+	</form>
+<table>
+	{{error}}
+	{% if result %}
+		<p>Showing results for <strong>{{query}}</strong></p>
+	{% else %}
+		<p>{{empty}}<strong>{{query}}</strong></p>
+	{% endif %}
+	{% for user in result %}
+		<tr>
+		<td><img src="../../{{user.profile.pro_img.url}}" width="50px" height="50px"></td>
+    	<td><a href="{% url 'accounts:public_profile' user.username %}">{{ user.username }}</td>
+    	<td>{{ user.first_name }} {{ user.last_name }}</td>
+    	<td>{{ user.email }}</td>
+    	<td>{{ user.last_login }}</td>
+    	<td>{{ user.profile.year }}</td>
+    	<td>{{ user.profile.curr_work }}</td>
+    	<td>{{ user.profile.prev_work }}</td>
+    	</tr>
+	{% endfor %}
+</table>
+<p><a href="{% url 'accounts:edit_profile' %}">Edit profile</a></p>
+{#<p><a href="{% url 'accounts:user_list' %}">List of all users</a></p>#}
+{#<p><a href="{% url 'accounts:change_password' %}">Change password</a></p>#}
+{% endblock %}

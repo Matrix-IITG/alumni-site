@@ -1,0 +1,27 @@
+{% extends 'accounts/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}{{PROJECT_NAME}} - Edit profile{% endblock %}
+{% block h1_block %}Edit your Profile{% endblock %}
+
+{% block body_block %}
+<p style="color:red">{{ep_error}}</p>
+<p style="color:green">{{ep_success}}</p>
+<form method="POST" action="." enctype="multipart/form-data">
+	{% csrf_token %}
+	{% for field in form_basic.visible_fields %}
+		{{field.label_tag}}
+		{{field.errors}}<br />
+		{{field}}<br/>
+	{% endfor %}
+    {% for field in form_add.visible_fields %}
+		{{field.label_tag}}
+		{{field.errors}}<br />
+		{{field}}<br/>
+	{% endfor %}
+	<input type="submit" name="submit" value="Submit" />
+</form>
+{#<p><a href="{% url 'accounts:change_password' %}">Change password</a></p>#}
+{#<p><a href="{% url 'accounts:public_profile' user.username %}">My public profile</a></p>#}
+<p><a href="{% url 'accounts:account_info' %}">Account info</a></p>
+{% endblock %}

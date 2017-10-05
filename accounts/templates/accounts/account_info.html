@@ -1,0 +1,25 @@
+{% extends 'accounts/base.html' %}
+{% load static %}
+
+{% block title_block %}{{PROJECT_NAME}} - account{% endblock %}
+{% block h1_block %}My Account{% endblock %}
+
+{% block body_block %}
+
+    <img src='../../../{{puser.profile.pro_img.url}}' width="10%" height="10%" alt={{puser.profile.pro_img.url}}>
+<table>
+    <tr><td><b>Username:</b></td><td>{{user.username}}</td></tr>
+    <tr><td><b>Name:</b></td><td>{{user.get_full_name}}</td></tr>
+    <tr><td><b>Email:</b></td><td>{{user.email}}</td></tr>
+    <tr><td><b>Year of Graduation:</b></td><td>{{user.profile.year}}</td></tr>
+    <tr><td><b>Current work:</b></td><td>{{user.profile.curr_work}}</td></tr>
+    <tr><td><b>Previous works:</b></td><td>{{user.profile.prev_work}}</td></tr>
+    <tr><td><b>Social links:</b></td>
+        <td><a href="{{user.profile.fb_link}}" target="_blank"><img src="../../static/fb_logo.png" width="10%" height="10%" alt="Facebook"/></a></td>
+        <td><a href="{{user.profile.ln_link}}" target="_blank"><img src="../../static/linkedin_logo.png" width="10%" height="10%" alt="Linkedin"/></a></td></tr>
+
+</table>
+<p><a href="{% url 'accounts:edit_profile' %}">Edit profile</a></p>
+<p><a href="{% url 'accounts:logout' %}">Logout</a></p>
+<p><a href="{% url 'accounts:search' %}">Search</a></p>
+{% endblock %}

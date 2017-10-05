@@ -1,0 +1,23 @@
+{% extends 'accounts/base.html' %}
+
+{% block title_block %}{{PROJECT_NAME}} - profile{% endblock %}
+{% block h1_block %}{{puser.username}}{% endblock %}
+
+{% block body_block %}
+<table>
+	<tr><td>Username:</td><td>{{puser.username}}</td></tr>
+	<tr><td>Name:</td><td>{{puser.get_full_name}}</td></tr>
+	<tr><td>Email:</td><td>{{puser.email}}</td></tr>
+    <tr><td>Year of Graduation:</td><td>{{puser.profile.year}}</td></tr>
+    <tr><td>Current work:</td><td>{{puser.profile.curr_work}}</td></tr>
+    <tr><td>Previous works:</td><td>{{puser.profile.prev_work}}</td></tr>
+    <img src='../../../{{puser.profile.pro_img.url}}' width="100px" height="120px" alt={{puser.profile.pro_img.url}}>
+    <tr><td>Social links:</td>
+        <td><a href="{{puser.profile.fb_link}}" target="_blank">Facebook</a></td>
+        <td><a href="{{puser.profile.ln_link}}" target="_blank">Linkedin</a></td></tr>
+
+</table>
+{% if user.is_authenticated and user == puser %}
+	<p><a href="{% url 'accounts:edit_profile' %}">Edit profile</a></p>
+{% endif %}
+{% endblock %}
