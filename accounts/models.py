@@ -17,7 +17,7 @@ class Profile(models.Model):
     ln_link = models.URLField(null=True)
     curr_work = models.CharField(max_length=100, blank = True)
     prev_work = models.CharField(max_length=200, blank = True)
-    pro_img = models.ImageField(upload_to = 'images/', default="/static/default_pro_pic.png")
+    pro_img = models.ImageField(upload_to = 'images/', default="images/profile.png")
 
 
 @receiver(post_save, sender=User)
