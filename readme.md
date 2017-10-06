@@ -1,6 +1,9 @@
 # Alumni-site
-I have made the accounts feature but still edit_profile needs to be added, some more fields and a better UI.
-
+Basic Info site is ready !!
+Few Enhancements can be thought of:
+- Share Experiences
+- Facebook Authentication
+- Once FB Oauth cleared take permission to see life events, share life events so everyone is connected.
 ## Setting up and running
 - Install django, preferably 1.10.4.
 - Clone the repo using `$ git clone https://github.com/Matrix-IITG/alumni-site.git`
