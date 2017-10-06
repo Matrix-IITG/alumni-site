@@ -8,13 +8,13 @@
 <p style="color:red">{{ep_error}}</p>
 <p style="color:green">{{ep_success}}</p>
     <div class="container">
-    <div class = "row">
-<form method="POST" action="." enctype="multipart/form-data">
+    <div class = "row text-center" style=" margin-left: auto;margin-right: auto">
+<form method="POST" action="." enctype="multipart/form-data" style=" margin-left: auto;margin-right: auto">
 	{% csrf_token %}
-
+<div style="background-color: whitesmoke;margin-left: auto;margin-right: auto;">
 	{% for field in form_basic.visible_fields %}
         <div class="form-group">
-        <label>{{field.label_tag}}</label>
+            <label><b>{{field.label_tag}}</b></label>
 		{{field.errors}}<br />
 		{{field}}<br/>
         </div>
@@ -22,16 +22,17 @@
 
     {% for field in form_add.visible_fields %}
         <div class="form-group">
-        <label>{{field.label_tag}}</label>
+            <label><b>{{field.label_tag}}</b></label>
 		{{field.errors}}<br />
 		{{field}}<br/>
         </div>
 	{% endfor %}
+</div>
 	<input type="submit" name="submit" value="Submit" />
 </form>
     </div>
     </div>
-
+<br><br><br>
 {#<p><a href="{% url 'accounts:change_password' %}">Change password</a></p>#}
 {#<p><a href="{% url 'accounts:public_profile' user.username %}">My public profile</a></p>#}
 {#<p><a href="{% url 'accounts:account_info' %}">Account info</a></p>#}
