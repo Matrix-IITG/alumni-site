@@ -24,3 +24,4 @@ media/
 accounts/migrations/
 .idea/
 venv/
+local_settings.py
