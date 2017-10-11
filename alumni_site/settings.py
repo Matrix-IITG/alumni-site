@@ -35,9 +35,9 @@ CURR_YEAR=datetime.datetime.now().year
 SECRET_KEY = '4(i50^6)5881wz#r3xkff8=r__n9heh+h%3_p3l6$n^4#l1_5)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
 # Application definition
 
@@ -87,8 +87,12 @@ WSGI_APPLICATION = 'alumni_site.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'matrix_website',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
@@ -125,8 +129,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '10.10.3.21']
+#ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 EXTSTATIC_DIR = os.path.join(BASE_DIR,'extstatic')
