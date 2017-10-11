@@ -134,7 +134,7 @@ db_from_env = dj_database_url.config()
 DATABASES['default'].update(db_from_env)
 
 #ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
-STATIC_URL = '/static/'
+STATIC_URL = '/accounts/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 EXTSTATIC_DIR = os.path.join(BASE_DIR,'extstatic')
 STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'), EXTSTATIC_DIR)
