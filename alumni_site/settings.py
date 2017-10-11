@@ -36,7 +36,7 @@ CURR_YEAR=datetime.datetime.now().year
 SECRET_KEY = '4(i50^6)5881wz#r3xkff8=r__n9heh+h%3_p3l6$n^4#l1_5)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
