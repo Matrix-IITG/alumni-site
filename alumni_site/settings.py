@@ -138,7 +138,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
 EXTSTATIC_DIR = os.path.join(BASE_DIR,'extstatic')
 STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'), EXTSTATIC_DIR)
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+#SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_URL)
 print(MEDIA_ROOT)
