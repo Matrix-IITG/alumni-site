@@ -1,0 +1,15 @@
+{% extends "home/unknownbase.html" %}
+{% load static %}
+{% block body %}
+    <br><br><br>
+    {% for us in alumni %}
+        {{ us.name }}<br>
+        {{ us.roll_no}}<br>
+        {{ us.fb_link }}<br>
+        {{ us.ln_link }}<br>
+        {{ us.curr_work }}<br>
+        {{ us.prev_work }}<br>
+        <img src="{{ us.profile_img.url }}" width="150px" height="150px" />
+        <a class="btn btn-default" href="{% url 'home:profile_edit_manual' %}"><span class="glyphicon glyphicon-pencil"></span></a>
+    {% endfor %}
+{% endblock %}

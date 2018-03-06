@@ -1,0 +1,29 @@
+{% extends "home/unknownbase.html" %}
+{% load static %}
+{% block body %}
+{% block title %}Login{% endblock %}
+<br><br><br>
+<section id="form"><!--form-->
+		<div class="container">
+			<div class="row">
+			    <div class="col-sm-4">
+
+		        </div>
+				<div class="col-sm-4 ">
+					<div class="login-form"><!--login form-->
+						<h2>Login to your account</h2>
+						<form role="form" action="{% url 'login' %}" method="post">
+							{% csrf_token %}
+							<input type="text" name="username" placeholder="Name" />
+							<input type="password" name="password" placeholder=" Password" />
+							<p><a href="{% url 'password_reset' %}">Lost password?</a></p>
+							<p>Not a user? Signup<a href="{% url 'home:register' %}">here</a></p>
+							<button type="submit" value="login"  class="btn btn-default">Login</button>
+						</form>
+					</div><!--/login form-->
+				</div>
+			</div>
+		</div>
+	</section><!--/form-->
+{% endblock %}
+

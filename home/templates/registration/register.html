@@ -1,0 +1,33 @@
+{% extends 'home/unknownbase.html' %}
+{% block title %}Register{% endblock %}
+{% block body %}
+{% block register_active %}active{% endblock %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4">
+		</div>
+        <div class="col-sm-4">
+			<div class="signup-form"><!--sign up form-->
+                    {% if error_message %}
+                        <p><strong>{{ error_message }}</strong></p>
+                    {% endif %}
+				<h2>New User Signup!</h2>
+				<form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
+					{% csrf_token %}
+					{% include 'home/form_template.html' %}
+                    Already have an account? <a href="{% url 'login'%}?next={{request.path}}">Click here</a> to log in.
+					<div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                    </div>
+				</form>
+			</div><!--/sign up form-->
+		</div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+

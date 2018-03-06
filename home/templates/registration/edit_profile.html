@@ -1,0 +1,16 @@
+{% extends 'home/unknownbase.html' %}
+{% block title %}Register{% endblock %}
+{% block body %}
+{% block register_active %}active{% endblock %}
+    <br><br><br>
+    <form method="POST" class="post-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+
+{% endblock %}
+
+
+
+

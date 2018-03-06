@@ -1,0 +1,35 @@
+{% extends 'post/baseuser.html' %}
+
+{% block content %}
+    {% for post in posts %}
+        {% if not post.approved_post %}
+            <div class="post">
+                <div class="date">
+                    {{ post.published_date }}
+                </div>
+                <h1><a href="{% url 'alumni:post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+                <a class="btn btn-default" href="{% url 'alumni:post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
+                <a class="btn btn-default" href="{% url 'alumni:post_approve' pk=post.pk %}"><span class="glyphicon glyphicon-ok"></span></a>
+                <p>{{ post.text|linebreaksbr }}</p>
+                <a href="{% url 'alumni:post_detail' pk=post.pk %}">Comments: {{ post.approved_comments.count }}</a>
+                {% for comment in post.comments.all %}
+                    {% if user.is_authenticated or comment.approved_comment %}
+                    <div class="comment">
+                        <div class="date">
+                            {{ comment.created_date }}
+                            {% if not comment.approved_comment %}
+                                <a class="btn btn-default" href="{% url 'alumni:comment_remove' pk=comment.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
+                                <a class="btn btn-default" href="{% url 'alumni:comment_approve' pk=comment.pk %}"><span class="glyphicon glyphicon-ok"></span></a>
+                            {% endif %}
+                        </div>
+                        <strong>{{ comment.author }}</strong>
+                        <p>{{ comment.text|linebreaks }}</p>
+                    </div>
+                    {% endif %}
+                {% empty %}
+                    <p>No comments here yet :(</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endblock content %}
