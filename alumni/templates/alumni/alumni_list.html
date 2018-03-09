@@ -1,0 +1,18 @@
+{% extends 'alumni/baseuser.html' %}
+
+{% block content %}
+    <div class="search_box pull-right">
+        <form class="navbar-form navbar-left" role="search" method="get" action="{% url 'alumni:alumni_list' %}">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search" name="q" value="{{ request.GET.q }}">
+            </div>
+            <!--<button type="submit" class="btn btn-default">Search</button>-->
+        </form>
+     </div>
+    {% for alumni in alumnis %}
+    <a href="{% url 'alumni:alumni_detail' pk=alumni.pk %}">{{alumni.name}}</a><br>
+        <img src="{{ alumni.profile_img.url }}"  alt="imagewas" width="150px" height="150px"  />
+        {{alumni.passout_year}}<br>
+        {{alumni.curr_work}}<br>
+    {% endfor %}
+{% endblock %}

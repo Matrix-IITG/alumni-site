@@ -1,0 +1,268 @@
+{% extends "home/unknownbase.html" %}
+{% load static %}
+{% block style%}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+{%endblock%}
+{% block body %}
+    <!-- <div class="slideshow-container">
+
+    <div class="mySlides fade">
+
+      <img src="{% static 'home/image/bg1.jpg' %}" style="width:100%">
+        <div class="text"><b>[ MATRIX ]</b></div>
+    </div>
+
+    <div class="mySlides fade">
+
+      <img src="{% static 'home/image/bg2.jpg' %}" style="width:100%">
+      <div class="text"><b>[ MATRIX ]</b></div>
+    </div>
+
+    <div class="mySlides fade">
+
+      <img src="{% static 'home/image/bg3.jpg' %}" style="width:100%">
+      <div class="text"><b>[ MATRIX ]</b></div>
+    </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    {% if user.is_authenticated %}
+        <li class="dropdown s-header-v2__nav-item s-header-v2__dropdown-on-hover">
+            <a href="#"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i>{{ user.get_username }} <span class="g-font-size-10--xs g-margin-l-5--xs ti-angle-down"></span></a>
+            <ul class="dropdown-menu s-header-v2__dropdown-menu">
+                <li><a href="{% url 'home:profile' %}" class="s-header-v2__dropdown-menu-link">Profile</a></li>
+                <li><a href="{% url 'logout'%}?next={{request.path}}" class="s-header-v2__dropdown-menu-link">Logout</a></li>
+            </ul>
+        </li>
+    {% else %}
+        <li><a href="{% url 'login'%}?next={{request.path}}"><i class="fa fa-lock"></i> Login</a></li>
+    {% endif %}-->
+    <!-- First Grid -->
+    <!--<div class="w3-row-padding w3-padding-64 w3-container">
+      <div class="w3-content">
+        <div class="w3-twothird">
+          <h1 class="w3-text-teal hvr-float-shadow">Mathematics</h1>
+
+          <p class=" w3-padding-32 hvr-sweep-to-right">Matrix is responsible for various events and lecture series related to Mathematics. This ensures full development of students as they learn about the real life applications of their theoretical knowledge which they have gained during their curriculum.
+    Lecture series by some of the greatest minds in the world, allow our students to interact and intrigue with such immensely knowledgeable people and strive to achieve research breakthroughs.
+    <br>Various Events such as LaTeX workshops and other relevant resourceful workshops help our research community to present a fruitful publication of their research projects.
+              Matrix is continuously planning to conduct more and more such workshops and lectures on off-syllabi topics such as Cryptography etc.</p>
+        </div>
+
+        <div class="w3-third w3-center">
+          <i class="fa fa-calculator w3-padding-64 w3-text-teal hvr-bob"></i>
+        </div>
+      </div>
+    </div>-->
+
+    <!-- Second Grid -->
+    <!--<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+      <div class="w3-content">
+        <div class="w3-third w3-center">
+          <i class="fa fa-code w3-padding-64 w3-text-blue w3-margin-right hvr-bob"></i>
+        </div>
+
+        <div class="w3-twothird">
+          <h1 class="w3-text-blue hvr-float-shadow">Computer Science</h1>
+
+          <p class="w3-padding-32 hvr-sweep-to-left">Coding skills are now essential part of professional and research domains. Matrix tries to conduct events such as Coding Competitions and Hackathons to encourage students to hone their coding skills.
+    For the same purpose, we try to have various workshops on web development, network management, understanding our operating system etc. too.
+    </p>
+        </div>
+      </div>
+    </div>-->
+
+    <!-- Third Grid -->
+    <!--<div class="w3-row-padding w3-padding-64 w3-container">
+      <div class="w3-content">
+        <div class="w3-twothird">
+          <h1 class = "w3-text-deep-purple hvr-float-shadow " >Financial Engineering</h1>
+
+          <p class="w3-padding-32 hvr-sweep-to-right1">Matrix tries to conduct events such as Virtual Stock Market (VSM), which is a very innovative idea for understanding the stock exchange. Matrix has plans for conducting various workshops such as Portfolio Management to help the community by giving an exposure of the outside exchange techniques. </p>
+        </div>
+
+        <div class="w3-third w3-center">
+          <i class="fa fa-line-chart w3-padding-64 w3-text-deep-purple hvr-bob"></i>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+        <h1 class="w3-margin w3-xlarge">MATRIX<br>Student Body<br>Department Of Mathematics<br>IIT Guwahati</h1>
+    </div>-->
+
+
+
+    <!-- Footer -->
+    <!--<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+      <div class="w3-xlarge w3-padding-32">
+       <a href="https://www.fb.me/MatrixIITG" class="w3-hover-text-indigo"><i class="fa fa-facebook-official hvr-float"></i></a>
+       <a href="#" class="w3-hover-text-indigo"><i class="fa fa-linkedin hvr-float"></i></a>
+     </div>
+     <p>Powered by <a>WebD@Matrix</a></p>
+    </footer>
+ -->
+
+    <!-- Banner -->
+      <section id="banner">
+        <div class="inner">
+          <img src="{% static 'assets/img/matrix1.png' %}"> 
+          <p>The student body of <a href="https://www.iitg.ernet.in/maths/">Department of Mathematics, IIT Guwahati</a></p>
+        </div>
+        <video autoplay loop muted playsinline src="{% static 'images/banner.mp4' %}"></video>
+
+      </section>
+
+    <!-- Highlights -->
+      <section class="wrapper">
+        <div class="inner">
+          <header class="special">
+            <h2>What is Matrix, exactly?</h2>
+            <p>Matrix exists to provide a channel of interaction between students and the outside world, which includes professors, alumni and other institutions.</p>
+          </header>
+          <div class="highlights">
+            <h2 style = "text-align: center">Our domains</h2>
+            <section>
+              <div class="content">
+                <header>
+                  <a href="#" class="icon fa-calculator"><span class="label">Icon</span></a>
+                  <h3>Mathematics</h3>
+                </header>
+                <p>Matrix is responsible for various events and lecture series related to Mathematics. This ensures full development of students as they learn about the real life applications of their theoretical knowledge which they have gained during their curriculum. Lecture series by some of the greatest minds in the world, allow our students to interact and intrigue with such immensely knowledgeable people and strive to achieve research breakthroughs.
+                Various Events such as LaTeX workshops and other relevant resourceful workshops help our research community to present a fruitful publication of their research projects. Matrix is continuously planning to conduct more and more such workshops and lectures on off-syllabi topics such as Cryptography etc.</p>
+              </div>
+            </section>
+            <section>
+              <div class="content">
+                <header>
+                  <a href="#" class="icon fa-code"><span class="label">Icon</span></a>
+                  <h3>Computer Science</h3>
+                </header>
+                <p>Coding skills are now essential part of professional and research domains. Matrix tries to conduct events such as Coding Competitions and Hackathons to encourage students to hone their coding skills. For the same purpose, we try to have various workshops on web development, network management, understanding our operating system etc. too. </p>
+              </div>
+            </section>
+            <section>
+              <div class="content">
+                <header>
+                  <a href="#" class="icon fa-line-chart"><span class="label">Icon</span></a>
+                  <h3>Finance</h3>
+                </header>
+                <p>Matrix tries to conduct events such as Virtual Stock Market (VSM), which is a very innovative idea for understanding the stock exchange. Matrix has plans for conducting various workshops such as Portfolio Management to help the community by giving an exposure of the outside exchange techniques. </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+    <!-- CTA -->
+      <section id="cta" class="wrapper">
+        <div class="inner">
+          <h2>Dimension</h2>
+          <p>The annual technical fest of Matrix. Click to see more.</p>
+        </div>
+      </section>
+
+    <!-- Testimonials -->
+
+    <!--
+      <section class="wrapper">
+        <div class="inner">
+          <header class="special">
+            <h2>Faucibus consequat lorem</h2>
+            <p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.</p>
+          </header>
+          <div class="testimonials">
+            <section>
+              <div class="content">
+                <blockquote>
+                  <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+                </blockquote>
+                <div class="author">
+                  <div class="image">
+                    <img src="images/pic01.jpg" alt="" />
+                  </div>
+                  <p class="credit">- <strong>Jane Doe</strong> <span>CEO - ABC Inc.</span></p>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="content">
+                <blockquote>
+                  <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+                </blockquote>
+                <div class="author">
+                  <div class="image">
+                    <img src="images/pic03.jpg" alt="" />
+                  </div>
+                  <p class="credit">- <strong>John Doe</strong> <span>CEO - ABC Inc.</span></p>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="content">
+                <blockquote>
+                  <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
+                </blockquote>
+                <div class="author">
+                  <div class="image">
+                    <img src="images/pic02.jpg" alt="" />
+                  </div>
+                  <p class="credit">- <strong>Janet Smith</strong> <span>CEO - ABC Inc.</span></p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    -->
+    <!-- Footer -->
+      <footer id="footer">
+        <div class="inner">
+          <div class="content">
+            <section>
+              <h3>Quick links</h3>
+              <ul class = "alt">
+                <li> Department of Maths, IITG </li>
+                <li> Dimension </li>
+                <li> Alumni portal </li>
+            </section>
+            <section>
+            </section>
+            <section>
+              <h4>Follow us</h4>
+              <ul class="plain">
+                <li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+                <li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+                <li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+                <li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+              </ul>
+            </section>
+          </div>
+          <div class="copyright">
+            &copy; Matrix
+          </div>
+        </div>
+      </footer>
+
+    <!-- Scripts -->
+      <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+      <script src="{% static 'assets/js/browser.min.js' %}"></script>
+      <script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
+      <script src="{% static 'assets/js/util.js' %}"></script>
+      <script src="{% static 'assets/js/main.js' %}"></script>
+
+
+{% endblock %}
