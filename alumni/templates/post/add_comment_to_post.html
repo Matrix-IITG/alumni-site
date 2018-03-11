@@ -4,6 +4,6 @@
     <h1>New comment</h1>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Send</button>
+        <button type="submit" style="text-decoration: none; background-color: #4CAF50;" class="btn btn-round btn-lg"> <span style="color: black;"><i class="icon fa-comment"></i> &nbsp;Comment</span></button>
     </form>
 {% endblock %}

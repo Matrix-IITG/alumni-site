@@ -23,6 +23,9 @@ def about_us(request):
     return render(request,'home/about.html')
 def team(request):
     return render(request,'home/team.html')
+def events(request):
+    return render(request,'home/events.html')
+
 
 ########### views for user accounts
 def register(request):

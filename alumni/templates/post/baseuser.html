@@ -10,16 +10,28 @@
 -->
 {%endblock%}
 {% block body %}
-<br><br><br><br>
-<div class="page-header">
-     {% if user.is_authenticated %}
+<div>
+    <!-- CTA -->
+      <section id="cta1" class="wrapper">
+        <div class="inner">
+          <h2>AlumBook</h2>
+          <p>Share yourself.</p>
+        </div>
+      </section>
+      <br> <br>
+    <h1 style = "text-align: center">Feed</h2>
+      <div align = "right">
+      {% if user.is_authenticated %}
+
         {% if user.is_superuser %}
-            <a class="top-menu" href="{% url 'alumni:post_approval' %}">{{approvalpending}} approval pending</a>
+        <a href="{% url 'alumni:post_approval' %}" class = "btn-round" style="text-decoration: none; background-color: #008CBA;"><span style="color: black;"><i class="icon fa-bell-o"></i> &nbsp;View {{approvalpending}} approval(s) pending</span></a>
         {% endif %}
-        <a href="{% url 'alumni:post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-        <a href="{% url 'alumni:post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
+        <a href="{% url 'alumni:post_new' %}" class = "btn-round" style="text-decoration: none; background-color: #4CAF50;"><span style="color: black;"><i class="icon fa-plus"></i> &nbsp;Add Post</span></a>
+        <a href="{% url 'alumni:post_draft_list' %}" class = "btn-round" style="text-decoration: none; background-color: #f44336;"><span style="color: black;"><i class="icon fa-edit"></i> &nbsp;View Drafts</span></a>
+        <br><br><br>
      {% endif %}
-     <h1><a href="/">Share Your Experiences</a></h1>
+    </div>
+
  </div>
  <div class="content container">
     <div class="row">

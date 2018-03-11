@@ -4,6 +4,7 @@ app_name = 'home'
 urlpatterns=[
     url(r'^$',views.home,name='home'),
     url(r'^home/$',views.home,name='home'),
+    url(r'^events/$', views.events, name='events'),
     url(r'^about/$', views.about_us, name='about_us'),
     url(r'^team/$', views.team, name='team'),
 

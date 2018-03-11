@@ -80,7 +80,7 @@ def post_edit(request, pk):
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
-            post.published_date = timezone.now()
+            # post.published_date = timezone.now()
             post.save()
             unapprovedposts = Post.objects.filter(approved_post=False).order_by('created_date')
             return redirect('alumni:post_detail', pk=post.pk)
@@ -108,6 +108,7 @@ def post_detail(request,pk):
 @login_required
 def post_draft_list(request):
     posts = Post.objects.filter(published_date__isnull=True).order_by('created_date')
+    posts = posts.filter(author = request.user)
     unapprovedposts = Post.objects.filter(approved_post=False).order_by('created_date')
     unpublishedposts = Post.objects.filter(published_date__isnull=True).order_by('created_date')
     if len(unapprovedposts) - len(unpublishedposts) >= 0:
@@ -135,6 +136,7 @@ def add_comment_to_post(request, pk):
         form = CommentForm(request.POST)
         if form.is_valid():
             comment = form.save(commit=False)
+            comment.author = request.user
             comment.post = post
             comment.save()
             return redirect('alumni:post_detail' ,pk=post.pk)

@@ -3,24 +3,27 @@
 {% block content %}
     {% for post in posts %}
         {% if post.approved_post %}
-            <div class="post">
-                <div class="date">
+            <div style = "background-color: rgba(255, 255, 255, 0.7); padding: 20px; width: 1100px; height: 600px; overflow-y: scroll;" class="w3-card-8 post">
+                <div align = "right" class="date">
                     {{ post.published_date }}
                 </div>
-                <h1><a href="{% url 'alumni:post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaksbr }}</p>
+                <br>
+                <h2 style = "margin-bottom: 8px;" align = "center"><a href="{% url 'alumni:post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+                <h4 align = "center">By: {{post.author}}</h4>
+                <p>{{ post.text|linebreaks }}</p>
                 <a href="{% url 'alumni:post_detail' pk=post.pk %}">Comments: {{ post.approved_comments.count }}</a>
                 {% for comment in post.comments.all %}
                     {% if user.is_authenticated or comment.approved_comment %}
                     <div class="comment">
                         <div class="date">
+                            <strong>{{ comment.author }} | </strong>
                             {{ comment.created_date }}
                             {% if not comment.approved_comment %}
                                 <a class="btn btn-default" href="{% url 'alumni:comment_remove' pk=comment.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
                                 <a class="btn btn-default" href="{% url 'alumni:comment_approve' pk=comment.pk %}"><span class="glyphicon glyphicon-ok"></span></a>
                             {% endif %}
                         </div>
-                        <strong>{{ comment.author }}</strong>
+                        
                         <p>{{ comment.text|linebreaks }}</p>
                     </div>
                     {% endif %}
@@ -28,6 +31,7 @@
                     <p>No comments here yet :(</p>
                 {% endfor %}
             </div>
+            <br><br>
         {% endif %}
     {% endfor %}
 {% endblock content %}

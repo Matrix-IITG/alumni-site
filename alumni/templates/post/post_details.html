@@ -7,18 +7,21 @@
                 {{ post.published_date }}
             </div>
         {% else %}
-            <a class="btn btn-default" href="{% url 'alumni:post_publish' pk=post.pk %}">Publish</a>
+            <a href="{% url 'alumni:post_publish' pk=post.pk %}" class = "btn-round" style="text-decoration: none; background-color: #4CAF50;"><span style="color: black;"><i class="icon fa-paper-plane-o"></i> &nbsp;Publish</span></a>
+            <br>
         {% endif %}
         {% if user.is_authenticated %}
-
-        <a class="btn btn-default" href="{% url 'alumni:post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-        <a class="btn btn-default" href="{% url 'alumni:post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
+        <br>
+        <a href="{% url 'alumni:post_edit' pk=post.pk %}" class = "btn-round" style="text-decoration: none; background-color: gray;"><span style="color: black;"><i class="icon fa-edit"></i> &nbsp;Edit</span></a>
+        <a href="{% url 'alumni:post_remove' pk=post.pk %}" class = "btn-round" style="text-decoration: none; background-color: #f44336;"><span style="color: black;"><i class="icon fa-remove"></i> &nbsp;Remove</span></a>
+        <br><br>
         {% endif %}
         <h1>{{ post.title }}</h1>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
     <hr>
-    <a class="btn btn-default" href="{% url 'alumni:add_comment_to_post' pk=post.pk %}">Add comment</a>
+    <a href="{% url 'alumni:add_comment_to_post' pk=post.pk %}" class = "btn-round" style="text-decoration: none; background-color: #4CAF50;"><span style="color: black;"><i class="icon fa-comment-o"></i> &nbsp;Add comment</span></a>
+    <br> <br>
     {% for comment in post.comments.all %}
         {% if user.is_authenticated or comment.approved_comment %}
         <div class="comment">

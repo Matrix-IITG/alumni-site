@@ -4,6 +4,6 @@
     <h1>New post</h1>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Save</button>
+        <button type = "submit" class = "btn btn-lg btn-round" style="text-decoration: none; background-color: #4CAF50;"><span style="color: black;"><i class="icon fa-paper-plane"></i> &nbsp;Post</span></button>
     </form>
 {% endblock %}

@@ -24,5 +24,7 @@ urlpatterns = [
     url(r'^', include('home.urls', namespace='home')),
     url(r'^alumni/', include('alumni.urls',namespace='alumni')),
     url(r'^accounts/', include('django.contrib.auth.urls')),
+    url(r'^dimension/', include('dimension.urls',namespace='dimension')),
+
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
