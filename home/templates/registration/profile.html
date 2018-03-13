@@ -1,7 +1,7 @@
 {% extends "home/unknownbase.html" %}
 {% load static %}
 {% block body %}
-    <br><br><br>
+    <!-- <br><br><br>
     {% for us in alumni %}
         {{ us.name }}<br>
         {{ us.roll_no}}<br>
@@ -11,5 +11,111 @@
         {{ us.prev_work }}<br>
         <img src="{{ us.profile_img.url }}" width="150px" height="150px" />
         <a class="btn btn-default" href="{% url 'home:profile_edit_manual' %}"><span class="glyphicon glyphicon-pencil"></span></a>
-    {% endfor %}
+    {% endfor %} -->
+    {% for us in alumni %}
+    <!-- CTA -->
+    <section id="cta1" class="wrapper">
+        <div class="container">
+            <div class="content-center">
+                <div class="photo-container">
+                    <img width="300px" height="300px" class="mx-auto rounded-circle img-raised" src="{{ us.profile_img.url }}" alt="Profile Image">
+                </div>
+                <h3 class="title">{{ us.name }}</h3>
+                <p class="category">{{ us.curr_work }}</p>
+                <div style = "text-align: center;" class="content-center">
+                    <div class="social-description">
+                        <h2>{{no_of_posts_by_user}}</h2>
+                        <p>Posts</p>
+                    </div>
+                </div>
+            </div>
+            <div class="social-line">
+                <a href="{{ us.fb_link }}" style = "color: #3b5998;" class="btn btn-neutral btn-icon btn-round">
+                    <i class="fa fa-facebook-square"></i>
+                </a>
+                <a href="{{ us.ln_link }}" style = "color: #3b5998;" class="btn btn-neutral btn-icon btn-lg btn-round">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="#pablo" style = "color: red;" class="btn btn-neutral btn-icon btn-round">
+                    <i class="fa fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+        <div class="section">
+            <div class="container">
+                <h2>About me</h2>
+                <h5>An artist of considerable range, Ryan — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. An artist of considerable range.</h5>
+                <div class="row">
+                    <div class="col-md-6 ml-auto mr-auto">
+                        <h4 class="title text-center">My Portfolio</h4>
+                        <div class="nav-align-center">
+                            <ul class="nav nav-pills nav-pills-primary" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#profile" role="tablist">
+                                        <i class="now-ui-icons design_image"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#home" role="tablist">
+                                        <i class="now-ui-icons location_world"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#messages" role="tablist">
+                                        <i class="now-ui-icons sport_user-run"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Tab panes -->
+                    <div class="tab-content gallery">
+                        <div class="tab-pane active" id="home" role="tabpanel">
+                            <div class="col-md-10 ml-auto mr-auto">
+                                <div class="row collections">
+                                    <div class="col-md-6">
+                                        <img src="../assets/img/bg1.jpg" alt="" class="img-raised">
+                                        <img src="../assets/img/bg3.jpg" alt="" class="img-raised">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="../assets/img/bg8.jpg" alt="" class="img-raised">
+                                        <img src="../assets/img/bg7.jpg" alt="" class="img-raised">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="profile" role="tabpanel">
+                            <div class="col-md-10 ml-auto mr-auto">
+                                <div class="row collections">
+                                    <div class="col-md-6">
+                                        <img src="../assets/img/bg6.jpg" class="img-raised">
+                                        <img src="../assets/img/bg11.jpg" alt="" class="img-raised">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="../assets/img/bg7.jpg" alt="" class="img-raised">
+                                        <img src="../assets/img/bg8.jpg" alt="" class="img-raised">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="messages" role="tabpanel">
+                            <div class="col-md-10 ml-auto mr-auto">
+                                <div class="row collections">
+                                    <div class="col-md-6">
+                                        <img src="../assets/img/bg3.jpg" alt="" class="img-raised">
+                                        <img src="../assets/img/bg8.jpg" alt="" class="img-raised">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="../assets/img/bg7.jpg" alt="" class="img-raised">
+                                        <img src="../assets/img/bg6.jpg" class="img-raised">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
 {% endblock %}

@@ -27,7 +27,7 @@ class Post(models.Model):
 class Comment(models.Model):
     post = models.ForeignKey('alumni.Post', related_name='comments',on_delete=models.CASCADE)
     author = models.CharField(max_length=200)
-    text = models.TextField()
+    text = models.CharField(max_length=300)
     created_date = models.DateTimeField(default=timezone.now)
     approved_comment = models.BooleanField(default=True)
 
@@ -50,8 +50,10 @@ class Alumni(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=100, blank = True)
     roll_no=models.IntegerField(default=160123005, blank=True,)
+    phone_no=models.IntegerField(default=999999999, blank=True,)
     profile_img = models.ImageField(upload_to='profile_img', default="profile_img/profile.png")
     passout_year = models.IntegerField(default=2016, blank=True, choices=YEARS)
+    email_link= models.EmailField(null=True)
     fb_link = models.URLField(null=True)
     ln_link = models.URLField(null=True)
     curr_work = models.CharField(max_length=100, blank = True)

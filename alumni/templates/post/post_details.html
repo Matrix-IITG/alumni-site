@@ -12,8 +12,10 @@
         {% endif %}
         {% if user.is_authenticated %}
         <br>
+        {% if users_post %}
         <a href="{% url 'alumni:post_edit' pk=post.pk %}" class = "btn-round" style="text-decoration: none; background-color: gray;"><span style="color: black;"><i class="icon fa-edit"></i> &nbsp;Edit</span></a>
         <a href="{% url 'alumni:post_remove' pk=post.pk %}" class = "btn-round" style="text-decoration: none; background-color: #f44336;"><span style="color: black;"><i class="icon fa-remove"></i> &nbsp;Remove</span></a>
+        {% endif %}
         <br><br>
         {% endif %}
         <h1>{{ post.title }}</h1>

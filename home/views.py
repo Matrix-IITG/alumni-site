@@ -33,8 +33,11 @@ def register(request):
     if form.is_valid():
         user = form.save(commit=False)
         username = form.cleaned_data['username']
+        email=form.cleaned_data["email_link"]
         password = form.cleaned_data['password']
         name = form.cleaned_data["name"]
+        phone_no=form.cleaned_data["phone_no"]
+        email_link=form.cleaned_data["email_link"]
         ln_link = form.cleaned_data["ln_link"]
         fb_link = form.cleaned_data["fb_link"]
         curr_work = form.cleaned_data["curr_work"]
@@ -44,7 +47,7 @@ def register(request):
         user.save()
         user = authenticate(username=username, password=password)
         my_group = Group.objects.get(name=group)
-        new_Alumni=Alumni.objects.create(user=user,name=name,roll_no=username,ln_link=ln_link,fb_link=fb_link,curr_work = curr_work,prev_work=pre_work)
+        new_Alumni=Alumni.objects.create(user=user,name=name,roll_no=username,phone_no=phone_no,email_link=email,ln_link=ln_link,fb_link=fb_link,curr_work = curr_work,prev_work=pre_work)
         new_Alumni.save()
         my_group.user_set.add(user)
         if user is not None:
@@ -79,7 +82,9 @@ def update_user(request):
 @login_required
 def profile(request):
     alumni = Alumni.objects.filter(user=request.user)
-    return render(request,'registration/profile.html',{'alumni':alumni})
+    us=request.user
+    no_of_posts_by_user=len(us.post_set.all())
+    return render(request,'registration/profile.html',{'alumni':alumni,'no_of_posts_by_user':no_of_posts_by_user})
 @login_required
 def profile_edit_manual(request):
     # # driver = webdriver.Firefox(executable_path=r'your\path\geckodriver.exe')  # I actually used the chromedriver and did not test firefox, but it should work.

@@ -11,6 +11,11 @@
                 <h2 style = "margin-bottom: 8px;" align = "center"><a href="{% url 'alumni:post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
                 <h4 align = "center">By: {{post.author}}</h4>
                 <p>{{ post.text|linebreaks }}</p>
+                <form method="POST" class="post-form">
+                    {% csrf_token %}
+                    {{form.as_p}}
+                    <button type="submit" name="butt" class="save btn" value="{{post.pk}}">Send</button>
+                </form>
                 <a href="{% url 'alumni:post_detail' pk=post.pk %}">Comments: {{ post.approved_comments.count }}</a>
                 {% for comment in post.comments.all %}
                     {% if user.is_authenticated or comment.approved_comment %}

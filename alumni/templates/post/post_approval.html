@@ -8,8 +8,8 @@
                     {{ post.published_date }}
                 </div>
                 <h1><a href="{% url 'alumni:post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-                <a class="btn btn-default" href="{% url 'alumni:post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
-                <a class="btn btn-default" href="{% url 'alumni:post_approve' pk=post.pk %}"><span class="glyphicon glyphicon-ok"></span></a>
+                <a href="{% url 'alumni:post_remove' pk=post.pk %}" class = "btn-round" style="text-decoration: none; background-color: #f44336;"><span style="color: black;"><i class="icon fa-remove"></i></span></a>
+                <a href="{% url 'alumni:post_approve' pk=post.pk %}" class = "btn-round" style="text-decoration: none; background-color: #4CAF50;"><span style="color: black;"><i class="icon fa-thumbs-up"></i></span></a>
                 <p>{{ post.text|linebreaksbr }}</p>
                 <a href="{% url 'alumni:post_detail' pk=post.pk %}">Comments: {{ post.approved_comments.count }}</a>
                 {% for comment in post.comments.all %}
