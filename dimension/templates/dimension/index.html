@@ -10,7 +10,7 @@
         <meta name="author" content="">
 
         <title>Dimension</title>
-        <link rel="shortcut icon" href="{% static 'img/dim.png' %}"/>
+        <link rel="shortcut icon" href="{% static 'img/logofavicon.png' %}"/>
 
         <!-- Bootstrap core CSS -->
         <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -67,10 +67,10 @@
                     <!-- <div class="intro-lead-in">Matrix presents</div> -->
                     <img width = "200px" height = "200px" src = "{% static 'assets/img/matrix1.png' %}"></img>
                     <!-- <h1>MATRIX</h1> -->
-                    <h5 style = "font-weight: normal; font-style: italic;">presents</h5>
+                    <h5 style = "bottom: 8px; left: 16px;font-weight: normal; font-style: italic;">presents</h5>
+                    <!-- <img height = "200px" src = "{% static 'img/logo_dimension.png' %}" alt = "logo"></img> -->
                     <div class="intro-heading text-uppercase">Dimension 2018</div>
-                    </br>
-                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Learn More</a>
+                    <a class="top-left btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Learn More</a>
                 </div>
             </div>
         </header>
@@ -196,81 +196,79 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <ul class="timeline">
-                            <li>
+                            <li class="timeline-image">
                                 <div class="timeline-image">
-                                    <img class="rounded-circle img-fluid" src="{% static 'img/about/1.jpg' %}" alt="">
-                                </div>
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4>2<sup>nd</sup> April - 6<sup>th</sup> April</h4>
-                                        <h4 class="subheading">Data Science BootCamp </h4>
-                                    </div>
-                                    <div class="timeline-body">
-                                        <p class="text-muted"></p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="timeline-inverted">
-                                <div class="timeline-image">
-                                    <img class="rounded-circle img-fluid" src="{% static 'img/about/2.jpg' %}" alt="">
-                                </div>
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4>6<sup>th</sup>-8<sup>th</sup> April</h4>
-                                        <h4 class="subheading">HackOverflow</h4>
-                                    </div>
-                                    <div class="timeline-body">
-                                        <p class="text-muted"></p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="timeline-image">
-                                    <img class="rounded-circle img-fluid" src="{% static 'img/about/3.jpg' %}" alt="">
-                                </div>
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4>7<sup>th</sup>-8<sup>th</sup> April</h4>
-                                        <h4 class="subheading">Lecture Series</h4>
-                                    </div>
-                                    <div class="timeline-body">
-                                        <p class="text-muted"></p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="timeline-inverted">
-                                <div class="timeline-image">
-                                    <img class="rounded-circle img-fluid" src="{% static 'img/about/4.jpg' %}" alt="">
+                                    <img class="rounded-circle img-fluid" src="{% static 'img/alumni.jpg' %}" alt="">
                                 </div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
                                         <h4>8<sup>th</sup> April</h4>
-                                        <h4 class="subheading">HackOverflow Presentation and Results</h4>
+                                        <h4 class="subheading">&nbsp;</h4>
                                     </div>
                                     <div class="timeline-body">
-                                        <p class="text-muted"></p>
+                                        <h4 class="text-muted">Alumni Reunion</h4>
                                     </div>
                                 </div>
                             </li>
-                             <li class="timeline-inverted">
+                            <li class="timeline-inverted">
                                 <div class="timeline-image">
-                                    <img class="rounded-circle img-fluid" src="{% static 'img/about/2.jpg' %}" alt="">
+                                    <img class="rounded-circle img-fluid" src="{% static 'img/present.jpg' %}" alt="">
                                 </div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
                                         <h4>8<sup>th</sup> April</h4>
-                                        <h4 class="subheading">Alumni Reunion</h4>
+                                        <h4 class="subheading">&nbsp;</h4>
                                     </div>
                                     <div class="timeline-body">
-                                        <p class="text-muted"></p>
+                                        <h4 class="text-muted">HackOverflow Presentation and Results</h4>
                                     </div>
                                 </div>
                             </li>
-
-
+                            <li>
+                                <div class="timeline-image">
+                                    <img class="rounded-circle img-fluid" src="{% static 'img/lecseriestimeline.jpg' %}" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>7<sup>th</sup> - 8<sup>th</sup> April</h4>
+                                        <h4 class="subheading">&nbsp;</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <h4 class="text-muted">Lecture Series</h4>
+                                    </div>
+                                </div>
+                            </li>
                             <li class="timeline-inverted">
                                 <div class="timeline-image">
-                                    <h4>Enter
+                                    <img class="rounded-circle img-fluid" src="{% static 'img/coding.jpg' %}" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>6<sup>th</sup> - 8<sup>th</sup> April</h4>
+                                        <h4 class="subheading">&nbsp;</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <h4 class="text-muted">HackOverflow</h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-image">
+                                    <img class="rounded-circle img-fluid" src="{% static 'img/bootcamptimeline.jpg' %}" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>2<sup>nd</sup> - 6<sup>th</sup> April</h4>
+                                        <h4 class="subheading">&nbsp;</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <h4 class="text-muted">Data Science BootCamp</h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image">
+                                    <h4>Enter into
                                         <br>a new
                                         <br>Dimension</h4>
                                 </div>
@@ -524,8 +522,4 @@
     <script src="
         {% static 'js/agency.min.js' %}"></script>
 
-        <
-        /body>
-
-        < /html>
     {% endblock %}
