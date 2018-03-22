@@ -55,6 +55,9 @@
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="#about">Timeline</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -190,51 +193,30 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 class="section-heading text-uppercase">Timeline</h2> <br>
+                        <h2 class="section-heading text-uppercase">Timeline</h2> <br><br>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
                         <ul class="timeline">
-                            <li class="timeline-image">
+                            <!-- <li class="timeline-inverted">
                                 <div class="timeline-image">
-                                    <img class="rounded-circle img-fluid" src="{% static 'img/alumni.jpg' %}" alt="">
+                                    <h4>Enter into
+                                        <br>a new
+                                        <br>Dimension</h4>
                                 </div>
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4>8<sup>th</sup> April</h4>
-                                        <h4 class="subheading">&nbsp;</h4>
-                                    </div>
-                                    <div class="timeline-body">
-                                        <h4 class="text-muted">Alumni Reunion</h4>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="timeline-inverted">
-                                <div class="timeline-image">
-                                    <img class="rounded-circle img-fluid" src="{% static 'img/present.jpg' %}" alt="">
-                                </div>
-                                <div class="timeline-panel">
-                                    <div class="timeline-heading">
-                                        <h4>8<sup>th</sup> April</h4>
-                                        <h4 class="subheading">&nbsp;</h4>
-                                    </div>
-                                    <div class="timeline-body">
-                                        <h4 class="text-muted">HackOverflow Presentation and Results</h4>
-                                    </div>
-                                </div>
-                            </li>
+                            </li> -->
                             <li>
                                 <div class="timeline-image">
-                                    <img class="rounded-circle img-fluid" src="{% static 'img/lecseriestimeline.jpg' %}" alt="">
+                                    <img class="rounded-circle img-fluid" src="{% static 'img/bootcamptimeline.jpg' %}" alt="">
                                 </div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
-                                        <h4>7<sup>th</sup> - 8<sup>th</sup> April</h4>
+                                        <h4>2<sup>nd</sup> - 6<sup>th</sup> April</h4>
                                         <h4 class="subheading">&nbsp;</h4>
                                     </div>
                                     <div class="timeline-body">
-                                        <h4 class="text-muted">Lecture Series</h4>
+                                        <h4 class="text-muted">Data Science BootCamp</h4>
                                     </div>
                                 </div>
                             </li>
@@ -254,30 +236,137 @@
                             </li>
                             <li>
                                 <div class="timeline-image">
-                                    <img class="rounded-circle img-fluid" src="{% static 'img/bootcamptimeline.jpg' %}" alt="">
+                                    <img class="rounded-circle img-fluid" src="{% static 'img/lecseriestimeline.jpg' %}" alt="">
                                 </div>
                                 <div class="timeline-panel">
                                     <div class="timeline-heading">
-                                        <h4>2<sup>nd</sup> - 6<sup>th</sup> April</h4>
+                                        <h4>7<sup>th</sup> - 8<sup>th</sup> April</h4>
                                         <h4 class="subheading">&nbsp;</h4>
                                     </div>
                                     <div class="timeline-body">
-                                        <h4 class="text-muted">Data Science BootCamp</h4>
+                                        <h4 class="text-muted">Lecture Series</h4>
                                     </div>
                                 </div>
                             </li>
                             <li class="timeline-inverted">
                                 <div class="timeline-image">
-                                    <h4>Enter into
-                                        <br>a new
-                                        <br>Dimension</h4>
+                                    <img class="rounded-circle img-fluid" src="{% static 'img/present.jpg' %}" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>8<sup>th</sup> April</h4>
+                                        <h4 class="subheading">&nbsp;</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <h4 class="text-muted">HackOverflow Presentation and Results</h4>
+                                    </div>
                                 </div>
                             </li>
+                            <li class="timeline-image">
+                                <div class="timeline-image">
+                                    <img class="rounded-circle img-fluid" src="{% static 'img/alumni.jpg' %}" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>8<sup>th</sup> April</h4>
+                                        <h4 class="subheading">&nbsp;</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <h4 class="text-muted">Alumni Reunion</h4>
+                                    </div>
+                                </div>
+                            </li>
+                            
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Team -->
+    <section class="bg-light" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Our Team</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
+              <h4>Kay Garland</h4>
+              <p class="text-muted">Lead Designer</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
+              <h4>Larry Parker</h4>
+              <p class="text-muted">Lead Marketer</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
+              <h4>Diana Pertersen</h4>
+              <p class="text-muted">Lead Developer</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
         <!-- Contact -->
         <!-- <section id="contact">
