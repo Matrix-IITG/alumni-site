@@ -4,4 +4,5 @@ app_name = 'dimension'
 urlpatterns=[
     url(r'^$',views.dimension,name='dimension'),
     url(r'^home/$',views.dimension,name='home'),
+    url(r'^hackoverflow/$',views.hackoverflow,name='hackoverflow'),
 ]

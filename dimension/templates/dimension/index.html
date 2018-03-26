@@ -294,22 +294,17 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-              <h4>Kay Garland</h4>
-              <p class="text-muted">Lead Designer</p>
+              <img class="mx-auto rounded-circle" src="{% static 'img/team/manas.jpg' %}" alt="">
+              <h4>Manas Daruka</h4>
+              <p class="text-muted">HackOverflow</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://www.facebook.com/manas.daruka">
                     <i class="fa fa-facebook"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/manas-d/">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
@@ -318,22 +313,17 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-              <h4>Larry Parker</h4>
-              <p class="text-muted">Lead Marketer</p>
+              <img class="mx-auto rounded-circle" src="{% static 'img/team/yugansh.jpg' %}" alt="">
+              <h4>Yugansh Bhatnagar</h4>
+              <p class="text-muted">HackOverflow</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://www.facebook.com/yugsry">
                     <i class="fa fa-facebook"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/yuganshb/">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
@@ -342,22 +332,76 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-              <h4>Diana Pertersen</h4>
-              <p class="text-muted">Lead Developer</p>
+              <img class="mx-auto rounded-circle" src="{% static 'img/team/mayank.jpg' %}" alt="">
+              <h4>Mayank Kagliwal</h4>
+              <p class="text-muted">Alumni Panel and Talks</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://www.facebook.com/mkagliwal49">
                     <i class="fa fa-facebook"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/mkagliwal/">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'img/team/abhinav.jpg' %}" alt="">
+              <h4>Abhinav Gupta</h4>
+              <p class="text-muted">Lecture Series</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/abhinav.2307">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/abhinavgupta203/">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'img/team/ojaswin.jpg' %}" alt="">
+              <h4>Ojaswin Sood</h4>
+              <p class="text-muted">Data Science BootCamp</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/OJASVINSOOD">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <!-- <li class="list-inline-item">
                   <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'img/team/anurag.jpg' %}" alt="">
+              <h4>Anurag Barfa</h4>
+              <p class="text-muted">Website</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/anurag.barfa">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/anurag-barfa-1929b7158/">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
@@ -509,7 +553,7 @@
                                         <i class="fa fa-mail-reply"></i>
                                         Go Back
                                     </button>
-                                    <a href = "http://www.hackoverflow.org.in/" target="_blank" class="btn btn-primary" type="button">
+                                    <a href = "{% url 'dimension:hackoverflow' %}" target="_blank" class="btn btn-primary" type="button">
                                         <i class="fa fa-mail-forward"></i>
                                         Go to Hackoverflow website
                                     </a>
@@ -608,7 +652,6 @@
         <script src="{% static 'js/contact_me.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="
-        {% static 'js/agency.min.js' %}"></script>
+    <script src="{% static 'js/agency.min.js' %}"></script>
 
     {% endblock %}

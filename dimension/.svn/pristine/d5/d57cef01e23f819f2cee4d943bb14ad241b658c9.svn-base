@@ -1,0 +1,614 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block style %}
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Dimension</title>
+        <link rel="shortcut icon" href="{% static 'img/logofavicon.png' %}"/>
+
+        <!-- Bootstrap core CSS -->
+        <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+              type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet'
+              type='text/css'>
+
+        <!-- Custom styles for this template -->
+        <link href="{% static 'css/agency.css' %}" rel="stylesheet">
+        <link href="{% static 'css/agency.min.css' %}" rel="stylesheet">
+    {% endblock %}
+
+    {% block body %}
+        </head>
+
+        <body id="page-top">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="js-scroll-trigger" style="color: white; text-decoration: none;" href="{% url 'home:home' %}">MATRIX</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    Menu
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#services">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#portfolio">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#about">Timeline</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <header class="masthead">
+            <div class="container">
+                <div class="intro-text">
+                    <!-- <div class="intro-lead-in">Matrix presents</div> -->
+                    <img width = "200px" height = "200px" src = "{% static 'assets/img/matrix1.png' %}"></img>
+                    <!-- <h1>MATRIX</h1> -->
+                    <h5 style = "bottom: 8px; left: 16px;font-weight: normal; font-style: italic;">presents</h5>
+                    <!-- <img height = "200px" src = "{% static 'img/logo_dimension.png' %}" alt = "logo"></img> -->
+                    <div class="intro-heading text-uppercase">Dimension 2018</div>
+                    <a class="top-left btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Learn More</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Services -->
+        <section id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase">Dimension</h2>
+                        <h3 class="section-subheading text-muted">The Annual Tech Fest of Department of Mathematics, IIT Guwahati</h3>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-lightbulb-o fa-stack-1x fa-inverse"></i>
+            </span>
+                        <h4 class="service-heading">Ideate</h4>
+                        <p class="text-muted">Dimension involves fostering creativity among students and nurturing good
+                            ideas.</p>
+                    </div>
+                    <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+            </span>
+                        <h4 class="service-heading">Interact</h4>
+                        <p class="text-muted">Interacting with alumni and distinguished guests is a major attraction</p>
+                    </div>
+                    <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-line-chart fa-stack-1x fa-inverse"></i>
+            </span>
+                        <h4 class="service-heading">Innovate</h4>
+                        <p class="text-muted">Dimension gives you a platform to innovate and incorporate .</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid -->
+        <section class="bg-light" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase">Events</h2> <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'img/bootcamp.jpg' %}" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Data Science BootCamp</h4>
+                            <p class="text-muted">Delve into the Big Data World with a plethora of resources.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'img/code.jpg' %}" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>HackOverflow</h4>
+                            <p class="text-muted">Incubate to Innovate - Enabling ideas to grow.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'img/lecseries.jpg' %}" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Lecture Series</h4>
+                            <p class="text-muted">From research to real-world applications, lecture series offers a look
+                                at data science
+                                through professional's eyes </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 portfolio-item">
+                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'img/quiz.jpg' %}" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Online Data Science Quiz</h4>
+                            <p class="text-muted"> Dive into the world of data science through interactive quizzes. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase">Timeline</h2> <br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="timeline">
+                            <!-- <li class="timeline-inverted">
+                                <div class="timeline-image">
+                                    <h4>Enter into
+                                        <br>a new
+                                        <br>Dimension</h4>
+                                </div>
+                            </li> -->
+                            <li>
+                                <div class="timeline-image">
+                                    <img class="rounded-circle img-fluid" src="{% static 'img/bootcamptimeline.jpg' %}" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>2<sup>nd</sup> - 6<sup>th</sup> April</h4>
+                                        <h4 class="subheading">&nbsp;</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <h4 class="text-muted">Data Science BootCamp</h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image">
+                                    <img class="rounded-circle img-fluid" src="{% static 'img/coding.jpg' %}" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>6<sup>th</sup> - 8<sup>th</sup> April</h4>
+                                        <h4 class="subheading">&nbsp;</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <h4 class="text-muted">HackOverflow</h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-image">
+                                    <img class="rounded-circle img-fluid" src="{% static 'img/lecseriestimeline.jpg' %}" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>7<sup>th</sup> - 8<sup>th</sup> April</h4>
+                                        <h4 class="subheading">&nbsp;</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <h4 class="text-muted">Lecture Series</h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image">
+                                    <img class="rounded-circle img-fluid" src="{% static 'img/present.jpg' %}" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>8<sup>th</sup> April</h4>
+                                        <h4 class="subheading">&nbsp;</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <h4 class="text-muted">HackOverflow Presentation and Results</h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-image">
+                                <div class="timeline-image">
+                                    <img class="rounded-circle img-fluid" src="{% static 'img/alumni.jpg' %}" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>8<sup>th</sup> April</h4>
+                                        <h4 class="subheading">&nbsp;</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <h4 class="text-muted">Alumni Reunion</h4>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team -->
+    <!--<section class="bg-light" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Our Team</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
+              <h4>Kay Garland</h4>
+              <p class="text-muted">Lead Designer</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
+              <h4>Larry Parker</h4>
+              <p class="text-muted">Lead Marketer</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
+              <h4>Diana Pertersen</h4>
+              <p class="text-muted">Lead Developer</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>-->
+
+        <!-- Contact -->
+        <!-- <section id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">Contact Us</h2>
+                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <form id="contactForm" name="sentMessage" novalidate>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input class="form-control" id="name" type="text" placeholder="Your Name *" required data-validation-required-message="Please enter your name.">
+                        <p class="help-block text-danger"></p>
+                      </div>
+                      <div class="form-group">
+                        <input class="form-control" id="email" type="email" placeholder="Your Email *" required data-validation-required-message="Please enter your email address.">
+                        <p class="help-block text-danger"></p>
+                      </div>
+                      <div class="form-group">
+                        <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required data-validation-required-message="Please enter your phone number.">
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <textarea class="form-control" id="message" placeholder="Your Message *" required data-validation-required-message="Please enter a message."></textarea>
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-lg-12 text-center">
+                      <div id="success"></div>
+                      <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section> -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <span class="copyright">&copy; Matrix</span>
+                    </div>
+                    <div class="col-md">
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/MatrixIITG/">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/matrixiitg/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Portfolio Modals -->
+
+        <!-- Modal 1 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                        <div class="lr">
+                            <div class="rl"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here -->
+                                    <h2 class="text-uppercase">Data Science BootCamp</h2>
+                                    <p class="item-intro text-muted">Delve into the Data Science World with a plethora
+                                        of
+                                        resources </p>
+                                    <!-- <img class="img-fluid d-block mx-auto"
+                                         src="{% static 'img/portfolio/01-full.jpg' %}" alt=""> -->
+                                    <p>Week-long Lecture series on Data Science by experienced senior students
+                                        will be conducted which would be an awesome opportunity for newbies to delve
+                                        into the Big Data World and obtain valuable insight into the upcoming
+                                        technologies . Hands on sessions accompanied with proper course materials will
+                                        go a
+                                        long way in helping them to pursue Data Science in future.
+                                    </p>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fa fa-mail-reply"></i>
+                                        Go Back
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                        <div class="lr">
+                            <div class="rl"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here -->
+                                    <h2 class="text-uppercase">HackOverflow</h2>
+                                    <p class="item-intro text-muted">Incubate to Innovate - Enable ideas to grow !!</p>
+                                    <!-- <img class="img-fluid d-block mx-auto"
+                                         src="{% static 'img/portfolio/02-full.jpg' %}" alt=""> -->
+                                    <p>HackOverflow is a unique Data Science Hackathon event. It will witness
+                                        participation from students as well as professionals from all of North East
+                                        India. Participants will get a chance to present their innovative ideas and
+                                        develop their own data application solutions for prominent industry challenges.
+                                        Mentors from different fields will be guiding them continuously
+                                        throughout the 24-hour hackathon. The selected ones will get the opportunity to
+                                        incubate their ideas along with other incentives.
+                                    </p>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fa fa-mail-reply"></i>
+                                        Go Back
+                                    </button>
+                                    <a href = "http://www.hackoverflow.org.in/" target="_blank" class="btn btn-primary" type="button">
+                                        <i class="fa fa-mail-forward"></i>
+                                        Go to Hackoverflow website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                        <div class="lr">
+                            <div class="rl"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here -->
+                                    <h2 class="text-uppercase">Lecture Series</h2>
+                                    <p class="item-intro text-muted">From research to real-world applications, lecture
+                                        series offers a look
+                                        at data science
+                                        through professional's eyes</p>
+                                    <!-- <img class="img-fluid d-block mx-auto"
+                                         src="{% static 'img/portfolio/03-full.jpg' %}" alt=""> -->
+                                    <p>Renowned faculty will be delivering lectures on a wide range of topics involving
+                                        data science, big data and machine learning and their role in reshaping
+                                        industries like agriculture,e-commerce and health care. Research opportunities
+                                        in existing and upcoming fields will also be covered in great detail along with
+                                        the
+                                        relevance of data science in the present world as well as in the future. </p>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fa fa-mail-reply"></i>
+                                        Go Back
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 4 -->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal">
+                        <div class="lr">
+                            <div class="rl"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here -->
+                                    <h2 class="text-uppercase">Online Data Science Trivia</h2>
+                                    <p class="item-intro text-muted">Dive into the world of Data Science through online
+                                        interactive quizzes </p>
+                                    <!-- <img class="img-fluid d-block mx-auto"
+                                         src="{% static 'img/portfolio/04-full.jpg' %}" alt=""> -->
+                                    <p>2-week long online interactive data science quizzes will be conducted in late
+                                        march . Thought-provoking relevant questions will encompass numerous fields of
+                                        data science and will serve as an icebreaker for all newbies.
+                                        Final winners of quizzes will be awarded amazon echo dot.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fa fa-mail-reply"></i>
+                                        Go Back
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+        <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+        <!-- Contact form JavaScript -->
+        <script src="{% static 'js/jqBootstrapValidation.js' %}"></script>
+        <script src="{% static 'js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="
+        {% static 'js/agency.min.js' %}"></script>
+
+    {% endblock %}

@@ -1,0 +1,620 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block style %}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="{% static 'HO/img/logofavicon.png' %}" type="image/x-icon" />
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>HackOverflow</title>
+
+        <!-- Icon css link -->
+        <link href="{% static 'HO/css/font-awesome.min.css' %}" rel="stylesheet">
+        <link href="{% static 'HO/vendors/elegant-icon/style.css' %}" rel="stylesheet">
+        <link href="{% static 'HO/vendors/themify-icon/themify-icons.css' %}" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link href="{% static 'HO/css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <!-- Rev slider css -->
+        <link href="{% static 'HO/vendors/revolution/css/settings.css' %}" rel="stylesheet">
+        <link href="{% static 'HO/vendors/revolution/css/layers.css' %}" rel="stylesheet">
+        <link href="{% static 'HO/vendors/revolution/css/navigation.css' %}" rel="stylesheet">
+        <link href="{% static 'HO/vendors/animate-css/animate.css' %}" rel="stylesheet">
+
+        <!-- Extra plugin css -->
+        <link href="{% static 'HO/vendors/owl-carousel/owl.carousel.min.css' %}" rel="stylesheet">
+
+        <link href="{% static 'HO/css/responsive.css' %}" rel="stylesheet">
+        <link href="{% static 'HO/css/style.css' %}" rel="stylesheet">
+        <!-- <link href="{% static 'HO/css/agency.css' %}" rel="stylesheet"> -->
+    {% endblock %}
+</head>
+
+    {% block body %}
+    <body data-spy="scroll" data-target="#mainNav" data-offset="200">
+
+        <!--================Header Menu Area =================-->
+        <header class="main_menu_area">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" id = "mainNav">
+                <a class="navbar-brand js-scroll-trigger" href="#home"><h3 style = "font-family: 'DIN'; color: white">hack<b>overflow</b></h3></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item"><a class = "nav-link js-scroll-trigger" href="#benefits">Benefits</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#problems">Problems</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#faq">FAQs</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#register">Register</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!--================End Header Menu Area =================-->
+
+        <!--================Slider Area =================-->
+        <section id = "home" class="main_slider_area">
+            <div id="main_slider" class="rev_slider" data-version="5.3.1.6">
+                <ul>
+                    <li data-index="rs-2947" data-transition="slidevertical" data-slotamount="1" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="1000"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                    <!-- MAIN IMAGE -->
+                        <img src="{% static 'HO/img/home-slider/slider-1.jpg' %}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                        <!-- LAYER NR. 1 -->
+                        <div class="slider_text_box">
+                            <div class="tp-caption tp-resizeme secand_text"
+                                data-x="['center','center','center','center','center','center']"
+                                data-hoffset="['0','80','80','0']"
+                                data-y="['middle','middle','middle','middle']"
+                                data-voffset="['0','0','0','0','0']"
+                                data-fontsize="['48','48','48','28','28','22']"
+                                data-lineheight="['60','60','60','36','36','30']"
+                                data-width="100%"
+                                data-height="none"
+                                data-whitespace="normal"
+                                data-type="text"
+                                data-responsive_offset="on"
+                                data-transform_idle="o:1;"
+                                data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
+                                data-textAlign="['center','center','center','center','center','center']"
+
+                                style="z-index: 8; font-family:'DIN';color:#fff;"><p style = "font-size: 70px;"> hack<b>overflow</b></p>
+                                <p style = "font-size: 30px;"> A 2-Day Data Science Hackathon </p>
+                            </div>
+
+                            <div class="tp-caption tp-resizeme slider_button"
+                                data-x="['center','center','center','center','center','center']"
+                                data-hoffset="['0','0','0','0']"
+                                data-y="['middle','middle','middle','middle']"
+                                data-voffset="['130','130','130','100','100','100']"
+                                data-width="none"
+                                data-height="none"
+                                data-whitespace="nowrap"
+                                data-type="text"
+                                data-responsive_offset="on"
+                                data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
+                                data-textAlign="['center','center','center','center','center','center']">
+                                <a class="bg_btn js-scroll-trigger" href="#about">Learn More</a>
+                                <a class="tp_btn js-scroll-trigger" href="#register">Register</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--================End Slider Area =================-->
+
+        <!--================Creative Feature Area =================-->
+        <section id = "about" class="creative_feature_area">
+            <div class="container">
+                <div class="c_feature_box">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="c_box_item">
+                                <h4><i class="fa fa-info" aria-hidden="true"></i> About the Event</h4>
+                                <p>HackOverFlow is a unique Data Science Hackathon event organized by MATRIX, Student Body, Department of Mathematics, IIT Guwahati and Consulting & Analytics Club, IIT Guwahati. A first of its kind event at IIT Guwahati, HackOverFlow will see participation from the North East and will focus on developing Data Science solutions for prominent industry challenges. The best teams will be invited to 3 month Summer Camp by Probyto at IIT Guwahati to develop Minimal Viable Prototypes(MVPs).</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="c_box_item">
+                                <h4><i class="fa fa-users" aria-hidden="true"></i> About the Organizers</h4>
+                                <p>HackOverFlow is a unique event designed to spread awareness about Data Science and encourage new talent to join the field. This event is being organised at IIT Guwahati as a joint initiative of Matrix IIT Guwahati, Consulting Club IIT Guwahati and Probyto, an independent and active organization in the field of data Science.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="c_box_item">
+                                <h4><i class="fa fa-bullseye" aria-hidden="true"></i> Event Vision</h4>
+                                <p>At HackOverFlow, we want to create Guwahati as a vibrant, self-sustaining, innovation-driven city. We invite original, innovative ideas from participants, that have the potential to transform lives and we want to help shape these ideas into finished products that can make an impact. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="digital_feature p_100">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="d_feature_text">
+                                <div class="main_title">
+                                    <h2>We Are A Creative <br /> Digital Agency Focused on Growing Brands Online</h2>
+                                </div>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderi.</p>
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id est laborum. Sed ut perspiciatis unde omnis iste.</p>
+                                <a class="read_btn" href="#">Read more</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d_feature_img">
+                                <img src="img/feature-right.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <br><br><br>
+        </section>
+        <!--================End Creative Feature Area =================-->
+
+        <!--================Industries Area =================-->
+        <!-- <section class="industries_area">
+            <div class="left_indus">
+                <div class="indus_img">
+                    <img src="img/indus-laptop.png" alt="">
+                </div>
+            </div>
+            <div class="right_indus">
+                <div class="indus_text">
+                    <div class="main_title">
+                        <h2>We Serve All Industries</h2>
+                        <p>We stay on top of our industry by being experts in yours. We measure our success by the results we drive for our clients.</p>
+                    </div>
+                    <div class="our_skill_inner">
+                        <div class="single_skill">
+                            <h3>Website Design</h3>
+                            <div class="progress" data-value="90">
+                                <div class="progress-bar">
+                                    <div class="progress_parcent"><span class="counter">90</span>%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_skill">
+                            <h3>Brand Strategy</h3>
+                            <div class="progress" data-value="95">
+                                <div class="progress-bar">
+                                    <div class="progress_parcent"><span class="counter">95</span>%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_skill">
+                            <h3>Digital Marketing</h3>
+                            <div class="progress" data-value="85">
+                                <div class="progress-bar">
+                                    <div class="progress_parcent"><span class="counter">85</span>%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_skill">
+                            <h3>Website Development</h3>
+                            <div class="progress" data-value="90">
+                                <div class="progress-bar">
+                                    <div class="progress_parcent"><span class="counter">90</span>%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="read_btn" href="#">Work with us</a>
+                </div>
+            </div>
+        </section> -->
+        <!--================End Industries Area =================-->
+
+        <!--================Our Service Area =================-->
+        <section id = "benefits" class="service_area">
+            <div class="container">
+                <div class="center_title">
+                    <h2>Benefits</h2>
+                    <p>Learning, Prizes and a lot more</p>
+                </div>
+                <div class="row service_item_inner">
+                    <div class="col-lg-4">
+                        <div class="service_item">
+                            <i class="ti-world"></i>
+                            <h4>Platform</h4>
+                            <p>HackOverFlow provides a platform to people with ideas from all parts of India to showcase their ideas or prototypes to industry experts, scholars, industrial houses, venture capitalists, and other funding agencies by hosting competitions among educational institutions involving erudite thought leaders of India, industrial houses, and media coverage. Here, at IIT Guwahati, we provide you with a platform to showcase your talent and your passion for building viable solutions to real-life problems and truly make a difference. </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="service_item">
+                            <i class="ti-comments"></i>
+                            <h4>Mentorship</h4>
+                            <p>Industry experts and academicians are in the pool of experts to help give shape to ideas from the event. Once an idea with potential is identified, the innovator of the respective idea is assigned a mentor. The mentor guides and counsels the innovator to further develop and refine their ideas.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="service_item">
+                            <i class="ti-money"></i>
+                            <h4>Commercialization</h4>
+                            <p>Probyto will invite string ideas to Summer Camp to Develop MVPs and help direct the selected innovators to industrialists, funding agencies, or incubation agencies in order to help them build a finished product/service. After determining the commercial viability of the innovation, Probyto will host the teams in Summer Camp at Technology Complex, IIT Guwahati.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Our Service Area =================-->
+
+        <!--================Testimonials Area =================-->
+        <section id = "problems" class="testimonials_area p_100">
+            <div class="container">
+                <h1 align = center style = "font-weight: bold">Problems</h1><br><br>
+                <div class="testimonials_slider owl-carousel">
+                    <div class="item">
+                        <div class="media">
+                            <img class="d-flex rounded-circle" src="{% static 'HO/img/geointelligence.jpg' %}" alt="">
+                            <div class="media-body">
+                                <h2>Smart Customer Geo-Intelligence</h2>
+                                <!-- <img class = "rounded-circle" src="{% static 'HO/img/geointelligence.jpg' %}" alt=""> -->
+                                <p>Demographic attributes of prospective customers of your business are not always known for un-registered users. Geo-location of the customer landing in your platform gives us fair idea for what he/she might be looking for in the platform. There are multiple sources of aggregated demographic information to ascertain some features of the customer to help design a customized web-pages or campaign. The incoming traffic of website can provide the IP address of the machine and using that we can infer the location of machine. The location then can help us gather data about aggregated features from hundreds of sources and help design the customized experience for each customer.</p>
+                                <!-- <h4><a href="#">Aigars Silkalns</a> - CEO DeerCreative</h4> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="media">
+                            <img class="d-flex rounded-circle" src="{% static 'HO/img/cybersecurity.jpg' %}" alt="">
+                            <div class="media-body">
+                                <h2>Cyber Security</h2>
+                                <!-- <img src="{% static 'HO/img/cybersecurity.jpg' %}" alt=""> -->
+                                <p>Internet is becoming diverse and complicated than ever before. Our financial life to social life is driven by internet. This makes it important to safeguard the cyber world from un-wanted malicious agents. Probyto is getting equipped to use machine learning algorithms for cyber security which also connects with application, information and network security.
+
+                                The recent attacks of ransomware, botnets, and other vectors has been increasing the organizational risk and they are looking for sophisticated machine learning algorithms for anomaly detection as an alternative to the ineffective static signature based approaches.</p>
+                                <!-- <h4><a href="#">Aigars Silkalns</a> - CEO DeerCreative</h4> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="media">
+                            <img class="d-flex rounded-circle" src="{% static 'HO/img/automation.jpg' %}" alt="">
+                            <div class="media-body">
+                                <h2>Robotic Process Automation</h2>
+                                <!-- <img src="{% static 'HO/img/dotted-icon.png' %}" alt=""> -->
+                                <p>Robotic process automation (RPA) is the application of technology that helps company to configure systems to capture, interpret and make decision for low level tasks such as scheduling, monitoring, data entry and many more. RPA are typically set of methodologies and processes to automate lower level jobs based on certain rules.
+
+                                One of the applications of RPA is helping companies to digitize their paper based forms and documents. With advent of technology and competent business environments, it is important for companies to have all their information in digital format while the business process still relies on paper based assets. OCR machines are costly and come along with hardware. The advent in machine learning efforts can turn any scanned copy of such assets into digital form. </p>
+                                <!-- <h4><a href="#">Aigars Silkalns</a> - CEO DeerCreative</h4> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Testimonials Area =================-->
+        <section id = "faq">
+            <div class="container">
+                <div class="center_title">
+                    <h2 style = "font-weight: bold; color: black;">FAQs</h2>
+                </div>
+                <div class="row service_item_inner">
+                    <div class = "col-lg-2"></div>
+                    <div class="col-lg-5">
+                        <div class = "container faq_container">
+                            <div class="faq">
+                                <div class="faq_question"><i class="fa fa-plus-circle"></i> What to bring?</div>
+                                <div class="faq_answer_container">
+                                    <div class="faq_answer">
+                                    <ul>
+                                        <li>Laptop and charger</li>
+                                        <li>Cellphone and charger</li>
+                                        <li>Toiletries (Toothbrush, toothpaste, deodorant, etc.)</li>
+                                        <li>Extra clothes</li>
+                                    </ul>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="faq">
+                                <div class="faq_question"><i class="fa fa-plus-circle"></i> Will there be a place to sleep?</div>
+                                    <div class="faq_answer_container">
+                                        <div class="faq_answer">Yes, we will be providing accomodation for all participants.</div>
+                                    </div>
+                            </div>
+                            <div class="faq">
+                                <div class="faq_question"><i class="fa fa-plus-circle"></i> What if I don’t have a team?</div>
+                                    <div class="faq_answer_container">
+                                        <div class="faq_answer">You can register individually. We will create random teams of the individual participants at the venue itself.</div>
+                                    </div>
+                            </div>
+                            <div class="faq">
+                                <div class="faq_question"><i class="fa fa-plus-circle"></i> What if I don’t have a project or idea?</div>
+                                <div class="faq_answer_container">
+                                    <div class="faq_answer">There will be multiple challenges and ideas for you to choose from. You can work on those and ideate a unique solution for it.</div>
+                                </div>
+                            </div>
+                            <div class="faq">
+                                <div class="faq_question"><i class="fa fa-plus-circle"></i> Should I bring extra hardware?</div>
+                                    <div class="faq_answer_container">
+                                        <div class="faq_answer">Yes, you may bring additional hardware if you have a project in mind.</div>
+                                    </div>
+                            </div>
+                            <div class="faq">
+                                <div class="faq_question"><i class="fa fa-plus-circle"></i> What should I prepare prior to the event?</div>
+                                    <div class="faq_answer_container">
+                                        <div class="faq_answer">It’s a good idea to setup your computer with some development software such as an IDE (i.e. Android Studio, XCode), a version control tool (i.e. Git). You don't want to spend a large chunk of time downloading software at the event, do it beforehand!</div>
+                                    </div>
+                            </div>
+                            <div class="faq">
+                                <div class="faq_question"><i class="fa fa-plus-circle"></i> Should I start my project before the hackathon?</div>
+                                    <div class="faq_answer_container">
+                                        <div class="faq_answer">No. All work on projects should be done at the event. You can read up on different APIs and frameworks but all code should be written during the hackathon.</div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class = "container faq_container">
+                            <div class="faq">
+                                <div class="faq_question"><i class="fa fa-plus-circle"></i> Where and when is HackOverflow?</div>
+                                <div class="faq_answer_container">
+                                    <div class="faq_answer">Date: April 7-8th, 2018<br>Address: <br><a target="_blank" style="" href="http://www.iitg.ac.in/">IIT Guwahati</a><br>Assam, India<br>PIN: 781039</div>
+                                </div>
+                            </div>
+                            <div class="faq">
+                                <div class="faq_question"><i class="fa fa-plus-circle"></i> Who can participate?</div>
+                                    <div class="faq_answer_container">
+                                        <div class="faq_answer">Any college or university students are welcome to participate! If you are passionate about programming and are interested in new technologies, we want you to join HackOverflow!</div>
+                                    </div>
+                            </div>
+                            <div class="faq">
+                                <div class="faq_question"><i class="fa fa-plus-circle"></i> How many people per team?</div>
+                                    <div class="faq_answer_container">
+                                        <div class="faq_answer">A team can have minimum 2 and maximum 5 members.</div>
+                                    </div>
+                            </div>
+                            <div class="faq">
+                                <div class="faq_question"><i class="fa fa-plus-circle"></i> How much will it cost?</div>
+                                <div class="faq_answer_container">
+                                    <div class="faq_answer">Registration to HackOverflow is absolutely free of cost.</div>
+                                </div>
+                            </div>
+                            <div class="faq">
+                                <div class="faq_question"><i class="fa fa-plus-circle"></i> What if I'm new to programming?</div>
+                                    <div class="faq_answer_container">
+                                        <div class="faq_answer">That's totally ok! Hackathons are a great place to learn. We're going to have tutorials and mentors to support you during the event.</div>
+                                    </div>
+                            </div>
+                            <div class="faq">
+                                <div class="faq_question"><i class="fa fa-plus-circle"></i> How will my project be judged?</div>
+                                    <div class="faq_answer_container">
+                                        <div class="faq_answer">Both Academy and Industry experts will browse the demos at the end of the event, asking questions and choosing their favorites. From these selections, the best-of-the-best will be compared and a select few will get the chance to present in front of everyone at the closing ceremony.</div>
+                                    </div>
+                            </div>
+                            <div class="faq">
+                                <div class="faq_question"><i class="fa fa-plus-circle"></i> Didn't find answer to your question?</div>
+                                    <div class="faq_answer_container">
+                                        <div class="faq_answer">Please reach us via <a href="https://www.facebook.com/MatrixIITG">Facebook</a> or email us at <a href="mailto:matrix@iitg.ernet.in">matrix@iitg.ernet.in</a>.</div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--================Project Area =================-->
+        <br><br><br><br>
+        <section id = "register" class="project_area">
+            <div class="container">
+                <div class="project_inner">
+                    <div class="center_title">
+                        <h2>Register Now</h2>
+                        <p>It will take 5 minutes max, we promise!</p><br>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScZYg7FJoYy8TZYcPLAqkxjyN99-NRo9tpJVoHZUV2-EVdPtg/viewform?embedded=true" width="760" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                    </div>
+
+                    <a class="tp_btn js-scroll-trigger" href="https://docs.google.com/forms/d/e/1FAIpQLScZYg7FJoYy8TZYcPLAqkxjyN99-NRo9tpJVoHZUV2-EVdPtg/viewform?usp=sf_link" target="_blank">Open in new tab</a>
+                </div>
+            </div>
+        </section>
+        <!--================End Project Area =================-->
+
+        <!--================Latest News Area =================-->
+        <!-- <section class="latest_news_area p_100">
+            <div class="container">
+                <div class="b_center_title">
+                    <h2>Latest News</h2>
+                    <p>We Are A Creative Digital Agency. Focused on Growing Brands Online</p>
+                </div>
+                <div class="l_news_inner">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="l_news_item">
+                                <div class="l_news_img"><a href="#"><img class="img-fluid" src="img/blog/l-news/l-news-1.jpg" alt=""></a></div>
+                                <div class="l_news_content">
+                                    <a href="#"><h4>We Create Experiences</h4></a>
+                                    <p>The Fancy that recognize the talent and effort of the best web designers, develop-ers and agencies in the world.</p>
+                                    <a class="more_btn" href="#">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="l_news_item">
+                                <div class="l_news_img"><a href="#"><img class="img-fluid" src="img/blog/l-news/l-news-2.jpg" alt=""></a></div>
+                                <div class="l_news_content">
+                                    <a href="#"><h4>Simple, Fast And Fun</h4></a>
+                                    <p>The Fancy that recognize the talent and effort of the best web designers, develop-ers and agencies in the world.</p>
+                                    <a class="more_btn" href="#">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="l_news_item">
+                                <div class="l_news_img"><a href="#"><img class="img-fluid" src="img/blog/l-news/l-news-3.jpg" alt=""></a></div>
+                                <div class="l_news_content">
+                                    <a href="#"><h4>Device Friendly</h4></a>
+                                    <p>The Fancy that recognize the talent and effort of the best web designers, develop-ers and agencies in the world.</p>
+                                    <a class="more_btn" href="#">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!--================End Latest News Area =================-->
+
+        <!--================Footer Area =================-->
+        <footer class="footer_area">
+            <div class="footer_widgets_area">
+                <div class="container">
+                    <div class="f_widgets_inner row">
+                        <!-- <div class="col-lg-3 col-md-6">
+                            <aside class="f_widget subscribe_widget">
+                                <div class="f_w_title">
+                                    <h3>Our Newsletter</h3>
+                                </div>
+                                <p>Subscribe to our mailing list to get the updates to your email inbox.</p>
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="E-mail" aria-label="E-mail">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-secondary submit_btn" type="button">Subscribe</button>
+                                    </span>
+                                </div>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                </ul>
+                            </aside>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <aside class="f_widget twitter_widget">
+                                <div class="f_w_title">
+                                    <h3>Twitter Feed</h3>
+                                </div>
+                                <div class="tweets_feed"></div>
+                            </aside>
+                        </div> -->
+                        <div class="col-lg-3 col-md-6">
+                            <aside class="f_widget categories_widget">
+                                <div class="f_w_title">
+                                    <h3>Quick Links</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="{% url 'dimension:home' %}"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Dimension</a></li>
+                                    <li><a href="{% url 'home:home' %}"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Matrix</a></li>
+                                    <li><a href="https://probyto.com/"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Probyto</a></li>
+                                    <li><a href="http://www.iitg.ac.in/"><i class="fa fa-angle-double-right" aria-hidden="true"></i>IIT Guwahati</a></li>
+                                    <!-- <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Register</a></li> -->
+                                </ul>
+                                <!-- <ul>
+                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Home</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>About</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Services</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Work</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Privacy</a></li>
+                                </ul> -->
+                            </aside>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <aside class="f_widget contact_widget">
+                                <div class="f_w_title">
+                                    <h3>Contact Us</h3>
+                                </div>
+                                <!-- <p>1 (800) 686-6688</p> -->
+                                <a href="mailto:matrix@iitg.ernet.in">matrix@iitg.ernet.in</a>
+                                <a href="tel:+91-995-424-5059">+91-995-424-5059</a><br>
+                                <a href="http://www.iitg.ac.in/maths/">Department of Maths<br />IIT Guwahati, India</a>
+                                <!-- <h6>Open hours: 8.00-18.00 Mon-Fri</h6> -->
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy_right_area">
+                <div class="container">
+                    <div class="float-md-left">
+                        <h5>Copyright &copy; <script>document.write(new Date().getFullYear()); </script>&nbsp;<a href="{% url 'home:home' %}" target="_blank"> Matrix</a></h5>
+                    </div>
+                    <!-- <div class="float-md-right">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Disclaimer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Privacy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Advertisement</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact us</a>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </footer>
+        <!--================End Footer Area =================-->
+
+
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="{% static 'HO/js/jquery-3.2.1.min.js' %}"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="{% static 'HO/js/popper.min.js' %}"></script>
+        <script src="{% static 'HO/js/bootstrap.min.js' %}"></script>
+        <!-- Rev slider js -->
+        <script src="{% static 'HO/vendors/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+        <script src="{% static 'HO/vendors/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+        <script src="{% static 'HO/vendors/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+        <script src="{% static 'HO/vendors/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+        <script src="{% static 'HO/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+        <script src="{% static 'HO/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+        <script src="{% static 'HO/vendors/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+        <script src="{% static 'HO/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+        <!-- Extra plugin css -->
+        <script src="{% static 'HO/vendors/counterup/jquery.waypoints.min.js' %}"></script>
+        <script src="{% static 'HO/vendors/counterup/jquery.counterup.min.js' %}"></script>
+        <script src="{% static 'HO/vendors/counterup/apear.js' %}"></script>
+        <script src="{% static 'HO/vendors/counterup/countto.js' %}"></script>
+        <script src="{% static 'HO/vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'HO/vendors/parallaxer/jquery.parallax-1.1.3.js' %}"></script>
+        <!--Tweets-->
+        <script src="{% static 'HO/vendors/tweet/tweetie.min.js' %}"></script>
+        <script src="{% static 'HO/vendors/tweet/script.js' %}"></script>
+
+        <script src="{% static 'HO/js/theme.js' %}"></script>
+        <script src="{% static 'HO/js/jquery.min.js' %}"></script>
+        <script src="{% static 'HO/js/jquery.easing.min.js' %}"></script>
+        <script src="{% static 'HO/js/jqBootstrapValidation.js' %}"></script>
+        <script src="{% static 'HO/js/agency.js' %}"></script>
+        <script>
+           $(document).ready(function() {
+
+            $('.faq_question').click(function() {
+                $(this).next('ul').slideToggle('500');
+                $(this).find('i').toggleClass('fa-plus-circle fa-minus-circle');
+
+                if ($(this).parent().is('.open')){
+                    $(this).closest('.faq').find('.faq_answer_container').animate({'height':'0'},500);
+                    $(this).closest('.faq').removeClass('open');
+
+                }else{
+                    var newHeight =$(this).closest('.faq').find('.faq_answer').height() +'px';
+                    $(this).closest('.faq').find('.faq_answer_container').animate({'height':newHeight},500);
+                    $(this).closest('.faq').addClass('open');
+                }
+
+            });
+
+        });
+        </script>
+    </body>
+    {% endblock %}
