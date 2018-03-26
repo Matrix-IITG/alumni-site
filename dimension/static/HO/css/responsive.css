@@ -40,7 +40,7 @@
     .main_menu_area .navbar .navbar-brand{
         padding-top: 18px;
         padding-bottom: 18px;
-        padding-left: 15px;
+        padding-left: 0px;
     }
     .main_menu_area .navbar .navbar-toggler span{
         height: 3px;
@@ -194,6 +194,7 @@
     .contact_form{
         margin-top: 50px;
     }
+
 }
 @media(max-width: 767px){
     .testimonials_slider .item .media {
@@ -290,6 +291,10 @@
         text-align: center;
         display: none !important;
     }
+    .register_form {
+        width: 400px;
+        height: 400px;
+    }
 }
 @media(max-width: 480px){
     .static_main_content .media{
@@ -300,5 +305,9 @@
     }
     .media .media-body {
         padding-left: 0px;
+    }
+    .register_form {
+        width: 250px;
+        height: 250px;
     }
 }
