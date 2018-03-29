@@ -51,11 +51,10 @@
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#home">Home</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#benefits">Benefits</a></li>
+                        <li class="nav-item"><a class = "nav-link js-scroll-trigger" href="#benefits">Benefits</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Problems</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#faq">FAQs</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#register">Register</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sponsors">Sponsors</a></li>
                     </ul>
                 </div>
             </nav>
@@ -75,9 +74,9 @@
                                 data-x="['center','center','center','center','center','center']"
                                 data-hoffset="['0','80','80','0']"
                                 data-y="['middle','middle','middle','middle']"
-                                data-voffset="['-100','-100','-100','-50','-50']"
-                                data-fontsize="['80','80','80','60','36','36']"
-                                data-lineheight="['60','60','60','50','36','30']"
+                                data-voffset="['0','0','0','0','0']"
+                                data-fontsize="['80','80','80','36','36','36']"
+                                data-lineheight="['60','60','60','36','36','30']"
                                 data-width="100%"
                                 data-height="none"
                                 data-whitespace="normal"
@@ -87,7 +86,7 @@
                                 data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
                                 data-textAlign="['center','center','center','center','center','center']"
 
-                                style="z-index: 8; font-family:'DIN'; color: black;">hackoverflow<br>                        
+                                style="z-index: 8; font-family:'DIN'; color:#fff;">hackoverflow<br><br><br><br><br>                        
                                 <!-- <p style = "font-size: 30px;"> A 2-Day Data Science Hackathon </p> -->
                             </div>
 
@@ -95,7 +94,7 @@
                                 data-x="['center','center','center','center','center','center']"
                                 data-hoffset="['0','80','80','0']"
                                 data-y="['middle','middle','middle','middle']"
-                                data-voffset="['20','20','20','20','20']"
+                                data-voffset="['0','0','0','0','0']"
                                 data-fontsize="['30','30','30','14','14','14']"
                                 data-lineheight="['60','60','60','36','36','30']"
                                 data-width="100%"
@@ -107,7 +106,7 @@
                                 data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
                                 data-textAlign="['center','center','center','center','center','center']"
 
-                                style="z-index: 8; font-family:'DIN'; color: black;">A 2-Day Data Science Hackathon<br> 7th - 8th April, 2018                          
+                                style="z-index: 8; font-family:'DIN'; color:#fff;">A 2-Day Data Science Hackathon<br> 7th - 8th April, 2018                          
                                 <!-- <p style = "font-size: 30px;"> A 2-Day Data Science Hackathon </p> -->
                             </div>
 
@@ -116,16 +115,16 @@
                                 data-x="['center','center','center','center','center','center']"
                                 data-hoffset="['0','0','0','0']"
                                 data-y="['middle','middle','middle','middle']"
-                                data-voffset="['40','40','40','40','0','0']"
+                                data-voffset="['130','130','130','100','100','100']"
                                 data-width="none"
                                 data-height="none"
                                 data-whitespace="nowrap"
                                 data-type="text"
                                 data-responsive_offset="on"
                                 data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
-                                data-textAlign="['center','center','center','center','center','center']" style = "margin-top: 15em;">
-                                <a class="bg_btn js-scroll-trigger" style = "color: black;" href="#about">Learn More</a>
-                                <a class="tp_btn js-scroll-trigger" style = "color: black;" href="#register">Register</a>
+                                data-textAlign="['center','center','center','center','center','center']">
+                                <a class="bg_btn js-scroll-trigger" href="#about">Learn More</a>
+                                <a class="tp_btn js-scroll-trigger" href="#register">Register</a>
                             </div>
                         </div>
                     </li>
@@ -286,7 +285,7 @@
                                     <h5>Geo-Spatial Analysis for flood warnings in Assam</h5>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{% static 'HO/img/problemimages/geospatial.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'img/bootcamp.jpg' %}" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h6>Geo-Spatial Analysis for flood warnings in Assam</h6>
@@ -301,7 +300,7 @@
                                     <h5>Cyber Security</h5>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{% static 'HO/img/problemimages/cybersecurity.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'img/code.jpg' %}" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h6>Cyber Security</h6>
@@ -316,7 +315,7 @@
                                     <h5>Converting Paper forms to Digital using Machine Learning (RPA)</h5>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{% static 'HO/img/problemimages/papertodigital.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'img/lecseries.jpg' %}" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h6>Converting Paper forms to Digital using Machine Learning (RPA)</h6>
@@ -333,7 +332,7 @@
                                     <h5>Analysing the pathological slide for blood analysis</h5>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{% static 'HO/img/problemimages/bloodanalysis.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'img/quiz.jpg' %}" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h6>Analysing the pathological slide for blood analysis</h6>
@@ -348,7 +347,7 @@
                                     <h5>Smart contracts using Blockchain</h5>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{% static 'HO/img/problemimages/smartcontracts.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'img/bootcamp.jpg' %}" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h6>Smart contracts using Blockchain</h6>
@@ -363,7 +362,7 @@
                                     <h5>Creative writing assisted by AI driven virtual assitant</h5>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{% static 'HO/img/problemimages/virtualassist.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'img/code.jpg' %}" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h6>Creative writing assisted by AI driven virtual assitant</h6>
@@ -378,7 +377,7 @@
                                     <h5>IoT based weather monitoring system</h5>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{% static 'HO/img/problemimages/weathermonitor.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'img/lecseries.jpg' %}" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h6>IoT based weather monitoring system</h6>
@@ -395,7 +394,7 @@
                                     <h5>IoT Based Air Quality Monitoring</h5>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{% static 'HO/img/problemimages/airquality.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'img/quiz.jpg' %}" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h6>IoT Based Air Quality Monitoring</h6>
@@ -410,7 +409,7 @@
                                     <h5>Chatbot assistant for Tourism in North East</h5>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{% static 'HO/img/problemimages/chatbot.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'img/bootcamp.jpg' %}" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h6>Chatbot assistant for Tourism in North East</h6>
@@ -425,7 +424,7 @@
                                     <h5>Alexa or Google based chatbot assistant for Primary education</h5>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{% static 'HO/img/problemimages/googlealexa.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'img/code.jpg' %}" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h6>Alexa or Google based chatbot assistant for Primary education</h6>
@@ -440,7 +439,7 @@
                                     <h5>Smart plug for energy supply driven by Android app</h5>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{% static 'HO/img/problemimages/smartplug.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'img/lecseries.jpg' %}" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h6>Smart plug for energy supply driven by Android app</h6>
@@ -457,7 +456,7 @@
                                     <h5>Facial Image based BMI calculator</h5>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{% static 'HO/img/problemimages/bmi.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'img/quiz.jpg' %}" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h6>Facial Image based BMI calculator</h6>
@@ -472,7 +471,7 @@
                                     <h5>Fake news detection using web crawled data</h5>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{% static 'HO/img/problemimages/realnews.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'img/bootcamp.jpg' %}" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h6>Fake news detection using web crawled data</h6>
@@ -487,7 +486,7 @@
                                     <h5>Breaking news detection from crawling web data</h5>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{% static 'HO/img/problemimages/breakingnews.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'img/code.jpg' %}" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h6>Breaking news detection from crawling web data</h6>
@@ -502,7 +501,7 @@
                                     <h5>Assaying and grading of fruits for e-procurement</h5>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{% static 'HO/img/problemimages/fruits.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'img/lecseries.jpg' %}" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h6>Assaying and grading of fruits for e-procurement</h6>
@@ -519,7 +518,7 @@
                                     <h5>Create connected graph for students to discover connected insights</h5>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{% static 'HO/img/problemimages/connectedgraph.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'img/quiz.jpg' %}" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h6>Create connected graph for students to discover connected insights</h6>
@@ -534,7 +533,7 @@
                                     <h5>Digital election based on Blockchain technology</h5>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{% static 'HO/img/problemimages/digitalelection.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'img/bootcamp.jpg' %}" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h6>Digital election based on Blockchain technology</h6>
@@ -549,7 +548,7 @@
                                     <h5>Computer vision &amp; Deep learning to deliver Telemedicine solution in Dermatology</h5>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{% static 'HO/img/problemimages/dermatology.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'img/code.jpg' %}" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h6>Computer vision &amp; Deep learning to deliver Telemedicine solution in Dermatology</h6>
@@ -564,7 +563,7 @@
                                     <h5>Smart Interview driven by AI to speed up recruitment</h5>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{% static 'HO/img/problemimages/interview.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'img/lecseries.jpg' %}" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h6>Smart Interview driven by AI to speed up recruitment</h6>
@@ -581,16 +580,13 @@
                                     <h5>Smart Cop to detect and fine traffic violations on road</h5>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="{% static 'HO/img/problemimages/smartcop.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'img/quiz.jpg' %}" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h6>Smart Cop to detect and fine traffic violations on road</h6>
                             <!-- <p class="text-muted"> Dive into the world of data science through interactive quizzes. </p> -->
                         </div>
                     </div>
-                </div>
-                <div class = "row">
-                    <a class="bg_btn" href="{% static 'HO/problems.pdf' %}" style = "margin: 0 auto;" target="_blank">Download PDF</a>
                 </div>
             </div>
         </section>
@@ -820,9 +816,9 @@
                 <div class="center_title" style = "color: black;">
                     <h2><br>Sponsors<br><br></h2>
                     <div class = "row">
-                        <div class = "col-md-4"><a href = "{% url 'home:home' %}"><img width = "50%" src = "{% static 'HO/img/sponsors/matrixLogo.png' %}"></img></a></div>
-                        <div class = "col-md-4"><a href = "https://probyto.com/"><img width = "50%" src = "{% static 'HO/img/sponsors/probyto.jpg' %}"></img></a></div>
-                        <div class = "col-md-4"><a href = "https://www.facebook.com/ConsultingAndAnalyticsClubIITG/"><img width = "50%" src = "{% static 'HO/img/sponsors/cac.jpg' %}"></img></a></div>
+                        <div class = "col-md-4"> <img width = "50%" src = "{% static 'HO/img/sponsors/matrixLogo.png' %}"></img></div>
+                        <div class = "col-md-4"> <img width = "50%" src = "{% static 'HO/img/sponsors/probyto.jpg' %}"></img></div>
+                        <div class = "col-md-4"> <img width = "50%" src = "{% static 'HO/img/sponsors/cac.jpg' %}"></img></div>
                 </div>
             </div>
         </section>
@@ -953,7 +949,7 @@
                                     </p>
                                     <p><b>Few resources to refer for more details:</b>
                                         <ul>
-                                            <li><a href="https://www.geospatialworld.net/blogs/iwmi-provides-rapid-emergency-response-maps-bihar-assam-floods/">https://www.geospatialworld.net/blogs/iwmi-provides-rapid-emergency-response-maps-bihar-assam-floods/</a></li>
+                                            <li><a href="https://www.geospatialworld.net/blogs/iwmi-provides-rapid-emergency-response-maps-bihar-assam-floods/">https://www.geospatialworld.net/blogs/iwmi-provides-rapid-emergency-response-maps-bihar-assam-floods/"</a></li>
                                             <li><a href = "https://www.isro.gov.in/updated-flood-hazard-atlas-assam-state">https://www.isro.gov.in/updated-flood-hazard-atlas-assam-state</a></li>
                                             <li><a href = "http://www.tandfonline.com/doi/full/10.1080/19475705.2017.1408705">http://www.tandfonline.com/doi/full/10.1080/19475705.2017.1408705</a></li>
                                             <li><a href = "http://civil.iisc.ernet.in/~nagesh/rs_docs/21_RS_GIS_DEM_Floods_bw.pdf">http://civil.iisc.ernet.in/~nagesh/rs_docs/21_RS_GIS_DEM_Floods_bw.pdf</a></li>
@@ -986,33 +982,26 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here -->
-                                    <h2 class="text-uppercase">Cyber Security</h2>
-                                    <!-- <p class="item-intro text-muted">Delve into the Data Science World with a plethora
-                                        of
-                                        resources </p> -->
+                                    <h2 class="text-uppercase">HackOverflow</h2>
+                                    <p class="item-intro text-muted">Incubate to Innovate - Enable ideas to grow !!</p>
                                     <!-- <img class="img-fluid d-block mx-auto"
-                                         src="{% static 'img/portfolio/01-full.jpg' %}" alt=""> -->
-                                    <p><b>Background:</b><br>Google is using machine learning to analyze threats against mobile endpoints running on Android -- as well as identifying and removing malware from infected handsets, while cloud infrastructure giant Amazon has acquired start-up harvest.AI and launched Macie, a service that uses machine learning to uncover, sort and classify data stored on the S3 cloud storage service.
-                                    <br>
-                                    Simultaneously, enterprise security vendors have been working towards incorporating machine learning into new and old products, largely in a bid to improve malware detection. “Most of the major companies in security have moved from a purely “signature-based” system of a few years ago used to detect malware, to a machine learning system that tries to interpret actions and events and learns from a variety of sources what is safe and what is not,” says Jack Gold, president and principal analyst at J. Gold Associates. “It’s still a nascent field, but it is clearly the way to go in the future. Artificial intelligence and machine learning will dramatically change how security is done.”
+                                         src="{% static 'img/portfolio/02-full.jpg' %}" alt=""> -->
+                                    <p>HackOverflow is a unique Data Science Hackathon event. It will witness
+                                        participation from students as well as professionals from all of North East
+                                        India. Participants will get a chance to present their innovative ideas and
+                                        develop their own data application solutions for prominent industry challenges.
+                                        Mentors from different fields will be guiding them continuously
+                                        throughout the 24-hour hackathon. The selected ones will get the opportunity to
+                                        incubate their ideas along with other incentives.
                                     </p>
-                                    <p><b>Challenge:</b><br>Can you use deep learning methods to analyse network traffic and spot an anomaly behavior? 
-                                    </p>
-                                    <p><b>Target Users:</b><br>Governments, Network Administrators, ISPs, Public and Corporates
-                                    </p>
-                                    <p><b>Few resources to refer for more details:</b>
-                                        <ul>
-                                            <li><a href="https://www.computerworld.com.au/article/631162/5-top-machine-learning-use-cases-security/">https://www.computerworld.com.au/article/631162/5-top-machine-learning-use-cases-security/</a></li>
-                                            <li><a href = "https://www.wireshark.org/">https://www.wireshark.org/ </a></li>
-                                            <li><a href = "http://www.tandfonline.com/doi/full/10.1080/19475705.2017.1408705">http://www.tandfonline.com/doi/full/10.1080/19475705.2017.1408705</a></li>
-                                            <li><a href = "https://github.com/jivoi/awesome-ml-for-cybersecurity">https://github.com/jivoi/awesome-ml-for-cybersecurity</a></li>
-                                        </ul>
-                                    </p>
-                                    <p><b>Sponsor: </b>Probyto<br><b>Location: </b>IIT Guwahati</p>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fa fa-mail-reply"></i>
                                         Go Back
                                     </button>
+                                    <a href = "{% url 'dimension:hackoverflow' %}" target="_blank" class="btn btn-primary" type="button">
+                                        <i class="fa fa-mail-forward"></i>
+                                        Go to Hackoverflow website
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -1035,28 +1024,19 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here -->
-                                    <h2 class="text-uppercase">Converting Paper forms to Digital using Machine Learning (RPA)</h2>
-                                    <!-- <p class="item-intro text-muted">Delve into the Data Science World with a plethora
-                                        of
-                                        resources </p> -->
+                                    <h2 class="text-uppercase">Lecture Series</h2>
+                                    <p class="item-intro text-muted">From research to real-world applications, lecture
+                                        series offers a look
+                                        at data science
+                                        through professional's eyes</p>
                                     <!-- <img class="img-fluid d-block mx-auto"
-                                         src="{% static 'img/portfolio/01-full.jpg' %}" alt=""> -->
-                                    <p><b>Background:</b><br>Robotic process automation (RPA) is the application of technology that helps company to configure systems to capture, interpret and make decision for low level tasks such as scheduling, monitoring, data entry and many more. RPA are typically set of methodologies and processes to automate lower level jobs based on certain rules.
-                                    <br>
-                                    One of the applications of RPA is helping companies to digitize their paper based forms and documents. With advent of technology and competent business environments, it is important for companies to have all their information in digital format while the business process still relies on paper-based assets. OCR machines are costly and come along with hardware. The advent in machine learning efforts can turn any scanned copy of such assets into digital form.
-                                    </p>
-                                    <p><b>Challenge:</b><br>Can you use machine learning and develop an application to capture information from variety of forms, receipts and do a reconciliation of records? 
-                                    </p>
-                                    <p><b>Target Users:</b><br>Telecom. Insurance, Tax Consultants, Governments and Administrators
-                                    </p>
-                                    <p><b>Few resources to refer for more details:</b>
-                                        <ul>
-                                            <li><a href="http://www.cvisiontech.com/resources/ocr-primer/ocr-neural-networks-and-other-machine-learning-techniques.html">http://www.cvisiontech.com/resources/ocr-primer/ocr-neural-networks-and-other-machine-learning-techniques.html</a></li>
-                                            <li><a href = "https://blogs.dropbox.com/tech/2017/04/creating-a-modern-ocr-pipeline-using-computer-vision-and-deep-learning/">https://blogs.dropbox.com/tech/2017/04/creating-a-modern-ocr-pipeline-using-computer-vision-and-deep-learning/</a></li>
-                                            <li><a href = "https://hackernoon.com/latest-deep-learning-ocr-with-keras-and-supervisely-in-15-minutes-34aecd630ed8">https://hackernoon.com/latest-deep-learning-ocr-with-keras-and-supervisely-in-15-minutes-34aecd630ed8</a></li>
-                                        </ul>
-                                    </p>
-                                    <p><b>Sponsor: </b>Probyto<br><b>Location: </b>IIT Guwahati</p>
+                                         src="{% static 'img/portfolio/03-full.jpg' %}" alt=""> -->
+                                    <p>Renowned faculty will be delivering lectures on a wide range of topics involving
+                                        data science, big data and machine learning and their role in reshaping
+                                        industries like agriculture,e-commerce and health care. Research opportunities
+                                        in existing and upcoming fields will also be covered in great detail along with
+                                        the
+                                        relevance of data science in the present world as well as in the future. </p>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fa fa-mail-reply"></i>
                                         Go Back
@@ -1083,30 +1063,15 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here -->
-                                    <h2 class="text-uppercase">Analysing the pathological slide for blood analysis</h2>
-                                    <!-- <p class="item-intro text-muted">Delve into the Data Science World with a plethora
-                                        of
-                                        resources </p> -->
+                                    <h2 class="text-uppercase">Online Data Science Trivia</h2>
+                                    <p class="item-intro text-muted">Dive into the world of Data Science through online
+                                        interactive quizzes </p>
                                     <!-- <img class="img-fluid d-block mx-auto"
-                                         src="{% static 'img/portfolio/01-full.jpg' %}" alt=""> -->
-                                    <p><b>Background:</b><br>Medical diagnosis is one of the important prerequisite for prescribing medicines and planning treatment. Diagnostic involve analyzing multimedia output of pathology test, X-rays, ultrasounds, ECGs and many other tests. Artificial Intelligence can be used in an assistive manner to help analyze the multimedia output quickly and more effectively. One of the recent areas of AI application in medical diagnostics is in pathology test for analysis like counting of RBC &amp; WBC cells, detecting foreign body, thickness, shape and many more. Image analysis techniques developed using deep learning algorithms have shown promise to do these tasks efficiently and increase productivity of pathologist.
-                                    <br>
-                                    A simple use case will involve analyzing a blood sample slide for detecting presence of any foreign body in the blood. The standard process involves analyzing slides manually by pathologist looking into the tiny eye-piece of a microscope, which is tedious &amp; error prone. For any AI based system to assist in this job it includes two main components, one a device to capture the slide content as a high resolution image and second an AI algorithm to assist the pathologist to analyze the output. The device will capture an image and send it to a cloud for storage. The images will then be sent to an API for analysis and returns an automatic report to pathologist.
-                                    </p>
-                                    <p><b>Challenge:</b><br>Can you build a Computer Vision based application to analyse pathological blood sample?
-
-                                    </p>
-                                    <p><b>Target Users:</b><br>Pathology Labs, Clinics and Healthcare service providers
-                                    </p>
-                                    <p><b>Few resources to refer for more details:</b>
-                                        <ul>
-                                            <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3996871/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3996871/</a></li>
-                                            <li><a href = "http://www.virtualpathology.leeds.ac.uk/research/analysis/">http://www.virtualpathology.leeds.ac.uk/research/analysis/</a></li>
-                                            <li><a href = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5556681/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5556681/</a></li>
-                                            <li><a href = "https://blog.athelas.com/classifying-white-blood-cells-with-convolutional-neural-networks-2ca6da239331">https://blog.athelas.com/classifying-white-blood-cells-with-convolutional-neural-networks-2ca6da239331</a></li>
-                                        </ul>
-                                    </p>
-                                    <p><b>Sponsor: </b>Probyto<br><b>Location: </b>IIT Guwahati</p>
+                                         src="{% static 'img/portfolio/04-full.jpg' %}" alt=""> -->
+                                    <p>2-week long online interactive data science quizzes will be conducted in late
+                                        march . Thought-provoking relevant questions will encompass numerous fields of
+                                        data science and will serve as an icebreaker for all newbies.
+                                        Final winners of quizzes will be awarded amazon echo dot.</p>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fa fa-mail-reply"></i>
                                         Go Back
@@ -1133,28 +1098,15 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here -->
-                                    <h2 class="text-uppercase">Smart contracts using Blockchain</h2>
-                                    <!-- <p class="item-intro text-muted">Delve into the Data Science World with a plethora
-                                        of
-                                        resources </p> -->
+                                    <h2 class="text-uppercase">Online Data Science Trivia</h2>
+                                    <p class="item-intro text-muted">Dive into the world of Data Science through online
+                                        interactive quizzes </p>
                                     <!-- <img class="img-fluid d-block mx-auto"
-                                         src="{% static 'img/portfolio/01-full.jpg' %}" alt=""> -->
-                                    <p><b>Background:</b><br>“The blockchain is an incorruptible digital ledger of economic transactions that can be programmed to record not just financial transactions but virtually everything of value.” - Don &amp; Alex Tapscott, authors Blockchain Revolution (2016)
-                                    <br>
-                                    Blockchain a technology innovation which have built in robustness by storing blocks of information that are identical across its network. The Blockchain can’t be controlled by a single entity and has no single point of failure.  Cryptocurrency is the most popular use case of Blockchain technology. The technology stack to implement Blockchain is also evolving with major technologies being Etherium, Hyperleadger and others. The investment in this technology shows the potential impact it will have in coming future.
-                                    </p>
-                                    <p><b>Challenge:</b><br>Can you build a platform for smart contracts between two parties using blockchain?
-                                    </p>
-                                    <p><b>Target Users:</b><br>Small Medium Enterprises, Royalties in Music and creative industry, contract enforcement agencies and Governments
-                                    </p>
-                                    <p><b>Few resources to refer for more details:</b>
-                                        <ul>
-                                            <li><a href="https://medium.com/crypto-currently/build-your-first-smart-contract-fc36a8ff50ca">https://medium.com/crypto-currently/build-your-first-smart-contract-fc36a8ff50ca</a></li>
-                                            <li><a href = "https://arxiv.org/pdf/1709.10000.pdf">https://arxiv.org/pdf/1709.10000.pdf</a></li>
-                                            <li><a href = "https://blog.zeppelin.solutions/the-hitchhikers-guide-to-smart-contracts-in-ethereum-848f08001f05">https://blog.zeppelin.solutions/the-hitchhikers-guide-to-smart-contracts-in-ethereum-848f08001f05</a></li>
-                                        </ul>
-                                    </p>
-                                    <p><b>Sponsor: </b>Probyto<br><b>Location: </b>IIT Guwahati</p>
+                                         src="{% static 'img/portfolio/04-full.jpg' %}" alt=""> -->
+                                    <p>2-week long online interactive data science quizzes will be conducted in late
+                                        march . Thought-provoking relevant questions will encompass numerous fields of
+                                        data science and will serve as an icebreaker for all newbies.
+                                        Final winners of quizzes will be awarded amazon echo dot.</p>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fa fa-mail-reply"></i>
                                         Go Back
@@ -1181,27 +1133,15 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here -->
-                                    <h2 class="text-uppercase">Creative writing assisted by AI driven virtual assitant</h2>
-                                    <!-- <p class="item-intro text-muted">Delve into the Data Science World with a plethora
-                                        of
-                                        resources </p> -->
+                                    <h2 class="text-uppercase">Online Data Science Trivia</h2>
+                                    <p class="item-intro text-muted">Dive into the world of Data Science through online
+                                        interactive quizzes </p>
                                     <!-- <img class="img-fluid d-block mx-auto"
-                                         src="{% static 'img/portfolio/01-full.jpg' %}" alt=""> -->
-                                    <p><b>Background:</b><br>A good creative writing requires lot of past experience and wit to create a master piece. With growing size of literature and user contributed contents the writers sometime lose the touch from real world driven by social media and dynamic social changes and struggle to corroborate their ideas into creative writing. AI is being able to churn millions of creative writing, in turn helping writer with perspectives to write new content inspired by past works of great writers.
-                                    <br>
-                                    It is really great to see a machine learning model that could generate with high accuracy text that resembles Shakespeare, Wikipedia, Harry Potter, Obama speeches, Star Wars episodes, and ultimately even write programming code. Once you collect enough data it is possible to train a charter-level Recurrent Neural Network (RNN). Microsoft made available a script to train a neural char-level language model to predict the next character after a sequence of characters. Finally, we will test if the network is able to complete sentences with creative use of vocabulary.
-                                    </p>
-                                    <p><b>Challenge:</b><br>Can you build a machine learning application to churn thousands of creative work and help new creative writers to leverage the past work?
-                                    </p>
-                                    <p><b>Target Users:</b><br>Small Medium Enterprises, Royalties in Music and creative industry, contract enforcement agencies and Governments
-                                    </p>
-                                    <p><b>Few resources to refer for more details:</b>
-                                        <ul>
-                                            <li><a href="https://medium.com/intuitionmachine/writing-travel-blogs-with-deep-learning-9b4a6fbcc87">https://medium.com/intuitionmachine/writing-travel-blogs-with-deep-learning-9b4a6fbcc87</a></li>
-                                            <li><a href = "https://medium.com/inside-machine-learning/artificial-creativity-347b7c20a5a1">https://medium.com/inside-machine-learning/artificial-creativity-347b7c20a5a1</a></li>
-                                        </ul>
-                                    </p>
-                                    <p><b>Sponsor: </b>Probyto<br><b>Location: </b>IIT Guwahati</p>
+                                         src="{% static 'img/portfolio/04-full.jpg' %}" alt=""> -->
+                                    <p>2-week long online interactive data science quizzes will be conducted in late
+                                        march . Thought-provoking relevant questions will encompass numerous fields of
+                                        data science and will serve as an icebreaker for all newbies.
+                                        Final winners of quizzes will be awarded amazon echo dot.</p>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fa fa-mail-reply"></i>
                                         Go Back
@@ -1228,32 +1168,20 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here -->
-                                    <h2 class="text-uppercase">IoT based weather monitoring system</h2>
-                                    <!-- <p class="item-intro text-muted">Delve into the Data Science World with a plethora
-                                        of
-                                        resources </p> -->
+                                    <h2 class="text-uppercase">Online Data Science Trivia</h2>
+                                    <p class="item-intro text-muted">Dive into the world of Data Science through online
+                                        interactive quizzes </p>
                                     <!-- <img class="img-fluid d-block mx-auto"
-                                         src="{% static 'img/portfolio/01-full.jpg' %}" alt=""> -->
-                                    <p><b>Background:</b><br>Weather forecasting has gained attention of many researchers due to its effect on human life and livelihood. Weather monitoring plays an important role in human life, so the collection of information about the temporal dynamics of weather changes is very important. In any industry during certain hazards it is very important to monitor weather. The aim of IoT based system is to develop an embedded system to design a weather monitoring system which enables the monitoring of weather parameters in an industry/field remotely. Such a system contains pair of sensors like temperature, light, humidity etc and data transmission module for data upload to clouds.
-                                    </p>
-                                    <p><b>Challenge:</b><br>Can you build a machine learning application to churn thousands of creative work and help new creative writers to leverage the past work?
-                                    </p>
-                                    <p><b>Target Users:</b><br>Agriculture, Food Processing, Utilities, Cold Storage, Weather/geo-spatial forecasting, disaster management agencies
-                                    </p>
-                                    <p><b>Few resources to refer for more details:</b>
-                                        <ul>
-                                            <li><a href="http://nevonprojects.com/iot-weather-reporting-system/">http://nevonprojects.com/iot-weather-reporting-system/</a></li>
-                                            <li><a href = "https://www.ijarcce.com/upload/2016/september-16/IJARCCE%2066.pdf">https://www.ijarcce.com/upload/2016/september-16/IJARCCE%2066.pdf</a></li>
-                                            <li><a href = "http://ijesc.org/upload/c1ad40d536ccca051ff4af59252ab9d6.Smart%20City%20IoT%20Based%20Weather%20Monitoring%20System.pdf">http://ijesc.org/upload/c1ad40d536ccca051ff4af59252ab9d6.Smart%20City%20IoT%20Based%20Weather%20Monitoring%20System.pdf</a></li>
-                                        </ul>
-                                    </p>
-                                    <p><b>Sponsor: </b>Probyto<br><b>Location: </b>IIT Guwahati</p>
+                                         src="{% static 'img/portfolio/04-full.jpg' %}" alt=""> -->
+                                    <p>2-week long online interactive data science quizzes will be conducted in late
+                                        march . Thought-provoking relevant questions will encompass numerous fields of
+                                        data science and will serve as an icebreaker for all newbies.
+                                        Final winners of quizzes will be awarded amazon echo dot.</p>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fa fa-mail-reply"></i>
                                         Go Back
                                     </button>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -1275,26 +1203,15 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here -->
-                                    <h2 class="text-uppercase">IoT Based Air Quality Monitoring</h2>
-                                    <!-- <p class="item-intro text-muted">Delve into the Data Science World with a plethora
-                                        of
-                                        resources </p> -->
+                                    <h2 class="text-uppercase">Online Data Science Trivia</h2>
+                                    <p class="item-intro text-muted">Dive into the world of Data Science through online
+                                        interactive quizzes </p>
                                     <!-- <img class="img-fluid d-block mx-auto"
-                                         src="{% static 'img/portfolio/01-full.jpg' %}" alt=""> -->
-                                    <p><b>Background:</b><br>Indoor air quality and its real-time information is critical for maintaining human health and productivity. According to Environmental Protection Agency (EPA)2, indoor air even in centrally air-conditioned buildings is several times more polluted than outdoor air, primarily due to change in occupancy pattern, poor, old or ill maintained ventilation systems, dust, and presence of volatile organic compounds. Hence, it is necessary for humans to pervasively and ubiquitously measure air quality information in real time, specially whose health is sensitive to poor indoor air.
-                                    </p>
-                                    <p><b>Challenge:</b><br>Can you build a context aware Android smart phone based mobile adhoc sensing system that senses various data from indoor environment around the user and analyses it in real time, thereby helping to maintain good health and better work productivity?
-                                    </p>
-                                    <p><b>Target Users:</b><br>Hospitals, Households, Offices, Industrial Units, Academic campuses and others indoor places
-                                    </p>
-                                    <p><b>Few resources to refer for more details:</b>
-                                        <ul>
-                                            <li><a href="http://www.kscst.iisc.ernet.in/spp/39_series/SPP39S/02_Exhibition_Projects/190_39S_BE_0501.pdf">http://www.kscst.iisc.ernet.in/spp/39_series/SPP39S/02_Exhibition_Projects/190_39S_BE_0501.pdf</a></li>
-                                            <li><a href = "https://circuitdigest.com/microcontroller-projects/iot-air-pollution-monitoring-using-arduino">https://circuitdigest.com/microcontroller-projects/iot-air-pollution-monitoring-using-arduino</a></li>
-                                            <li><a href = "https://itra.medialabasia.in/data/Documents/HumanSense/publications/SmartVent%20A%20Context%20Aware%20IoT%20System%20to%20Measure%20Indoor%20Air%20Quality%20%20and%20Ventilation%20Rate.pdf">https://itra.medialabasia.in/data/Documents/HumanSense/publications/SmartVent%20A%20Context%20Aware%20IoT%20System%20to%20Measure%20Indoor%20Air%20Quality%20%20and%20Ventilation%20Rate.pdf</a></li>
-                                        </ul>
-                                    </p>
-                                    <p><b>Sponsor: </b>Probyto<br><b>Location: </b>IIT Guwahati</p>
+                                         src="{% static 'img/portfolio/04-full.jpg' %}" alt=""> -->
+                                    <p>2-week long online interactive data science quizzes will be conducted in late
+                                        march . Thought-provoking relevant questions will encompass numerous fields of
+                                        data science and will serve as an icebreaker for all newbies.
+                                        Final winners of quizzes will be awarded amazon echo dot.</p>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fa fa-mail-reply"></i>
                                         Go Back
@@ -1321,28 +1238,15 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here -->
-                                    <h2 class="text-uppercase">Chatbot assistant for Tourism in North East</h2>
-                                    <!-- <p class="item-intro text-muted">Delve into the Data Science World with a plethora
-                                        of
-                                        resources </p> -->
+                                    <h2 class="text-uppercase">Online Data Science Trivia</h2>
+                                    <p class="item-intro text-muted">Dive into the world of Data Science through online
+                                        interactive quizzes </p>
                                     <!-- <img class="img-fluid d-block mx-auto"
-                                         src="{% static 'img/portfolio/01-full.jpg' %}" alt=""> -->
-                                    <p><b>Background:</b><br>A chat bot is a digital service that can hold natural sounding conversations with human beings with the aim of accomplishing tasks, such as answering questions or enabling product purchases. Powered by a set of simple rules and varying degrees of AI, these bots converse with real people via messaging apps such as Facebook Messenger and Telegram. Though the technology is maturing fast, the use cases still drives the value it creates for its stakeholders. 
-                                    <br>
-                                    As players in a competitive field, travel agencies, hotel booking services, and other businesses built around travel and tourism need to keep assessing their offerings to make sure that they draw and retain enough customers. With travel chatbot development, they can do that and more.
-                                    </p>
-                                    <p><b>Challenge:</b><br>Can you develop a chatbot which can help tourists know more about Assam and North East?
-                                    </p>
-                                    <p><b>Target Users:</b><br>Travel agencies, hotel booking services, and other businesses built around travel and tourism
-                                    </p>
-                                    <p><b>Few resources to refer for more details:</b>
-                                        <ul>
-                                            <li><a href="https://chatbotsmagazine.com/travel-chatbot-how-chatbots-can-help-city-tourism-a2f122c0896d">https://chatbotsmagazine.com/travel-chatbot-how-chatbots-can-help-city-tourism-a2f122c0896d</a></li>
-                                            <li><a href = "https://medium.com/@onlim_com/chatbots-alexa-co-in-the-tourism-industry-8f8fe0d95662">https://medium.com/@onlim_com/chatbots-alexa-co-in-the-tourism-industry-8f8fe0d95662</a></li>
-                                            <li><a href = "https://blogs.msdn.microsoft.com/uk_faculty_connection/2017/09/08/how-to-build-a-chat-bot-using-azure-bot-service-and-train-it-with-luis/">https://blogs.msdn.microsoft.com/uk_faculty_connection/2017/09/08/how-to-build-a-chat-bot-using-azure-bot-service-and-train-it-with-luis/</a></li>
-                                        </ul>
-                                    </p>
-                                    <p><b>Sponsor: </b>Probyto<br><b>Location: </b>IIT Guwahati</p>
+                                         src="{% static 'img/portfolio/04-full.jpg' %}" alt=""> -->
+                                    <p>2-week long online interactive data science quizzes will be conducted in late
+                                        march . Thought-provoking relevant questions will encompass numerous fields of
+                                        data science and will serve as an icebreaker for all newbies.
+                                        Final winners of quizzes will be awarded amazon echo dot.</p>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fa fa-mail-reply"></i>
                                         Go Back
@@ -1369,28 +1273,15 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here -->
-                                    <h2 class="text-uppercase">Alexa or Google based chatbot assistant for Primary education</h2>
-                                    <!-- <p class="item-intro text-muted">Delve into the Data Science World with a plethora
-                                        of
-                                        resources </p> -->
+                                    <h2 class="text-uppercase">Online Data Science Trivia</h2>
+                                    <p class="item-intro text-muted">Dive into the world of Data Science through online
+                                        interactive quizzes </p>
                                     <!-- <img class="img-fluid d-block mx-auto"
-                                         src="{% static 'img/portfolio/01-full.jpg' %}" alt=""> -->
-                                    <p><b>Background:</b><br>A chat bot is a digital service that can hold natural sounding conversations with human beings with the aim of accomplishing tasks, such as answering questions or enabling product purchases. Powered by a set of simple rules and varying degrees of AI, these bots converse with real people via messaging apps such as Facebook Messenger and Telegram. Though the technology is maturing fast, the use cases still drives the value it creates for its stakeholders. 
-                                    <br>
-                                    As players in a competitive field, travel agencies, hotel booking services, and other businesses built around travel and tourism need to keep assessing their offerings to make sure that they draw and retain enough customers. With travel chatbot development, they can do that and more.
-                                    </p>
-                                    <p><b>Challenge:</b><br>Can you develop a chatbot conversing with voice to teach basic mathematics/alphabets to kids?
-                                    </p>
-                                    <p><b>Target Users:</b><br>Primary education, day care, Toy makers
-                                    </p>
-                                    <p><b>Few resources to refer for more details:</b>
-                                        <ul>
-                                            <li><a href="https://developer.amazon.com/alexa-skills-kit/kids">https://developer.amazon.com/alexa-skills-kit/kids</a></li>
-                                            <li><a href = "https://developer.amazon.com/post/Tx1DSINBM8LUNHY/New-Alexa-Skills-Kit-ASK-Feature-Audio-Streaming-in-Alexa-Skills">https://developer.amazon.com/post/Tx1DSINBM8LUNHY/New-Alexa-Skills-Kit-ASK-Feature-Audio-Streaming-in-Alexa-Skills</a></li>
-                                            <li><a href = "https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/rest-overview">https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/rest-overview</a></li>
-                                        </ul>
-                                    </p>
-                                    <p><b>Sponsor: </b>Probyto<br><b>Location: </b>IIT Guwahati</p>
+                                         src="{% static 'img/portfolio/04-full.jpg' %}" alt=""> -->
+                                    <p>2-week long online interactive data science quizzes will be conducted in late
+                                        march . Thought-provoking relevant questions will encompass numerous fields of
+                                        data science and will serve as an icebreaker for all newbies.
+                                        Final winners of quizzes will be awarded amazon echo dot.</p>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fa fa-mail-reply"></i>
                                         Go Back
@@ -1417,26 +1308,15 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here -->
-                                    <h2 class="text-uppercase">Smart plug for energy supply driven by Android app</h2>
-                                    <!-- <p class="item-intro text-muted">Delve into the Data Science World with a plethora
-                                        of
-                                        resources </p> -->
+                                    <h2 class="text-uppercase">Online Data Science Trivia</h2>
+                                    <p class="item-intro text-muted">Dive into the world of Data Science through online
+                                        interactive quizzes </p>
                                     <!-- <img class="img-fluid d-block mx-auto"
-                                         src="{% static 'img/portfolio/01-full.jpg' %}" alt=""> -->
-                                    <p><b>Background:</b><br>Smart outlets either replace a conventional outlet or plugs right into a conventional outlet. These useful products can help prevent vampire power. They are comparatively inexpensive and can reduce your overall power consumption, which is better for your bank balance and the environment. Smart outlets are incredibly easy to use, particularly the plug and go models that simply slot into an existing traditional outlet. This ease of use and low price tag, combined with immediately visible results with the monitoring features, make these smart products a great introduction to smart home technology and a solid foundation to building a smart home.
-                                    </p>
-                                    <p><b>Challenge:</b><br>Can you build a smart plug connected to Android mobile for monitoring energy consumption?
-                                    </p>
-                                    <p><b>Target Users:</b><br>Hospitals, Households, Offices, Industrial Units, Academic campuses and others indoor places
-                                    </p>
-                                    <p><b>Few resources to refer for more details:</b>
-                                        <ul>
-                                            <li><a href="https://www.sciencedirect.com/science/article/pii/S0301421517300393">https://www.sciencedirect.com/science/article/pii/S0301421517300393</a></li>
-                                            <li><a href = "http://www.ti.com/solution/other_building_automation_smart_plug">http://www.ti.com/solution/other_building_automation_smart_plug</a></li>
-                                            <li><a href = "https://www.researchgate.net/publication/283231526_Design_of_Smart_Home_System_Based_on_WiFi_Smart_Plug">https://www.researchgate.net/publication/283231526_Design_of_Smart_Home_System_Based_on_WiFi_Smart_Plug</a></li>
-                                        </ul>
-                                    </p>
-                                    <p><b>Sponsor: </b>Probyto<br><b>Location: </b>IIT Guwahati</p>
+                                         src="{% static 'img/portfolio/04-full.jpg' %}" alt=""> -->
+                                    <p>2-week long online interactive data science quizzes will be conducted in late
+                                        march . Thought-provoking relevant questions will encompass numerous fields of
+                                        data science and will serve as an icebreaker for all newbies.
+                                        Final winners of quizzes will be awarded amazon echo dot.</p>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fa fa-mail-reply"></i>
                                         Go Back
@@ -1463,27 +1343,15 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here -->
-                                    <h2 class="text-uppercase">Facial Image based BMI calculator</h2>
-                                    <!-- <p class="item-intro text-muted">Delve into the Data Science World with a plethora
-                                        of
-                                        resources </p> -->
+                                    <h2 class="text-uppercase">Online Data Science Trivia</h2>
+                                    <p class="item-intro text-muted">Dive into the world of Data Science through online
+                                        interactive quizzes </p>
                                     <!-- <img class="img-fluid d-block mx-auto"
-                                         src="{% static 'img/portfolio/01-full.jpg' %}" alt=""> -->
-                                    <p><b>Background:</b><br>Research in physiology has shown that facial expressions provide a lot of cues to human psychological and physical features.  In today's world where selfie has become common among millennial, a lot of use-cases in recruitment and user tagging are being built. Life Insurance companies require BMI for underwriting life policies, as they are looking for automating underwriting process they want to have approximate BMI by image.
-                                    </p>
-                                    <p><b>Challenge:</b><br>Can you create an application which allow user to take selfie and report the BMI?
-                                    </p>
-                                    <p><b>Target Users:</b><br>State Government, Disaster Management, Public, Media and NGOs
-                                    </p>
-                                    <p><b>Few resources to refer for more details:</b>
-                                        <ul>
-                                            <li><a href="https://arxiv.org/pdf/1703.03156.pdf">https://arxiv.org/pdf/1703.03156.pdf</a></li>
-                                            <li><a href = "https://www.sciencedirect.com/science/article/pii/S0262885613000462">https://www.sciencedirect.com/science/article/pii/S0262885613000462</a></li>
-                                            <li><a href = "http://www.fasebj.org/doi/abs/10.1096/fasebj.31.1_supplement.955.11">http://www.fasebj.org/doi/abs/10.1096/fasebj.31.1_supplement.955.11</a></li>
-                                            <li><a href = "http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0169336&type=printable">http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0169336&type=printable</a></li>
-                                        </ul>
-                                    </p>
-                                    <p><b>Sponsor: </b>Probyto<br><b>Location: </b>IIT Guwahati</p>
+                                         src="{% static 'img/portfolio/04-full.jpg' %}" alt=""> -->
+                                    <p>2-week long online interactive data science quizzes will be conducted in late
+                                        march . Thought-provoking relevant questions will encompass numerous fields of
+                                        data science and will serve as an icebreaker for all newbies.
+                                        Final winners of quizzes will be awarded amazon echo dot.</p>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fa fa-mail-reply"></i>
                                         Go Back
@@ -1510,28 +1378,15 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here -->
-                                    <h2 class="text-uppercase">Fake news detection using web crawled data</h2>
-                                    <!-- <p class="item-intro text-muted">Delve into the Data Science World with a plethora
-                                        of
-                                        resources </p> -->
+                                    <h2 class="text-uppercase">Online Data Science Trivia</h2>
+                                    <p class="item-intro text-muted">Dive into the world of Data Science through online
+                                        interactive quizzes </p>
                                     <!-- <img class="img-fluid d-block mx-auto"
-                                         src="{% static 'img/portfolio/01-full.jpg' %}" alt=""> -->
-                                    <p><b>Background:</b><br>Fake news is a piece of news/source that intentionally fabricate information, circulate deceptive information and content, or grossly distort actual news reports. Fake news is information that has no factual basis or information that is fabricated by those who do not have the appropriate credentials to be writing news stories. In recent days, social media has been hijacked by people/groups running propaganda for malignant motives. The information is being created to lure unaware netizens to believe and react to news and information which is not factual. The situation has become so alarming that now social media have taken cognizance of this and working to eradicate it completely. The fake news detection algorithm is being developed by incorporating algorithms using latest research done in the area of association rule mining, graph databases, and block chain based validation techniques. The core challenge for measuring the authenticity of any news items circulated in social media is that there is no gold standard for right information. In absence of any such standard, the data science algorithms have to rely on collective knowledge of trusted sources. The algorithms are unable to provide a black and white answer but validating the information from various sources does provide an opportunity to filter information.
-                                    </p>
-                                    <p><b>Challenge:</b><br>Can you create an application to give credibility score to a news article, hence flagging news having unverified facts?
-                                    </p>
-                                    <p><b>Target Users:</b><br>Social media, electronic media, law enforcement, news agencies
-                                    </p>
-                                    <p><b>Few resources to refer for more details:</b>
-                                        <ul>
-                                            <li><a href="http://www.fakenewschallenge.org/">http://www.fakenewschallenge.org/</a></li>
-                                            <li><a href = "http://www.kdd.org/exploration_files/19-1-Article2.pdf">http://www.kdd.org/exploration_files/19-1-Article2.pdf</a></li>
-                                            <li><a href = "https://www.kdnuggets.com/2017/10/guide-fake-news-detection-social-media.html">https://www.kdnuggets.com/2017/10/guide-fake-news-detection-social-media.html</a></li>
-                                            <li><a href = "https://web.stanford.edu/class/cs224n/reports/2710385.pdf">https://web.stanford.edu/class/cs224n/reports/2710385.pdf</a></li>
-                                            <li><a href = "https://towardsdatascience.com/i-trained-fake-news-detection-ai-with-95-accuracy-and-almost-went-crazy-d10589aa57c">https://towardsdatascience.com/i-trained-fake-news-detection-ai-with-95-accuracy-and-almost-went-crazy-d10589aa57c</a></li>
-                                        </ul>
-                                    </p>
-                                    <p><b>Sponsor: </b>Probyto<br><b>Location: </b>IIT Guwahati</p>
+                                         src="{% static 'img/portfolio/04-full.jpg' %}" alt=""> -->
+                                    <p>2-week long online interactive data science quizzes will be conducted in late
+                                        march . Thought-provoking relevant questions will encompass numerous fields of
+                                        data science and will serve as an icebreaker for all newbies.
+                                        Final winners of quizzes will be awarded amazon echo dot.</p>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fa fa-mail-reply"></i>
                                         Go Back
@@ -1558,27 +1413,15 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here -->
-                                    <h2 class="text-uppercase">Breaking news detection from crawling web data</h2>
-                                    <!-- <p class="item-intro text-muted">Delve into the Data Science World with a plethora
-                                        of
-                                        resources </p> -->
+                                    <h2 class="text-uppercase">Online Data Science Trivia</h2>
+                                    <p class="item-intro text-muted">Dive into the world of Data Science through online
+                                        interactive quizzes </p>
                                     <!-- <img class="img-fluid d-block mx-auto"
-                                         src="{% static 'img/portfolio/01-full.jpg' %}" alt=""> -->
-                                    <p><b>Background:</b><br>Internet has been used as one of the communication channels for spreading breaking news. There are method to collect, group, rank and track breaking news in Social Media. Current detection method is limited to facts part of messages. Users can discover breaking news from the Twitter timeline. Each story is provided with the information of message originator, story development and activity chart. This provides a convenient way for people to follow breaking news and stay informed with real-time updates.
-                                    </p>
-                                    <p><b>Challenge:</b><br>Can you develop an application using social media data to discover breaking news?
-                                    </p>
-                                    <p><b>Target Users:</b><br>Social media, electronic media, law enforcement, news agencies 
-                                    </p>
-                                    <p><b>Few resources to refer for more details:</b>
-                                        <ul>
-                                            <li><a href="https://www.researchgate.net/publication/221156676_Breaking_News_Detection_and_Tracking_in_Twitter">https://www.researchgate.net/publication/221156676_Breaking_News_Detection_and_Tracking_in_Twitter</a></li>
-                                            <li><a href = "https://github.com/fhamborg/news-please">https://github.com/fhamborg/news-please</a></li>
-                                            <li><a href = "https://www.botify.com/blog/breaking-news-botify-announces-javascript-crawl/">https://www.botify.com/blog/breaking-news-botify-announces-javascript-crawl/</a></li>
-                                            <li><a href = "https://webhose.io/data-feeds/news-api/">https://webhose.io/data-feeds/news-api/</a></li>
-                                        </ul>
-                                    </p>
-                                    <p><b>Sponsor: </b>Probyto<br><b>Location: </b>IIT Guwahati</p>
+                                         src="{% static 'img/portfolio/04-full.jpg' %}" alt=""> -->
+                                    <p>2-week long online interactive data science quizzes will be conducted in late
+                                        march . Thought-provoking relevant questions will encompass numerous fields of
+                                        data science and will serve as an icebreaker for all newbies.
+                                        Final winners of quizzes will be awarded amazon echo dot.</p>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fa fa-mail-reply"></i>
                                         Go Back
@@ -1605,29 +1448,15 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here -->
-                                    <h2 class="text-uppercase">Assaying and grading of fruits for e-procurement</h2>
-                                    <!-- <p class="item-intro text-muted">Delve into the Data Science World with a plethora
-                                        of
-                                        resources </p> -->
+                                    <h2 class="text-uppercase">Online Data Science Trivia</h2>
+                                    <p class="item-intro text-muted">Dive into the world of Data Science through online
+                                        interactive quizzes </p>
                                     <!-- <img class="img-fluid d-block mx-auto"
-                                         src="{% static 'img/portfolio/01-full.jpg' %}" alt=""> -->
-                                    <p><b>Background:</b><br>Electronic National Agriculture Market (eNAM) is a virtual market with a physical market (mandi) at the back end, which networks the existing APMC/mandis to create a unified national market for agricultural commodities for pan-India electronic trading. The assaying of agricultural produce at the market level is of utmost importance to enhance the marketability of the produce and to enable the farmers to realize price commensurate to the quality of their agricultural produce. 
-                                    <br>
-                                    Mandis handles huge volumes (lots) of arrival and smaller lots, hence it is essential to provide quick quality assaying solutions (preferably within a minute/ parameter) to promote online trading.
-                                    </p>
-                                    <p><b>Challenge:</b><br>Can you develop an application based on IoT (Computer Vision) for quick grading & assaying solution for fruits (e.g., Apple or orange) which can also be connected to the internet to increase the efficiency of the agricultural chain?
-                                    </p>
-                                    <p><b>Target Users:</b><br>Farmer, procurement mandis, storage houses, food companies
-                                    </p>
-                                    <p><b>Few resources to refer for more details:</b>
-                                        <ul>
-                                            <li><a href="https://www.sciencedirect.com/science/article/pii/S2214317316300385">https://www.sciencedirect.com/science/article/pii/S2214317316300385</a></li>
-                                            <li><a href = "https://pdfs.semanticscholar.org/4aa0/a0cdfe036b512b9c6a0e9f34c7f47382a27d.pdf">https://pdfs.semanticscholar.org/4aa0/a0cdfe036b512b9c6a0e9f34c7f47382a27d.pdf</a></li>
-                                            <li><a href = "http://pubs.ub.ro/dwnl.php?id=CSCC6201601V01S01A0008">http://pubs.ub.ro/dwnl.php?id=CSCC6201601V01S01A0008</a></li>
-                                            <li><a href = "http://tmu.ac.in/college-of-computing-sciences-and-it/wp-content/uploads/sites/17/2016/10/CCSIT114.pdf">http://tmu.ac.in/college-of-computing-sciences-and-it/wp-content/uploads/sites/17/2016/10/CCSIT114.pdf</a></li>
-                                        </ul>
-                                    </p>
-                                    <p><b>Sponsor: </b>Probyto<br><b>Location: </b>IIT Guwahati</p>
+                                         src="{% static 'img/portfolio/04-full.jpg' %}" alt=""> -->
+                                    <p>2-week long online interactive data science quizzes will be conducted in late
+                                        march . Thought-provoking relevant questions will encompass numerous fields of
+                                        data science and will serve as an icebreaker for all newbies.
+                                        Final winners of quizzes will be awarded amazon echo dot.</p>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fa fa-mail-reply"></i>
                                         Go Back
@@ -1654,29 +1483,15 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here -->
-                                    <h2 class="text-uppercase">Create connected graph for students to discover connected insights</h2>
-                                    <!-- <p class="item-intro text-muted">Delve into the Data Science World with a plethora
-                                        of
-                                        resources </p> -->
+                                    <h2 class="text-uppercase">Online Data Science Trivia</h2>
+                                    <p class="item-intro text-muted">Dive into the world of Data Science through online
+                                        interactive quizzes </p>
                                     <!-- <img class="img-fluid d-block mx-auto"
-                                         src="{% static 'img/portfolio/01-full.jpg' %}" alt=""> -->
-                                    <p><b>Background:</b><br>We all aspire to be something in life, follow some role models and want to achieve something big. All these aspirations are connected to the individuals schooling, graduation, industry experience and so on. The ability to acquire a skill and prove it relevant to land in a dream job is always a challenge. Discovering talent and identifying the most suitable job are two sides of the same coin. Talent Map is built on powerful graph databases which could explore some hidden connections between a person and a company. Graph databases traverse the intricate connections between profiles and help in coming out with not only matching a person to a job but could be used in various use-cases for career development.  Think of, if somebody could tell you "10 skills to acquire to land a dream job in Google" or "Best institutes to get trained as a fashion designer".
-                                    <br>
-                                    In a connected world, storing massive details around interconnections between various entities is computationally costly in the traditional Relational Database Management System (RDBMS) and offers very little intelligence for any analytics capability. This brings us to graph databases, which are from a NoSQL parlance, overcoming the challenges of RDBMS. The relation between two entities is found through an efficient graph traversal algorithm rather than database queries which are based on execution plans.
-                                    </p>
-                                    <p><b>Challenge:</b><br>Can you develop an application to collect data and populate connected graph using neo4j/titan to discover insights from connected data?
-                                    </p>
-                                    <p><b>Target Users:</b><br>Human Resource Management, Recruitment, Competency maps, Project allocation and skill development programs
-                                    </p>
-                                    <p><b>Few resources to refer for more details:</b>
-                                        <ul>
-                                            <li><a href="https://www.wired.com/insights/2014/11/graph-databases-recruiting/">https://www.wired.com/insights/2014/11/graph-databases-recruiting/</a></li>
-                                            <li><a href = "http://blog.bruggen.com/2014/09/graphs-for-hr-analytics.html">http://blog.bruggen.com/2014/09/graphs-for-hr-analytics.html</a></li>
-                                            <li><a href = "https://graphaware.com/neo4j/2016/07/19/neo4j-key-human-capital-people-hcm.html">https://graphaware.com/neo4j/2016/07/19/neo4j-key-human-capital-people-hcm.html</a></li>
-                                            <li><a href = "https://linkurio.us/blog/hr-analytics-graphs-match-person-job/">https://linkurio.us/blog/hr-analytics-graphs-match-person-job/</a></li>
-                                        </ul>
-                                    </p>
-                                    <p><b>Sponsor: </b>Probyto<br><b>Location: </b>IIT Guwahati</p>
+                                         src="{% static 'img/portfolio/04-full.jpg' %}" alt=""> -->
+                                    <p>2-week long online interactive data science quizzes will be conducted in late
+                                        march . Thought-provoking relevant questions will encompass numerous fields of
+                                        data science and will serve as an icebreaker for all newbies.
+                                        Final winners of quizzes will be awarded amazon echo dot.</p>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fa fa-mail-reply"></i>
                                         Go Back
@@ -1703,30 +1518,15 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here -->
-                                    <h2 class="text-uppercase">Digital election based on Blockchain technology</h2>
-                                    <!-- <p class="item-intro text-muted">Delve into the Data Science World with a plethora
-                                        of
-                                        resources </p> -->
+                                    <h2 class="text-uppercase">Online Data Science Trivia</h2>
+                                    <p class="item-intro text-muted">Dive into the world of Data Science through online
+                                        interactive quizzes </p>
                                     <!-- <img class="img-fluid d-block mx-auto"
-                                         src="{% static 'img/portfolio/01-full.jpg' %}" alt=""> -->
-                                    <p><b>Background:</b><br>Since the dawn of democracy, elections throughout the world have been plagued with accusations of illegitimacy. As democratic societies across the globe are beginning to adopt technology to improve the efficiency of the election process, many people are discovering that certain types of technology can be extremely vulnerable, which may have the potential to unfairly influence the outcome of elections.
-                                    <br>
-                                    Using blockchain technology, we will be able to gain transparency into our elections, without compromising voter privacy, and have a way to mathematically prove that the elections results are accurate.  Also, at the voter’s request, there would even be a way to allow a voter to cast their vote online in an election and follow their vote into the ballot box to ensure that their vote was safely and securely stored without being changed or altered in any way. 
-                                    </p>
-                                    <p><b>Challenge:</b><br>Can you develop an online voting application based in blockchain?
-                                    </p>
-                                    <p><b>Target Users:</b><br>Electoral agencies, Governments, Corporate bodies, student bodies
-                                    </p>
-                                    <p><b>Few resources to refer for more details:</b>
-                                        <ul>
-                                            <li><a href="https://followmyvote.com/">https://followmyvote.com/</a></li>
-                                            <li><a href = "https://docs.polys.me/technology">https://docs.polys.me/technology</a></li>
-                                            <li><a href = "http://bitcoin-class.org/presentations/Blockchain_Voting.pdf">http://bitcoin-class.org/presentations/Blockchain_Voting.pdf</a></li>
-                                            <li><a href = "https://hackernoon.com/blockchain-for-voting-and-elections-9888f3c8bf72">https://hackernoon.com/blockchain-for-voting-and-elections-9888f3c8bf72</a></li>
-                                            <li><a href = "http://www.europarl.europa.eu/RegData/etudes/ATAG/2016/581918/EPRS_ATA%282016%29581918_EN.pdf">http://www.europarl.europa.eu/RegData/etudes/ATAG/2016/581918/EPRS_ATA%282016%29581918_EN.pdf</a></li>
-                                        </ul>
-                                    </p>
-                                    <p><b>Sponsor: </b>Probyto<br><b>Location: </b>IIT Guwahati</p>
+                                         src="{% static 'img/portfolio/04-full.jpg' %}" alt=""> -->
+                                    <p>2-week long online interactive data science quizzes will be conducted in late
+                                        march . Thought-provoking relevant questions will encompass numerous fields of
+                                        data science and will serve as an icebreaker for all newbies.
+                                        Final winners of quizzes will be awarded amazon echo dot.</p>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fa fa-mail-reply"></i>
                                         Go Back
@@ -1753,30 +1553,15 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here -->
-                                    <h2 class="text-uppercase">Computer vision & Deep learning to deliver Telemedicine solution in Dermatology</h2>
-                                    <!-- <p class="item-intro text-muted">Delve into the Data Science World with a plethora
-                                        of
-                                        resources </p> -->
+                                    <h2 class="text-uppercase">Online Data Science Trivia</h2>
+                                    <p class="item-intro text-muted">Dive into the world of Data Science through online
+                                        interactive quizzes </p>
                                     <!-- <img class="img-fluid d-block mx-auto"
-                                         src="{% static 'img/portfolio/01-full.jpg' %}" alt=""> -->
-                                    <p><b>Background:</b><br>Now a day, skin diseases are mostly found in animals, humans and plants. A skin disease is a particular kind of illness caused by bacteria or an infection. These diseases like alopecia, ringworm, yeast infection, brown spot, allergies, eczema etc. have various dangerous effects on the skin and keep on spreading over time. It becomes important to identify these diseases at their initial stage to control it from spreading. These diseases are identified by using many technologies such as image processing, data mining, artificial neural network (ANN) etc. Recently, image processing has played a major role in this area of research and has widely used for the detection of skin diseases. 
-                                    <br>
-                                    Techniques like filtering, segmentation, feature extraction, image pre-processing and edge detection etc. are part of image processing and are used to identify the part affected by disease, the form of affected area, its affected area color etc. This paper presents a survey of various skin disease diagnosis systems using image processing techniques in recent times.
-                                    </p>
-                                    <p><b>Challenge:</b><br>Can you develop an computer vision based technique to provide preliminary identification of skin disease? 
-                                    </p>
-                                    <p><b>Target Users:</b><br>Hospitals, Primary Healthcare, Veterinary hospitals, botany and other healthcare related to dermatology
-                                    </p>
-                                    <p><b>Few resources to refer for more details:</b>
-                                        <ul>
-                                            <li><a href="http://ieeexplore.ieee.org/document/8093746/">http://ieeexplore.ieee.org/document/8093746/</a></li>
-                                            <li><a href = "https://pdfs.semanticscholar.org/6984/d88a95ffe9afddd0718a56e1baa34e801c8b.pdf">https://pdfs.semanticscholar.org/6984/d88a95ffe9afddd0718a56e1baa34e801c8b.pdf</a></li>
-                                            <li><a href = "https://pdfs.semanticscholar.org/70c7/ef3e12d648aa978c1badc5fc47fac740458d.pdf">https://pdfs.semanticscholar.org/70c7/ef3e12d648aa978c1badc5fc47fac740458d.pdf</a></li>
-                                            <li><a href = "https://arxiv.org/ftp/arxiv/papers/1609/1609.03277.pdf">https://arxiv.org/ftp/arxiv/papers/1609/1609.03277.pdf</a></li>
-                                            <li><a href = "https://www.researchgate.net/publication/283878737_Dermatological_disease_detection_using_image_processing_and_artificial_neural_network">https://www.researchgate.net/publication/283878737_Dermatological_disease_detection_using_image_processing_and_artificial_neural_network</a></li>
-                                        </ul>
-                                    </p>
-                                    <p><b>Sponsor: </b>Probyto<br><b>Location: </b>IIT Guwahati</p>
+                                         src="{% static 'img/portfolio/04-full.jpg' %}" alt=""> -->
+                                    <p>2-week long online interactive data science quizzes will be conducted in late
+                                        march . Thought-provoking relevant questions will encompass numerous fields of
+                                        data science and will serve as an icebreaker for all newbies.
+                                        Final winners of quizzes will be awarded amazon echo dot.</p>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fa fa-mail-reply"></i>
                                         Go Back
@@ -1803,29 +1588,15 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here -->
-                                    <h2 class="text-uppercase">Smart Interview driven by AI to speed up recruitment</h2>
-                                    <!-- <p class="item-intro text-muted">Delve into the Data Science World with a plethora
-                                        of
-                                        resources </p> -->
+                                    <h2 class="text-uppercase">Online Data Science Trivia</h2>
+                                    <p class="item-intro text-muted">Dive into the world of Data Science through online
+                                        interactive quizzes </p>
                                     <!-- <img class="img-fluid d-block mx-auto"
-                                         src="{% static 'img/portfolio/01-full.jpg' %}" alt=""> -->
-                                    <p><b>Background:</b><br>Many times, as a recruiter, you'll find both active and passive candidates who fulfill a job description. Some problems arise when the candidate must go to the office to conduct an interview with the recruiter. The main issues are related to distance and transportation. Also, if we are dealing with a passive candidate who already has a job, conducting an interview is almost impossible. If you can reach them, you need to provide some facilities to proceed with the interview.
-                                    <br>
-                                    While above situation describes time flexibility for interview, this system can save lot of cost and help do initial screening beyond resumes.
-                                    </p>
-                                    <p><b>Challenge:</b><br>Can you develop an AI driven HR for a basic interview? 
-                                    </p>
-                                    <p><b>Target Users:</b><br>Recruitment, Placement agencies, HR consultancy firms, employment platforms
-                                    </p>
-                                    <p><b>Few resources to refer for more details:</b>
-                                        <ul>
-                                            <li><a href="https://dzone.com/articles/smart-interview-a-new-way-for-recruiting-candidate">https://dzone.com/articles/smart-interview-a-new-way-for-recruiting-candidate</a></li>
-                                            <li><a href = "https://nypost.com/2017/12/04/ai-already-reads-your-resume-now-its-going-to-interview-you-too/">https://nypost.com/2017/12/04/ai-already-reads-your-resume-now-its-going-to-interview-you-too/</a></li>
-                                            <li><a href = "https://glider.ai/">https://glider.ai/</a></li>
-                                            <li><a href = "https://www.hirevue.com/">https://www.hirevue.com/</a></li>
-                                        </ul>
-                                    </p>
-                                    <p><b>Sponsor: </b>Probyto<br><b>Location: </b>IIT Guwahati</p>
+                                         src="{% static 'img/portfolio/04-full.jpg' %}" alt=""> -->
+                                    <p>2-week long online interactive data science quizzes will be conducted in late
+                                        march . Thought-provoking relevant questions will encompass numerous fields of
+                                        data science and will serve as an icebreaker for all newbies.
+                                        Final winners of quizzes will be awarded amazon echo dot.</p>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fa fa-mail-reply"></i>
                                         Go Back
@@ -1852,27 +1623,15 @@
                             <div class="col-lg-8 mx-auto">
                                 <div class="modal-body">
                                     <!-- Project Details Go Here -->
-                                    <h2 class="text-uppercase">Smart Cop to detect and fine traffic violations on road</h2>
-                                    <!-- <p class="item-intro text-muted">Delve into the Data Science World with a plethora
-                                        of
-                                        resources </p> -->
+                                    <h2 class="text-uppercase">Online Data Science Trivia</h2>
+                                    <p class="item-intro text-muted">Dive into the world of Data Science through online
+                                        interactive quizzes </p>
                                     <!-- <img class="img-fluid d-block mx-auto"
-                                         src="{% static 'img/portfolio/01-full.jpg' %}" alt=""> -->
-                                    <p><b>Background:</b><br>Dangerous lane changing, illegal overtaking, and driving in the wrong lane account for a high percentage of the total accidents that occur on the road, second only to accidents due to over-speeding. Automated traffic applications typically encompass the detection and segmentation of moving vehicles as a crucial process. Background subtraction and shadow detection are amongst the most challenging tasks involved in the segmentation of foreground blobs in dynamic environments. An effective balance between accuracy and speed is required to process a continuous feed of high resolution images from multiple cameras. Police Eyes is a mobile, real-time traffic surveillance system we have developed to enable automatic detection of traffic violations. Police Eyes would be useful to police for enforcing traffic laws and would also increase compliance with traffic laws even in the absence of police. The system detects illegal crossings of solid lines using image processing and efficient computer vision techniques on image sequences acquired from IP cameras. The automatic solid line crossing detection system can be used at locations where the traffic violations are notoriously high and are known to create traffic congestion and avoidable accidents. The system can be installed on an embankment, at an intersection area, at a lane change restriction area, at a no parking area or anywhere there is an observed pattern of drivers intentionally violating traffic laws. We have installed the system in an industrial grade embedded PC and deployed it in a police mannequin. Results of an empirical field evaluation show that the system performs well in a variety of real-world traffic scenes.
-                                    </p>
-                                    <p><b>Challenge:</b><br>Can you develop an application using in video/cctv feed to detect traffic violation and send an fine to vehicle owner?
-                                    </p>
-                                    <p><b>Target Users:</b><br>Traffic police, law and order enforcements, revenue departments
-                                    </p>
-                                    <p><b>Few resources to refer for more details:</b>
-                                        <ul>
-                                            <li><a href="https://www.sciencedirect.com/science/article/pii/000368709190159F">https://www.sciencedirect.com/science/article/pii/000368709190159F</a></li>
-                                            <li><a href = "http://ieeexplore.ieee.org/document/6559635/">http://ieeexplore.ieee.org/document/6559635/</a></li>
-                                            <li><a href = "https://patents.google.com/patent/US20120148092A1/en">https://patents.google.com/patent/US20120148092A1/en</a></li>
-                                            <li><a href = "http://www.iject.org/vol73/27-harwinder-singh.pdf">http://www.iject.org/vol73/27-harwinder-singh.pdf</a></li>
-                                        </ul>
-                                    </p>
-                                    <p><b>Sponsor: </b>Probyto<br><b>Location: </b>IIT Guwahati</p>
+                                         src="{% static 'img/portfolio/04-full.jpg' %}" alt=""> -->
+                                    <p>2-week long online interactive data science quizzes will be conducted in late
+                                        march . Thought-provoking relevant questions will encompass numerous fields of
+                                        data science and will serve as an icebreaker for all newbies.
+                                        Final winners of quizzes will be awarded amazon echo dot.</p>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fa fa-mail-reply"></i>
                                         Go Back
