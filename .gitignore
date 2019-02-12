@@ -20,4 +20,4 @@ tests/.coverage
 build/
 tests/report/
 .idea/
-venv/
+venv/*.sqlite3

@@ -182,13 +182,13 @@
                         </li>    
                     {% endif %}
 
-                    <li class="nav-item">
+ <!--                   <li class="nav-item">
                         <a class="nav-link" style="text-decoration: none" href="{% url 'dimension:home' %}">
                             <i class="now-ui-icons files_paper"></i>
                             <p>Dimension</p>
                         </a>
                     </li>
-                   
+    -->               
                     <li class="nav-item">
                         <a class="nav-link" style="text-decoration: none" href="{% url 'home:events' %}">
                             <i class="icon now-ui-icons fa-calendar"></i>
@@ -201,6 +201,7 @@
                             <p>Team</p>
                         </a>
                     </li>
+
                     <!-- <li class="nav-item">
                         <a class="nav-link" data-placement="bottom" href="{% url 'home:home' %}">
                             <i class="fa fa-twitter"></i>
@@ -268,7 +269,7 @@
               <h3>Quick links</h3>
               <ul class = "alt">
                 <li><a href="https://www.iitg.ernet.in/maths/" target="_blank"> Department of Maths, IITG</a> </li>
-                <li><a href="{% url 'dimension:home' %}"> Dimension </a></li>
+                <!--<li><a href="{% url 'dimension:home' %}"> Dimension </a></li>-->
                 <li><a href="{% url 'home:events' %}"> Event Calendar </a></li>
             </section>
             <section>
@@ -350,5 +351,6 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
+{% block script %}{% endblock %}
     </body>
 </html>

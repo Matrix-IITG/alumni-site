@@ -7,6 +7,9 @@ urlpatterns=[
     url(r'^events/$', views.events, name='events'),
     url(r'^about/$', views.about_us, name='about_us'),
     url(r'^team/$', views.team, name='team'),
+    url(r'^question/$', views.question, name='question'),
+    #url(r'^login/$', views.hometry, name='login_ms'),
+    #url(r'^gettoken/$', views.gettoken, name='gettoken'),
 
     #url(r'^accounts/login/$',views.register,name='register'),
     url(r'^accounts/register/$', views.register, name='register'),
