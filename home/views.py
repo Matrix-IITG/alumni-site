@@ -1,7 +1,8 @@
 import urllib3
+import time
 
 from django.contrib.auth.decorators import login_required, permission_required
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, get_object_or_404, redirect , HttpResponse
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import Group, User
 
@@ -16,6 +17,11 @@ from django.utils import timezone
 #from selenium import webdriver
 import bs4 as bs
 import urllib3
+#import pyrebase
+from home.authhelper import get_signin_url, get_token_from_code, get_access_token
+from home.outlookservice import get_me
+from django.urls import reverse
+
 # Create your views here.
 def home(request):
     return render(request,'home/index.html')
@@ -26,6 +32,61 @@ def team(request):
 def events(request):
     return render(request,'home/events.html')
 
+def question(request):
+    return render(request,'home/question.html')
+
+def hometry(request):
+  redirect_uri = request.build_absolute_uri(reverse('home:gettoken'))
+  sign_in_url = get_signin_url(redirect_uri)
+  return HttpResponse('<a href="' + sign_in_url +'">Click here to sign in and view your mail</a>')
+
+def gettoken(request):
+  auth_code = request.GET['code']
+  redirect_uri = request.build_absolute_uri(reverse('home:gettoken'))
+  token = get_token_from_code(auth_code, redirect_uri)
+  access_token = token['access_token']
+  user = get_me(access_token)
+  refresh_token = token['refresh_token']
+  expires_in = token['expires_in']
+
+  # expires_in is in seconds
+  # Get current timestamp (seconds since Unix Epoch) and
+  # add expires_in to get expiration time
+  # Subtract 5 minutes to allow for clock differences
+  expiration = int(time.time()) + expires_in - 300
+
+  # Save the token in the session
+  request.session['access_token'] = access_token
+  request.session['refresh_token'] = refresh_token
+  request.session['token_expires'] = expiration
+  return HttpResponse('User: {0}, Access token: {1}'.format(user['mail'], access_token))
+
+
+'''
+config = {
+    'apiKey': "AIzaSyD6nWjooy2i_KwbCh79nULmmLivqwES2SU",
+    'authDomain': "matrix-16ca4.firebaseapp.com",
+    'databaseURL': "https://matrix-16ca4.firebaseio.com",
+    'projectId': "matrix-16ca4",
+    'storageBucket': "matrix-16ca4.appspot.com",
+    'messagingSenderId': "497393251946"
+}
+
+firebase = pyrebase.initialize_app(config)
+auth = firebase.auth()
+def singIn(request):
+    return render(request, "signIn.html")
+def postsign(request):
+    email=request.POST.get('email')
+    passw = request.POST.get("pass")
+    try:
+        user = auth.sign_in_with_email_and_password(email,passw)
+    except:
+        message = "invalid cerediantials"
+        return render(request,"signIn.html",{"msg":message})
+    print(user)
+    return render(request, "welcome.html",{"e":email})
+'''
 
 ########### views for user accounts
 def register(request):
