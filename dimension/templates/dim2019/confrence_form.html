@@ -1,0 +1,77 @@
+{%extends 'dim2019/layouts/blank_master.html'%}
+{%load static%}
+{%block title%}Registration | Confrence{%endblock%}
+{%block content%}
+<div class="margin-auto text-center">
+	<img src="/static/img/dim.png" style="width:140px" alt="Dimension Logo"/>
+</div>
+<br>
+<div class="row" style="margin-left:0px; margin-right: 0px;">
+	<div class="col-md-3"></div>
+	<div class="col-xs-12 col-md-6">
+		<div class="card">
+
+			<div class="card-body card-block">
+				<form action="#" method="post" enctype="multipart/form-data" class="form-horizontal">
+					
+
+					{%csrf_token%}
+
+					<div class="row form-group">
+						<div class="col col-md-3"><label for="id_name" class=" form-control-label">Name</label></div>
+						<div class="col-12 col-md-9"><input type="name" id="id_name" name="email" placeholder="" class="form-control" required></div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col col-md-3"><label for="id_email" class=" form-control-label">Email Address</label></div>
+						<div class="col-12 col-md-9"><input type="email" id="id_email" name="email" placeholder="Enter Email" class="form-control" required><small class="help-block form-text">Please enter your email</small></div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col col-md-3"><label for="id_contact" class=" form-control-label">Contact</label></div>
+						<div class="col-12 col-md-9 input-group">
+							
+							<input type="text" max-length="10" id="id_contact" name="contact" placeholder="Enter Here" class="form-control" required>
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col col-md-3"><label for="id_college" class=" form-control-label">College</label></div>
+						<div class="col-12 col-md-9"><input type="text" id="id_college" name="college" placeholder="Enter your College name" class="form-control" required></div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col col-md-3"><label for="id_state" class=" form-control-label">State</label></div>
+						<div class="col-12 col-md-9"><input type="text"  id="id_state" name="state" class="form-control" required></div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col col-md-3"><label for="id_city" class=" form-control-label">City:</label></div>
+						<div class="col-12 col-md-9"><input type="text" id="id_city" name="city" placeholder="Enter Here" class="form-control" required></div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col col-md-3"><label for="id_transaction" class=" form-control-label">Transaction ID:</label></div>
+						<div class="col-12 col-md-9"><input type="text" id="id_transaction" name="transaction" placeholder="Enter Here" class="form-control" required></div>
+					</div>
+
+					
+
+					<div class="row">
+					<div class="col-xs-3 col-sm-3"></div>
+					<div class="col-xs-6 col-sm-6 text-center">
+						<button type="submit" name="submit" class="btn btn-success">Submit</button>
+					</div>
+					<div class="col-xs-3 col-sm-3"></div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3"></div>
+</div>
+{%endblock%}
+
+{%block script%}
+
+{%endblock%}

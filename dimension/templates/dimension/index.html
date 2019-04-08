@@ -37,6 +37,15 @@
         <!-- Custom styles for this template -->
         <link href="{% static 'css/agency.css' %}" rel="stylesheet">
         <link href="{% static 'css/agency.min.css' %}" rel="stylesheet">
+
+        <style type="text/css">
+            .container{
+                overflow-x: hidden;
+            }
+        </style>
+
+       
+
     {% endblock %}
 
     {% block body %}
@@ -62,12 +71,14 @@
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="#portfolio">Events</a>
                         </li>
+                        <!--
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="#about">Timeline</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="#team">Team</a>
                         </li>
+                    -->
                     </ul>
                 </div>
             </div>
@@ -80,16 +91,15 @@
                     <!-- <div class="intro-lead-in">Matrix presents</div> -->
                     <img width = "200px" height = "200px" src = "{% static 'assets/img/matrix1.png' %}"></img>
                     <!-- <h1>MATRIX</h1> -->
-                    <h5 style = "bottom: 8px; left: 16px;font-weight: normal; font-style: italic;">presents</h5>
+                    <h5 style = "bottom: 8px; left: 16px;font-weight: normal;">presents</h5>
                     <!-- <img height = "200px" src = "{% static 'img/logo_dimension.png' %}" alt = "logo"></img> -->
-                    <div class="intro-heading text-uppercase">Dimension 2018</div>
-                    <a class="top-left btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Learn More</a>
+                    <div class="intro-heading text-uppercase">Dimension</div>
                 </div>
             </div>
         </header>
 
         <!-- Services -->
-        <section id="services">
+        <section id="services" style="background-color: black; color: white;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
@@ -99,36 +109,26 @@
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-lightbulb-o fa-stack-1x fa-inverse"></i>
-            </span>
-                        <h4 class="service-heading">Ideate</h4>
-                        <p class="text-muted">Dimension involves fostering creativity among students and nurturing good
-                            ideas.</p>
+                            <div id="anime" style="padding: 100px;"></div>
+                            <h4>INNOVATON</h4>
                     </div>
+                
                     <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-users fa-stack-1x fa-inverse"></i>
-            </span>
-                        <h4 class="service-heading">Interact</h4>
-                        <p class="text-muted">Interacting with alumni and distinguished guests is a major attraction</p>
+                            <div id="wallet" style="padding: 100px;"></div>
+                            <h4>NETWORKING</h4>
                     </div>
+                
                     <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-line-chart fa-stack-1x fa-inverse"></i>
-            </span>
-                        <h4 class="service-heading">Innovate</h4>
-                        <p class="text-muted">Dimension gives you a platform to innovate and incorporate .</p>
+                            <div id="finance" style="padding: 100px;"></div>
+                            <h4>FINANCE</h4>
                     </div>
+                
                 </div>
             </div>
         </section>
 
         <!-- Portfolio Grid -->
-        <section class="bg-light" id="portfolio">
+        <section id="portfolio" style="background-color: black; color: white;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
@@ -136,34 +136,24 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 col-sm-6 portfolio-item">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="{% static 'img/bootcamp.jpg' %}" alt="">
-                        </a>
-                        <div class="portfolio-caption">
-                            <h4>Data Science BootCamp</h4>
-                            <p class="text-muted">Delve into the Big Data World with a plethora of resources.</p>
-                        </div>
+                    <div class="col-md-6 col-sm-6 portfolio-item" id="latex" style="padding: 100px; overflow-x: hidden;">
                     </div>
                     <div class="col-md-6 col-sm-6 portfolio-item">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                    <i class="fa fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="{% static 'img/code.jpg' %}" alt="">
-                        </a>
-                        <div class="portfolio-caption">
-                            <h4>HackOverflow</h4>
-                            <p class="text-muted">Incubate to Innovate - Enabling ideas to grow.</p>
+                        <div class="text-center">
+                            <h3>LATEX WORKSHOP</h3>
+                            <br>
+                            <p class="text-left">
+                                Matrix presents “DIMENSION 2019” in association with SIAM. This time we have got this chance to organize “LATEX WORKSHOP” for the students of NORTH-EAST. We have one of the experienced Research Scholar of IIT Guwahati Mr Rakesh Jana from Department of Mathematics who is going to conduct this Workshop.<br>
+
+                                This is the golden opportunity for you all to add something extra to your skill set which will be the difference among you and others. We are hoping a large number of students to turn up but we have limited space so hurry up !!!<br>
+                            </p>
+                                    <a href="https://tinyurl.com/dimension-latex" class="btn btn-success"> REGISTER </a> 
+                            
                         </div>
                     </div>
+                    <div class="col-md-12 col-sm-12 portfolio-item" id="soon" style="padding: 200px;">
+                    </div>
+                    <!--
                     <div class="col-md-6 col-sm-6 portfolio-item">
                         <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
                             <div class="portfolio-hover">
@@ -173,7 +163,7 @@
                             </div>
                             <img class="img-fluid" src="{% static 'img/lecseries.jpg' %}" alt="">
                         </a>
-                        <div class="portfolio-caption">
+                        <div class="portfolio-caption" style="color:black;">
                             <h4>Lecture Series</h4>
                             <p class="text-muted">From research to real-world applications, lecture series offers a look
                                 at data science
@@ -189,16 +179,18 @@
                             </div>
                             <img class="img-fluid" src="{% static 'img/quiz.jpg' %}" alt="">
                         </a>
-                        <div class="portfolio-caption">
+                        <div class="portfolio-caption" style="color:black;">
                             <h4>Online Data Science Quiz</h4>
                             <p class="text-muted"> Dive into the world of data science through interactive quizzes. </p>
                         </div>
                     </div>
+                    -->
                 </div>
             </div>
         </section>
 
-        <!-- About -->
+<!--
+        
         <section id="about">
             <div class="container">
                 <div class="row">
@@ -209,13 +201,6 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <ul class="timeline">
-                            <!-- <li class="timeline-inverted">
-                                <div class="timeline-image">
-                                    <h4>Enter into
-                                        <br>a new
-                                        <br>Dimension</h4>
-                                </div>
-                            </li> -->
                             <li>
                                 <div class="timeline-image">
                                     <img class="rounded-circle img-fluid" src="{% static 'img/bootcamptimeline.jpg' %}" alt="">
@@ -292,9 +277,9 @@
                 </div>
             </div>
         </section>
-
+-->
         <!-- Team -->
-    <section class="bg-light" id="team">
+ <!--    <section class="bg-light" id="team">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -394,11 +379,7 @@
                     <i class="fa fa-facebook"></i>
                   </a>
                 </li>
-                 <!-- <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li> -->  
+                  
               </ul>
             </div>
           </div>
@@ -546,7 +527,7 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
 
         <!-- Contact -->
         <!-- <section id="contact">
@@ -594,8 +575,8 @@
         </section> -->
 
         <!-- Footer -->
-        <footer>
-            <div class="container">
+        <footer style="background-color: black;">
+            <div class="container" style="background-color: black; color: white;">
                 <div class="row">
                     <div class="col-md">
                         <span class="copyright">&copy; Matrix</span>
@@ -789,5 +770,53 @@
 
     <!-- Custom scripts for this template -->
     <script src="{% static 'js/agency.min.js' %}"></script>
+    <script src="{% static 'animation/bodymovin.js' %}"></script>
+
+    <script type="text/javascript">
+        var animation = bodymovin.loadAnimation({
+          container: document.getElementById('anime'), // Required
+          path: '/static/animation/header.json', // Required
+          renderer: 'svg/canvas/html', // Required
+          loop: true, // Optional
+          autoplay: true, // Optional
+          name: "Hello World", // Name for future reference. Optional.
+        })
+
+        var animate = bodymovin.loadAnimation({
+          container: document.getElementById('wallet'), // Required
+          path: '/static/animation/connect.json', // Required
+          renderer: 'svg/canvas/html', // Required
+          loop: true, // Optional
+          autoplay: true, // Optional
+          name: "Hello World", // Name for future reference. Optional.
+        })
+
+        var finance = bodymovin.loadAnimation({
+          container: document.getElementById('finance'), // Required
+          path: '/static/animation/finance.json', // Required
+          renderer: 'svg/canvas/html', // Required
+          loop: true, // Optional
+          autoplay: true, // Optional
+          name: "Hello World", // Name for future reference. Optional.
+        })
+
+        var finance = bodymovin.loadAnimation({
+          container: document.getElementById('latex'), // Required
+          path: '/static/animation/latex.json', // Required
+          renderer: 'svg/canvas/html', // Required
+          loop: true, // Optional
+          autoplay: true, // Optional
+          name: "Hello World", // Name for future reference. Optional.
+        })
+
+        var comming = bodymovin.loadAnimation({
+          container: document.getElementById('soon'), // Required
+          path: '/static/animation/comming.json', // Required
+          renderer: 'svg/canvas/html', // Required
+          loop: true, // Optional
+          autoplay: true, // Optional
+          name: "Hello World", // Name for future reference. Optional.
+        })
+    </script>
 
     {% endblock %}
