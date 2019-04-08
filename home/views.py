@@ -17,7 +17,7 @@ from django.utils import timezone
 #from selenium import webdriver
 import bs4 as bs
 import urllib3
-import pyrebase
+#import pyrebase
 from home.authhelper import get_signin_url, get_token_from_code, get_access_token
 from home.outlookservice import get_me
 from django.urls import reverse
